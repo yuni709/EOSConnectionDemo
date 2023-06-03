@@ -1,0 +1,5141 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "OnlineSubsystemBlueprints_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h"
+#include "Engine/Classes/Engine/GameInstance.h"
+#include "Engine/Classes/GameFramework/OnlineReplStructs.h"
+#include "OnlineSubsystemBlueprints/Public/Types/OSBOnlineErrorInfo.h"
+#include "OnlineSubsystemBlueprints/Public/Types/OSBPartyTypes.h"
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeOnlinePartySubsystem() {}
+// Cross Module References
+	ENGINE_API UClass* Z_Construct_UClass_UBlueprintAsyncActionBase();
+	ENGINE_API UClass* Z_Construct_UClass_UGameInstanceSubsystem();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FUniqueNetIdRepl();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UBlueprintPartyMember_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UMutablePartyData_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartyJoinInfo_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystem();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystem_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemCleanupParties();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemCreateParty();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemCreateParty_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemJoinParty();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemJoinParty_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemKickMember();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemKickMember_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemLeaveParty();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemPromoteMember();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemRejoinParty();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemRestoreParties();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemSendInvitation();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemUpdateParty();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UParty_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UPartyId_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UReadablePartyData_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_ECreatePartyCompletionResult_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_EJoinPartyCompletionResult_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_EKickMemberCompletionResult_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_ELeavePartyCompletionResult_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_EMemberExitedReason_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_EPartyState_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_EPromoteMemberCompletionResult_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_ESendPartyInvitationCompletionResult_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_EUpdateConfigCompletionResult_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UScriptStruct* Z_Construct_UScriptStruct_FOnlineErrorInfo();
+	ONLINESUBSYSTEMBLUEPRINTS_API UScriptStruct* Z_Construct_UScriptStruct_FOnlinePartyConfiguration();
+	UPackage* Z_Construct_UPackage__Script_OnlineSubsystemBlueprints();
+// End Cross Module References
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyJoined_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyJoined_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyJoined_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::NewProp_PartyId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyJoined_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyJoined_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyExited_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyExited_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyExited_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::NewProp_PartyId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyExited_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyExited_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyStateChanged_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			EPartyState_ State;
+			EPartyState_ PreviousState;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_State_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_State;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_PreviousState_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_PreviousState;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyStateChanged_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyStateChanged_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_State_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyStateChanged_BP_Parms, State), Z_Construct_UEnum_OnlineSubsystemBlueprints_EPartyState_, METADATA_PARAMS(nullptr, 0) }; // 2498032405
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_PreviousState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_PreviousState = { "PreviousState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyStateChanged_BP_Parms, PreviousState), Z_Construct_UEnum_OnlineSubsystemBlueprints_EPartyState_, METADATA_PARAMS(nullptr, 0) }; // 2498032405
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_State_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_State,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_PreviousState_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::NewProp_PreviousState,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyStateChanged_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyStateChanged_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyJIPResponse_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			bool Success;
+			int32 DeniedResultCode;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static void NewProp_Success_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_Success;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_DeniedResultCode;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPResponse_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPResponse_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_Success_SetBit(void* Obj)
+	{
+		((_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPResponse_BP_Parms*)Obj)->Success = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPResponse_BP_Parms), &Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_DeniedResultCode = { "DeniedResultCode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPResponse_BP_Parms, DeniedResultCode), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_Success,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::NewProp_DeniedResultCode,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyJIPResponse_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPResponse_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyPromotionLockoutChanged_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			bool bLockoutState;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static void NewProp_bLockoutState_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bLockoutState;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyPromotionLockoutChanged_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyPromotionLockoutChanged_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::NewProp_bLockoutState_SetBit(void* Obj)
+	{
+		((_Script_OnlineSubsystemBlueprints_eventParty_PartyPromotionLockoutChanged_BP_Parms*)Obj)->bLockoutState = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::NewProp_bLockoutState = { "bLockoutState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(_Script_OnlineSubsystemBlueprints_eventParty_PartyPromotionLockoutChanged_BP_Parms), &Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::NewProp_bLockoutState_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::NewProp_bLockoutState,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyPromotionLockoutChanged_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyPromotionLockoutChanged_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyConfigChanged_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FOnlinePartyConfiguration PartyConfig;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_PartyConfig;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyConfigChanged_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyConfigChanged_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::NewProp_PartyConfig = { "PartyConfig", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyConfigChanged_BP_Parms, PartyConfig), Z_Construct_UScriptStruct_FOnlinePartyConfiguration, METADATA_PARAMS(nullptr, 0) }; // 1752554292
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::NewProp_PartyConfig,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyConfigChanged_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyConfigChanged_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyDataReceived_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FName Namespace;
+			UReadablePartyData* PartyData;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_Namespace;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyData;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyDataReceived_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyDataReceived_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::NewProp_Namespace = { "Namespace", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyDataReceived_BP_Parms, Namespace), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::NewProp_PartyData = { "PartyData", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyDataReceived_BP_Parms, PartyData), Z_Construct_UClass_UReadablePartyData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::NewProp_Namespace,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::NewProp_PartyData,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyDataReceived_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyDataReceived_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyMemberPromoted_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl NewLeaderId;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_NewLeaderId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberPromoted_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberPromoted_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::NewProp_NewLeaderId = { "NewLeaderId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberPromoted_BP_Parms, NewLeaderId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::NewProp_NewLeaderId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyMemberPromoted_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberPromoted_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyMemberExited_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl MemberId;
+			EMemberExitedReason_ Reason;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MemberId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Reason_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Reason;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberExited_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberExited_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_MemberId = { "MemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberExited_BP_Parms, MemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_Reason_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_Reason = { "Reason", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberExited_BP_Parms, Reason), Z_Construct_UEnum_OnlineSubsystemBlueprints_EMemberExitedReason_, METADATA_PARAMS(nullptr, 0) }; // 3777270958
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_MemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_Reason_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::NewProp_Reason,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyMemberExited_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberExited_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyMemberJoined_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl MemberId;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MemberId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberJoined_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberJoined_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::NewProp_MemberId = { "MemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberJoined_BP_Parms, MemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::NewProp_MemberId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyMemberJoined_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberJoined_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyMemberDataReceived_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl MemberId;
+			FName Namespace;
+			UReadablePartyData* PartyData;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MemberId;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_Namespace;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyData;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberDataReceived_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberDataReceived_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_MemberId = { "MemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberDataReceived_BP_Parms, MemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_Namespace = { "Namespace", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberDataReceived_BP_Parms, Namespace), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_PartyData = { "PartyData", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberDataReceived_BP_Parms, PartyData), Z_Construct_UClass_UReadablePartyData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_MemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_Namespace,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::NewProp_PartyData,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyMemberDataReceived_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyMemberDataReceived_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyInvitesChanged_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyInvitesChanged_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyInvitesChanged_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyInvitesChanged_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyInviteRequestReceived_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl SenderId;
+			FUniqueNetIdRepl RequestForId;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_SenderId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_RequestForId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyInviteRequestReceived_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyInviteRequestReceived_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::NewProp_SenderId = { "SenderId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyInviteRequestReceived_BP_Parms, SenderId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::NewProp_RequestForId = { "RequestForId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyInviteRequestReceived_BP_Parms, RequestForId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::NewProp_SenderId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::NewProp_RequestForId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyInviteRequestReceived_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyInviteRequestReceived_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyInviteReceivedEx_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UOnlinePartyJoinInfo* Invitation;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Invitation;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyInviteReceivedEx_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::NewProp_Invitation = { "Invitation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyInviteReceivedEx_BP_Parms, Invitation), Z_Construct_UClass_UOnlinePartyJoinInfo_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::NewProp_Invitation,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyInviteReceivedEx_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyInviteReceivedEx_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_PartyJIPRequestReceived_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl SenderId;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_SenderId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPRequestReceived_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPRequestReceived_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::NewProp_SenderId = { "SenderId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPRequestReceived_BP_Parms, SenderId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::NewProp_SenderId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// @parameters-not-compatible\n// DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FParty_PartyJoinRequestReceived_BP, const FUniqueNetId&, LocalUserId, const FOnlinePartyId&, PartyId, const IOnlinePartyPendingJoinRequestInfo&, JoinRequestInfo);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ToolTip", "@parameters-not-compatible\nDECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FParty_PartyJoinRequestReceived_BP, const FUniqueNetId&, LocalUserId, const FOnlinePartyId&, PartyId, const IOnlinePartyPendingJoinRequestInfo&, JoinRequestInfo);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_PartyJIPRequestReceived_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_PartyJIPRequestReceived_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventParty_FillPartyJoinRequestData_BP_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			UMutablePartyData* PartyData;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyData;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_FillPartyJoinRequestData_BP_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_FillPartyJoinRequestData_BP_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::NewProp_PartyData = { "PartyData", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventParty_FillPartyJoinRequestData_BP_Parms, PartyData), Z_Construct_UClass_UMutablePartyData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::NewProp_PartyData,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "Party_FillPartyJoinRequestData_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventParty_FillPartyJoinRequestData_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execDumpPartyState)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DumpPartyState();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execMakeTokenFromJoinInfo)
+	{
+		P_GET_OBJECT(UOnlinePartyJoinInfo,Z_Param_JoinInfo);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->MakeTokenFromJoinInfo(Z_Param_JoinInfo);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execMakeJoinInfoJson)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->MakeJoinInfoJson(Z_Param_LocalUserId,Z_Param_PartyId);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetPendingInvitedUsers)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_TARRAY_REF(FUniqueNetIdRepl,Z_Param_Out_OutPendingInvitedUserArray);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->GetPendingInvitedUsers(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_Out_OutPendingInvitedUserArray);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetPendingInvites)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_TARRAY_REF(UOnlinePartyJoinInfo*,Z_Param_Out_OutPendingInvitesArray);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->GetPendingInvites(Z_Param_LocalUserId,Z_Param_Out_OutPendingInvitesArray);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetPartyMembers)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_TARRAY_REF(UBlueprintPartyMember*,Z_Param_Out_OutPartyMembersArray);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->GetPartyMembers(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_Out_OutPartyMembersArray);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetJoinedParties)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_TARRAY_REF(UPartyId*,Z_Param_Out_OutPartyIdArray);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->GetJoinedParties(Z_Param_LocalUserId,Z_Param_Out_OutPartyIdArray);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetPartyMemberData)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_MemberId);
+		P_GET_PROPERTY(FNameProperty,Z_Param_Namespace);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UReadablePartyData**)Z_Param__Result=P_THIS->GetPartyMemberData(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_MemberId,Z_Param_Namespace);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetPartyData)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_PROPERTY(FNameProperty,Z_Param_Namespace);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UReadablePartyData**)Z_Param__Result=P_THIS->GetPartyData(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_Namespace);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetPartyMember)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_MemberId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UBlueprintPartyMember**)Z_Param__Result=P_THIS->GetPartyMember(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_MemberId);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetParty)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UParty**)Z_Param__Result=P_THIS->GetParty(Z_Param_LocalUserId,Z_Param_PartyId);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execGetPartyMemberCount)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int64*)Z_Param__Result=P_THIS->GetPartyMemberCount(Z_Param_LocalUserId,Z_Param_PartyId);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execIsMemberLeader)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_MemberId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsMemberLeader(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_MemberId);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execUpdatePartyMemberData)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_PROPERTY(FNameProperty,Z_Param_Namespace);
+		P_GET_OBJECT(UReadablePartyData,Z_Param_PartyMemberData);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->UpdatePartyMemberData(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_Namespace,Z_Param_PartyMemberData);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execUpdatePartyData)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_PROPERTY(FNameProperty,Z_Param_Namespace);
+		P_GET_OBJECT(UReadablePartyData,Z_Param_PartyData);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->UpdatePartyData(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_Namespace,Z_Param_PartyData);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execRejectInvitation)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_SenderId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->RejectInvitation(Z_Param_LocalUserId,Z_Param_SenderId);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execRespondToQueryJoinability)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_RecipientId);
+		P_GET_UBOOL(Z_Param_bCanJoin);
+		P_GET_PROPERTY(FIntProperty,Z_Param_DeniedResultCode);
+		P_GET_OBJECT(UReadablePartyData,Z_Param_PartyData);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RespondToQueryJoinability(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_RecipientId,Z_Param_bCanJoin,Z_Param_DeniedResultCode,Z_Param_PartyData);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execApproveJoinRequest)
+	{
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_RecipientId);
+		P_GET_UBOOL(Z_Param_bIsApproved);
+		P_GET_PROPERTY(FIntProperty,Z_Param_DeniedResultCode);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->ApproveJoinRequest(Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_RecipientId,Z_Param_bIsApproved,Z_Param_DeniedResultCode);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystem::execIsSubsystemAvailable)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsSubsystemAvailable();
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystem::StaticRegisterNativesUOnlinePartySubsystem()
+	{
+		UClass* Class = UOnlinePartySubsystem::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "ApproveJoinRequest", &UOnlinePartySubsystem::execApproveJoinRequest },
+			{ "DumpPartyState", &UOnlinePartySubsystem::execDumpPartyState },
+			{ "GetJoinedParties", &UOnlinePartySubsystem::execGetJoinedParties },
+			{ "GetParty", &UOnlinePartySubsystem::execGetParty },
+			{ "GetPartyData", &UOnlinePartySubsystem::execGetPartyData },
+			{ "GetPartyMember", &UOnlinePartySubsystem::execGetPartyMember },
+			{ "GetPartyMemberCount", &UOnlinePartySubsystem::execGetPartyMemberCount },
+			{ "GetPartyMemberData", &UOnlinePartySubsystem::execGetPartyMemberData },
+			{ "GetPartyMembers", &UOnlinePartySubsystem::execGetPartyMembers },
+			{ "GetPendingInvitedUsers", &UOnlinePartySubsystem::execGetPendingInvitedUsers },
+			{ "GetPendingInvites", &UOnlinePartySubsystem::execGetPendingInvites },
+			{ "IsMemberLeader", &UOnlinePartySubsystem::execIsMemberLeader },
+			{ "IsSubsystemAvailable", &UOnlinePartySubsystem::execIsSubsystemAvailable },
+			{ "MakeJoinInfoJson", &UOnlinePartySubsystem::execMakeJoinInfoJson },
+			{ "MakeTokenFromJoinInfo", &UOnlinePartySubsystem::execMakeTokenFromJoinInfo },
+			{ "RejectInvitation", &UOnlinePartySubsystem::execRejectInvitation },
+			{ "RespondToQueryJoinability", &UOnlinePartySubsystem::execRespondToQueryJoinability },
+			{ "UpdatePartyData", &UOnlinePartySubsystem::execUpdatePartyData },
+			{ "UpdatePartyMemberData", &UOnlinePartySubsystem::execUpdatePartyMemberData },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics
+	{
+		struct OnlinePartySubsystem_eventApproveJoinRequest_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl RecipientId;
+			bool bIsApproved;
+			int32 DeniedResultCode;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_RecipientId;
+		static void NewProp_bIsApproved_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsApproved;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_DeniedResultCode;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventApproveJoinRequest_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventApproveJoinRequest_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_RecipientId = { "RecipientId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventApproveJoinRequest_Parms, RecipientId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	void Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_bIsApproved_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventApproveJoinRequest_Parms*)Obj)->bIsApproved = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_bIsApproved = { "bIsApproved", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventApproveJoinRequest_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_bIsApproved_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_DeniedResultCode = { "DeniedResultCode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventApproveJoinRequest_Parms, DeniedResultCode), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventApproveJoinRequest_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventApproveJoinRequest_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_RecipientId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_bIsApproved,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_DeniedResultCode,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "ApproveJoinRequest", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::OnlinePartySubsystem_eventApproveJoinRequest_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_DumpPartyState_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_DumpPartyState_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "Comment", "// @generator-incompatible\n// FDelegateHandle AddOnPartyInviteRemovedDelegate_Handle(const FOnPartyInviteRemovedDelegate& Delegate);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ToolTip", "@generator-incompatible\nFDelegateHandle AddOnPartyInviteRemovedDelegate_Handle(const FOnPartyInviteRemovedDelegate& Delegate);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_DumpPartyState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "DumpPartyState", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_DumpPartyState_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_DumpPartyState_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_DumpPartyState()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_DumpPartyState_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics
+	{
+		struct OnlinePartySubsystem_eventGetJoinedParties_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			TArray<UPartyId*> OutPartyIdArray;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OutPartyIdArray_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_OutPartyIdArray;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetJoinedParties_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_OutPartyIdArray_Inner = { "OutPartyIdArray", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_OutPartyIdArray = { "OutPartyIdArray", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetJoinedParties_Parms, OutPartyIdArray), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventGetJoinedParties_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventGetJoinedParties_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_OutPartyIdArray_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_OutPartyIdArray,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "Comment", "// @generator-incompatible\n// IOnlinePartyJoinInfoConstPtr GetAdvertisedParty(const FUniqueNetId& LocalUserId, const FUniqueNetId& UserId, const FOnlinePartyTypeId PartyTypeId);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ToolTip", "@generator-incompatible\nIOnlinePartyJoinInfoConstPtr GetAdvertisedParty(const FUniqueNetId& LocalUserId, const FUniqueNetId& UserId, const FOnlinePartyTypeId PartyTypeId);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetJoinedParties", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::OnlinePartySubsystem_eventGetJoinedParties_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics
+	{
+		struct OnlinePartySubsystem_eventGetParty_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			UParty* ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetParty_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetParty_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetParty_Parms, ReturnValue), Z_Construct_UClass_UParty_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetParty", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::OnlinePartySubsystem_eventGetParty_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetParty()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetParty_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics
+	{
+		struct OnlinePartySubsystem_eventGetPartyData_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FName Namespace;
+			UReadablePartyData* ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_Namespace;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyData_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyData_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::NewProp_Namespace = { "Namespace", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyData_Parms, Namespace), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyData_Parms, ReturnValue), Z_Construct_UClass_UReadablePartyData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::NewProp_Namespace,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetPartyData", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::OnlinePartySubsystem_eventGetPartyData_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics
+	{
+		struct OnlinePartySubsystem_eventGetPartyMember_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl MemberId;
+			UBlueprintPartyMember* ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MemberId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMember_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMember_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::NewProp_MemberId = { "MemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMember_Parms, MemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMember_Parms, ReturnValue), Z_Construct_UClass_UBlueprintPartyMember_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::NewProp_MemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "Comment", "// @generator-excluded-with-pick\n// FOnlinePartyConstPtr GetParty(const FUniqueNetId& LocalUserId, const FOnlinePartyTypeId& PartyTypeId);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ToolTip", "@generator-excluded-with-pick\nFOnlinePartyConstPtr GetParty(const FUniqueNetId& LocalUserId, const FOnlinePartyTypeId& PartyTypeId);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetPartyMember", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::OnlinePartySubsystem_eventGetPartyMember_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics
+	{
+		struct OnlinePartySubsystem_eventGetPartyMemberCount_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			int64 ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FInt64PropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMemberCount_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMemberCount_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FInt64PropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMemberCount_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetPartyMemberCount", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::OnlinePartySubsystem_eventGetPartyMemberCount_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics
+	{
+		struct OnlinePartySubsystem_eventGetPartyMemberData_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl MemberId;
+			FName Namespace;
+			UReadablePartyData* ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MemberId;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_Namespace;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMemberData_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMemberData_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_MemberId = { "MemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMemberData_Parms, MemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_Namespace = { "Namespace", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMemberData_Parms, Namespace), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMemberData_Parms, ReturnValue), Z_Construct_UClass_UReadablePartyData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_MemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_Namespace,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetPartyMemberData", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::OnlinePartySubsystem_eventGetPartyMemberData_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics
+	{
+		struct OnlinePartySubsystem_eventGetPartyMembers_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			TArray<UBlueprintPartyMember*> OutPartyMembersArray;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OutPartyMembersArray_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_OutPartyMembersArray;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMembers_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMembers_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_OutPartyMembersArray_Inner = { "OutPartyMembersArray", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UClass_UBlueprintPartyMember_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_OutPartyMembersArray = { "OutPartyMembersArray", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPartyMembers_Parms, OutPartyMembersArray), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventGetPartyMembers_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventGetPartyMembers_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_OutPartyMembersArray_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_OutPartyMembersArray,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetPartyMembers", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::OnlinePartySubsystem_eventGetPartyMembers_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics
+	{
+		struct OnlinePartySubsystem_eventGetPendingInvitedUsers_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			TArray<FUniqueNetIdRepl> OutPendingInvitedUserArray;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_OutPendingInvitedUserArray_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_OutPendingInvitedUserArray;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPendingInvitedUsers_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPendingInvitedUsers_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_OutPendingInvitedUserArray_Inner = { "OutPendingInvitedUserArray", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_OutPendingInvitedUserArray = { "OutPendingInvitedUserArray", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPendingInvitedUsers_Parms, OutPendingInvitedUserArray), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	void Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventGetPendingInvitedUsers_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventGetPendingInvitedUsers_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_OutPendingInvitedUserArray_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_OutPendingInvitedUserArray,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "Comment", "// @generator-incompatible\n// bool GetPendingJoinRequests(const FUniqueNetId& LocalUserId, const FOnlinePartyId& PartyId, TArray<IOnlinePartyPendingJoinRequestInfoConstRef>& OutPendingJoinRequestArray);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ToolTip", "@generator-incompatible\nbool GetPendingJoinRequests(const FUniqueNetId& LocalUserId, const FOnlinePartyId& PartyId, TArray<IOnlinePartyPendingJoinRequestInfoConstRef>& OutPendingJoinRequestArray);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetPendingInvitedUsers", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::OnlinePartySubsystem_eventGetPendingInvitedUsers_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics
+	{
+		struct OnlinePartySubsystem_eventGetPendingInvites_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			TArray<UOnlinePartyJoinInfo*> OutPendingInvitesArray;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OutPendingInvitesArray_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_OutPendingInvitesArray;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPendingInvites_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_OutPendingInvitesArray_Inner = { "OutPendingInvitesArray", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UClass_UOnlinePartyJoinInfo_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_OutPendingInvitesArray = { "OutPendingInvitesArray", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventGetPendingInvites_Parms, OutPendingInvitesArray), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventGetPendingInvites_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventGetPendingInvites_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_OutPendingInvitesArray_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_OutPendingInvitesArray,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "GetPendingInvites", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::OnlinePartySubsystem_eventGetPendingInvites_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics
+	{
+		struct OnlinePartySubsystem_eventIsMemberLeader_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl MemberId;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MemberId;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventIsMemberLeader_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventIsMemberLeader_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_MemberId = { "MemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventIsMemberLeader_Parms, MemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	void Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventIsMemberLeader_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventIsMemberLeader_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_MemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "IsMemberLeader", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::OnlinePartySubsystem_eventIsMemberLeader_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics
+	{
+		struct OnlinePartySubsystem_eventIsSubsystemAvailable_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventIsSubsystemAvailable_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventIsSubsystemAvailable_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "IsSubsystemAvailable", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::OnlinePartySubsystem_eventIsSubsystemAvailable_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics
+	{
+		struct OnlinePartySubsystem_eventMakeJoinInfoJson_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventMakeJoinInfoJson_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventMakeJoinInfoJson_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventMakeJoinInfoJson_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "Comment", "// @generator-incompatible\n// bool GetPendingRequestsToJoin(const FUniqueNetId& LocalUserId, TArray<IOnlinePartyRequestToJoinInfoConstRef>& OutRequestsToJoin);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ToolTip", "@generator-incompatible\nbool GetPendingRequestsToJoin(const FUniqueNetId& LocalUserId, TArray<IOnlinePartyRequestToJoinInfoConstRef>& OutRequestsToJoin);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "MakeJoinInfoJson", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::OnlinePartySubsystem_eventMakeJoinInfoJson_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics
+	{
+		struct OnlinePartySubsystem_eventMakeTokenFromJoinInfo_Parms
+		{
+			UOnlinePartyJoinInfo* JoinInfo;
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_JoinInfo;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::NewProp_JoinInfo = { "JoinInfo", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventMakeTokenFromJoinInfo_Parms, JoinInfo), Z_Construct_UClass_UOnlinePartyJoinInfo_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventMakeTokenFromJoinInfo_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::NewProp_JoinInfo,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "Comment", "// @generator-incompatible\n// IOnlinePartyJoinInfoConstPtr MakeJoinInfoFromJson(const FString& JoinInfoJson);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ToolTip", "@generator-incompatible\nIOnlinePartyJoinInfoConstPtr MakeJoinInfoFromJson(const FString& JoinInfoJson);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "MakeTokenFromJoinInfo", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::OnlinePartySubsystem_eventMakeTokenFromJoinInfo_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics
+	{
+		struct OnlinePartySubsystem_eventRejectInvitation_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			FUniqueNetIdRepl SenderId;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_SenderId;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventRejectInvitation_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::NewProp_SenderId = { "SenderId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventRejectInvitation_Parms, SenderId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	void Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventRejectInvitation_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventRejectInvitation_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::NewProp_SenderId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "RejectInvitation", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::OnlinePartySubsystem_eventRejectInvitation_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics
+	{
+		struct OnlinePartySubsystem_eventRespondToQueryJoinability_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl RecipientId;
+			bool bCanJoin;
+			int32 DeniedResultCode;
+			UReadablePartyData* PartyData;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_RecipientId;
+		static void NewProp_bCanJoin_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bCanJoin;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_DeniedResultCode;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyData;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventRespondToQueryJoinability_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventRespondToQueryJoinability_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_RecipientId = { "RecipientId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventRespondToQueryJoinability_Parms, RecipientId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	void Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_bCanJoin_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventRespondToQueryJoinability_Parms*)Obj)->bCanJoin = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_bCanJoin = { "bCanJoin", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventRespondToQueryJoinability_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_bCanJoin_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_DeniedResultCode = { "DeniedResultCode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventRespondToQueryJoinability_Parms, DeniedResultCode), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_PartyData = { "PartyData", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventRespondToQueryJoinability_Parms, PartyData), Z_Construct_UClass_UReadablePartyData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_RecipientId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_bCanJoin,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_DeniedResultCode,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::NewProp_PartyData,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "RespondToQueryJoinability", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::OnlinePartySubsystem_eventRespondToQueryJoinability_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics
+	{
+		struct OnlinePartySubsystem_eventUpdatePartyData_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FName Namespace;
+			UReadablePartyData* PartyData;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_Namespace;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyData;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventUpdatePartyData_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventUpdatePartyData_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_Namespace = { "Namespace", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventUpdatePartyData_Parms, Namespace), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_PartyData = { "PartyData", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventUpdatePartyData_Parms, PartyData), Z_Construct_UClass_UReadablePartyData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventUpdatePartyData_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventUpdatePartyData_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_Namespace,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_PartyData,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "UpdatePartyData", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::OnlinePartySubsystem_eventUpdatePartyData_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics
+	{
+		struct OnlinePartySubsystem_eventUpdatePartyMemberData_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FName Namespace;
+			UReadablePartyData* PartyMemberData;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_Namespace;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyMemberData;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventUpdatePartyMemberData_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventUpdatePartyMemberData_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_Namespace = { "Namespace", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventUpdatePartyMemberData_Parms, Namespace), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_PartyMemberData = { "PartyMemberData", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystem_eventUpdatePartyMemberData_Parms, PartyMemberData), Z_Construct_UClass_UReadablePartyData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystem_eventUpdatePartyMemberData_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystem_eventUpdatePartyMemberData_Parms), &Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_Namespace,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_PartyMemberData,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystem, nullptr, "UpdatePartyMemberData", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::OnlinePartySubsystem_eventUpdatePartyMemberData_Parms), Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystem);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystem_NoRegister()
+	{
+		return UOnlinePartySubsystem::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystem_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyJoined_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyJoined;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyExited_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyExited;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyStateChanged_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyStateChanged;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyJIPResponse_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyJIPResponse;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyPromotionLockoutChanged_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyPromotionLockoutChanged;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyConfigChanged_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyConfigChanged;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyDataReceived_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyDataReceived;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyMemberPromoted_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyMemberPromoted;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyMemberExited_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyMemberExited;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyMemberJoined_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyMemberJoined;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyMemberDataReceived_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyMemberDataReceived;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyInvitesChanged_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyInvitesChanged;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyInviteRequestReceived_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyInviteRequestReceived;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyInviteReceivedEx_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyInviteReceivedEx;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyJIPRequestReceived_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyJIPRequestReceived;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnFillPartyJoinRequestData_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnFillPartyJoinRequestData;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystem_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UGameInstanceSubsystem,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystem_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_ApproveJoinRequest, "ApproveJoinRequest" }, // 2444911248
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_DumpPartyState, "DumpPartyState" }, // 3147123537
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetJoinedParties, "GetJoinedParties" }, // 542770395
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetParty, "GetParty" }, // 4267920465
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyData, "GetPartyData" }, // 2292311930
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMember, "GetPartyMember" }, // 3511897370
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberCount, "GetPartyMemberCount" }, // 1017691991
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMemberData, "GetPartyMemberData" }, // 477336485
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetPartyMembers, "GetPartyMembers" }, // 694486802
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvitedUsers, "GetPendingInvitedUsers" }, // 2159239201
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_GetPendingInvites, "GetPendingInvites" }, // 3800117749
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_IsMemberLeader, "IsMemberLeader" }, // 3330258253
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_IsSubsystemAvailable, "IsSubsystemAvailable" }, // 2578111444
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_MakeJoinInfoJson, "MakeJoinInfoJson" }, // 1140529804
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_MakeTokenFromJoinInfo, "MakeTokenFromJoinInfo" }, // 1996126618
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_RejectInvitation, "RejectInvitation" }, // 1305846581
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_RespondToQueryJoinability, "RespondToQueryJoinability" }, // 3192286373
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyData, "UpdatePartyData" }, // 1814065040
+		{ &Z_Construct_UFunction_UOnlinePartySubsystem_UpdatePartyMemberData, "UpdatePartyMemberData" }, // 2640420539
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "Comment", "// @parameters-not-compatible\n// DECLARE_DYNAMIC_MULTICAST_DELEGATE_FiveParams(FParty_PartyRequestToJoinRemoved_BP, const FUniqueNetId&, LocalUserId, const FOnlinePartyId&, PartyId, const FUniqueNetId&, RequesterId, const IOnlinePartyRequestToJoinInfo&, Request, EPartyRequestToJoinRemovedReason, Reason);\n" },
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ToolTip", "@parameters-not-compatible\nDECLARE_DYNAMIC_MULTICAST_DELEGATE_FiveParams(FParty_PartyRequestToJoinRemoved_BP, const FUniqueNetId&, LocalUserId, const FOnlinePartyId&, PartyId, const FUniqueNetId&, RequesterId, const IOnlinePartyRequestToJoinInfo&, Request, EPartyRequestToJoinRemovedReason, Reason);" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJoined_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJoined = { "OnPartyJoined", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyJoined), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJoined_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJoined_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJoined_MetaData)) }; // 2462162287
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyExited_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyExited = { "OnPartyExited", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyExited), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyExited_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyExited_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyExited_MetaData)) }; // 4056312436
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyStateChanged_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyStateChanged = { "OnPartyStateChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyStateChanged), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyStateChanged_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyStateChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyStateChanged_MetaData)) }; // 2482775735
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPResponse_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPResponse = { "OnPartyJIPResponse", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyJIPResponse), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPResponse_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPResponse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPResponse_MetaData)) }; // 1313579480
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyPromotionLockoutChanged_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyPromotionLockoutChanged = { "OnPartyPromotionLockoutChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyPromotionLockoutChanged), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyPromotionLockoutChanged_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyPromotionLockoutChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyPromotionLockoutChanged_MetaData)) }; // 3144616705
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyConfigChanged_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyConfigChanged = { "OnPartyConfigChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyConfigChanged), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyConfigChanged_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyConfigChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyConfigChanged_MetaData)) }; // 2671227973
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyDataReceived_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyDataReceived = { "OnPartyDataReceived", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyDataReceived), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyDataReceived_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyDataReceived_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyDataReceived_MetaData)) }; // 2062786296
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberPromoted_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberPromoted = { "OnPartyMemberPromoted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyMemberPromoted), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberPromoted_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberPromoted_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberPromoted_MetaData)) }; // 3488564782
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberExited_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberExited = { "OnPartyMemberExited", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyMemberExited), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberExited_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberExited_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberExited_MetaData)) }; // 3784813886
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberJoined_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberJoined = { "OnPartyMemberJoined", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyMemberJoined), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberJoined_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberJoined_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberJoined_MetaData)) }; // 3656755504
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberDataReceived_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberDataReceived = { "OnPartyMemberDataReceived", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyMemberDataReceived), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyMemberDataReceived_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberDataReceived_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberDataReceived_MetaData)) }; // 2024959461
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInvitesChanged_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInvitesChanged = { "OnPartyInvitesChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyInvitesChanged), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInvitesChanged_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInvitesChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInvitesChanged_MetaData)) }; // 9454507
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteRequestReceived_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteRequestReceived = { "OnPartyInviteRequestReceived", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyInviteRequestReceived), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteRequestReceived_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteRequestReceived_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteRequestReceived_MetaData)) }; // 1947306356
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteReceivedEx_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteReceivedEx = { "OnPartyInviteReceivedEx", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyInviteReceivedEx), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyInviteReceivedEx_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteReceivedEx_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteReceivedEx_MetaData)) }; // 755502917
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPRequestReceived_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPRequestReceived = { "OnPartyJIPRequestReceived", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnPartyJIPRequestReceived), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_PartyJIPRequestReceived_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPRequestReceived_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPRequestReceived_MetaData)) }; // 2771136407
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnFillPartyJoinRequestData_MetaData[] = {
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnFillPartyJoinRequestData = { "OnFillPartyJoinRequestData", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystem, OnFillPartyJoinRequestData), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_Party_FillPartyJoinRequestData_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnFillPartyJoinRequestData_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnFillPartyJoinRequestData_MetaData)) }; // 336787524
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystem_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJoined,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyExited,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyStateChanged,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPResponse,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyPromotionLockoutChanged,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyConfigChanged,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyDataReceived,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberPromoted,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberExited,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberJoined,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyMemberDataReceived,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInvitesChanged,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteRequestReceived,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyInviteReceivedEx,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnPartyJIPRequestReceived,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystem_Statics::NewProp_OnFillPartyJoinRequestData,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystem_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystem>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystem_Statics::ClassParams = {
+		&UOnlinePartySubsystem::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystem_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystem_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystem_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystem()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystem.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystem.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystem_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystem.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystem>()
+	{
+		return UOnlinePartySubsystem::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystem);
+	UOnlinePartySubsystem::~UOnlinePartySubsystem() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRestorePartiesCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			FOnlineErrorInfo Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRestorePartiesCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRestorePartiesCallbackPin_Parms, Result), Z_Construct_UScriptStruct_FOnlineErrorInfo, METADATA_PARAMS(nullptr, 0) }; // 93036015
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRestorePartiesCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemRestoreParties::execRestoreParties)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemRestoreParties**)Z_Param__Result=UOnlinePartySubsystemRestoreParties::RestoreParties(Z_Param_Subsystem,Z_Param_LocalUserId);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemRestoreParties::StaticRegisterNativesUOnlinePartySubsystemRestoreParties()
+	{
+		UClass* Class = UOnlinePartySubsystemRestoreParties::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "RestoreParties", &UOnlinePartySubsystemRestoreParties::execRestoreParties },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics
+	{
+		struct OnlinePartySubsystemRestoreParties_eventRestoreParties_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UOnlinePartySubsystemRestoreParties* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRestoreParties_eventRestoreParties_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRestoreParties_eventRestoreParties_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRestoreParties_eventRestoreParties_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemRestoreParties, nullptr, "RestoreParties", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::OnlinePartySubsystemRestoreParties_eventRestoreParties_Parms), Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemRestoreParties);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_NoRegister()
+	{
+		return UOnlinePartySubsystemRestoreParties::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnRestorePartiesComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnRestorePartiesComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemRestoreParties_RestoreParties, "RestoreParties" }, // 1919729822
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreParties, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnCallFailed_MetaData)) }; // 3659605133
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnRestorePartiesComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnRestorePartiesComplete = { "OnRestorePartiesComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreParties, OnRestorePartiesComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestorePartiesCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnRestorePartiesComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnRestorePartiesComplete_MetaData)) }; // 3659605133
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreParties, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreParties, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreParties, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp_OnRestorePartiesComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::NewProp___Store__LocalUserId,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemRestoreParties>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::ClassParams = {
+		&UOnlinePartySubsystemRestoreParties::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemRestoreParties()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemRestoreParties.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemRestoreParties.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemRestoreParties_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemRestoreParties.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemRestoreParties>()
+	{
+		return UOnlinePartySubsystemRestoreParties::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemRestoreParties);
+	UOnlinePartySubsystemRestoreParties::~UOnlinePartySubsystemRestoreParties() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRestoreInvitesCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			FOnlineErrorInfo Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRestoreInvitesCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRestoreInvitesCallbackPin_Parms, Result), Z_Construct_UScriptStruct_FOnlineErrorInfo, METADATA_PARAMS(nullptr, 0) }; // 93036015
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRestoreInvitesCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemRestoreInvites::execRestoreInvites)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemRestoreInvites**)Z_Param__Result=UOnlinePartySubsystemRestoreInvites::RestoreInvites(Z_Param_Subsystem,Z_Param_LocalUserId);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemRestoreInvites::StaticRegisterNativesUOnlinePartySubsystemRestoreInvites()
+	{
+		UClass* Class = UOnlinePartySubsystemRestoreInvites::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "RestoreInvites", &UOnlinePartySubsystemRestoreInvites::execRestoreInvites },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics
+	{
+		struct OnlinePartySubsystemRestoreInvites_eventRestoreInvites_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UOnlinePartySubsystemRestoreInvites* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRestoreInvites_eventRestoreInvites_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRestoreInvites_eventRestoreInvites_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRestoreInvites_eventRestoreInvites_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites, nullptr, "RestoreInvites", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::OnlinePartySubsystemRestoreInvites_eventRestoreInvites_Parms), Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemRestoreInvites);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_NoRegister()
+	{
+		return UOnlinePartySubsystemRestoreInvites::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnRestoreInvitesComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnRestoreInvitesComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemRestoreInvites_RestoreInvites, "RestoreInvites" }, // 2351025118
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreInvites, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnCallFailed_MetaData)) }; // 2009833568
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnRestoreInvitesComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnRestoreInvitesComplete = { "OnRestoreInvitesComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreInvites, OnRestoreInvitesComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRestoreInvitesCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnRestoreInvitesComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnRestoreInvitesComplete_MetaData)) }; // 2009833568
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreInvites, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreInvites, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRestoreInvites, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp_OnRestoreInvitesComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::NewProp___Store__LocalUserId,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemRestoreInvites>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::ClassParams = {
+		&UOnlinePartySubsystemRestoreInvites::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemRestoreInvites.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemRestoreInvites.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemRestoreInvites.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemRestoreInvites>()
+	{
+		return UOnlinePartySubsystemRestoreInvites::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemRestoreInvites);
+	UOnlinePartySubsystemRestoreInvites::~UOnlinePartySubsystemRestoreInvites() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCleanupPartiesCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			FOnlineErrorInfo Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCleanupPartiesCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCleanupPartiesCallbackPin_Parms, Result), Z_Construct_UScriptStruct_FOnlineErrorInfo, METADATA_PARAMS(nullptr, 0) }; // 93036015
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCleanupPartiesCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemCleanupParties::execCleanupParties)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemCleanupParties**)Z_Param__Result=UOnlinePartySubsystemCleanupParties::CleanupParties(Z_Param_Subsystem,Z_Param_LocalUserId);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemCleanupParties::StaticRegisterNativesUOnlinePartySubsystemCleanupParties()
+	{
+		UClass* Class = UOnlinePartySubsystemCleanupParties::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "CleanupParties", &UOnlinePartySubsystemCleanupParties::execCleanupParties },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics
+	{
+		struct OnlinePartySubsystemCleanupParties_eventCleanupParties_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UOnlinePartySubsystemCleanupParties* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCleanupParties_eventCleanupParties_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCleanupParties_eventCleanupParties_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCleanupParties_eventCleanupParties_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemCleanupParties, nullptr, "CleanupParties", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::OnlinePartySubsystemCleanupParties_eventCleanupParties_Parms), Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemCleanupParties);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_NoRegister()
+	{
+		return UOnlinePartySubsystemCleanupParties::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCleanupPartiesComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCleanupPartiesComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemCleanupParties_CleanupParties, "CleanupParties" }, // 4012257077
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCleanupParties, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCallFailed_MetaData)) }; // 1346081494
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCleanupPartiesComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCleanupPartiesComplete = { "OnCleanupPartiesComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCleanupParties, OnCleanupPartiesComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCleanupPartiesCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCleanupPartiesComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCleanupPartiesComplete_MetaData)) }; // 1346081494
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCleanupParties, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCleanupParties, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCleanupParties, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp_OnCleanupPartiesComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::NewProp___Store__LocalUserId,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemCleanupParties>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::ClassParams = {
+		&UOnlinePartySubsystemCleanupParties::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemCleanupParties()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemCleanupParties.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemCleanupParties.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemCleanupParties_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemCleanupParties.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemCleanupParties>()
+	{
+		return UOnlinePartySubsystemCleanupParties::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemCleanupParties);
+	UOnlinePartySubsystemCleanupParties::~UOnlinePartySubsystemCleanupParties() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCreatePartyCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			ECreatePartyCompletionResult_ Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Result_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCreatePartyCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCreatePartyCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCreatePartyCallbackPin_Parms, Result), Z_Construct_UEnum_OnlineSubsystemBlueprints_ECreatePartyCompletionResult_, METADATA_PARAMS(nullptr, 0) }; // 3276375972
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCreatePartyCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemCreateParty::execCreateParty)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_PROPERTY(FInt64Property,Z_Param_PartyTypeId);
+		P_GET_STRUCT(FOnlinePartyConfiguration,Z_Param_PartyConfig);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemCreateParty**)Z_Param__Result=UOnlinePartySubsystemCreateParty::CreateParty(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_PartyTypeId,Z_Param_PartyConfig);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemCreateParty::StaticRegisterNativesUOnlinePartySubsystemCreateParty()
+	{
+		UClass* Class = UOnlinePartySubsystemCreateParty::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "CreateParty", &UOnlinePartySubsystemCreateParty::execCreateParty },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics
+	{
+		struct OnlinePartySubsystemCreateParty_eventCreateParty_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			int64 PartyTypeId;
+			FOnlinePartyConfiguration PartyConfig;
+			UOnlinePartySubsystemCreateParty* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FInt64PropertyParams NewProp_PartyTypeId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_PartyConfig;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCreateParty_eventCreateParty_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCreateParty_eventCreateParty_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FInt64PropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_PartyTypeId = { "PartyTypeId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCreateParty_eventCreateParty_Parms, PartyTypeId), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_PartyConfig = { "PartyConfig", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCreateParty_eventCreateParty_Parms, PartyConfig), Z_Construct_UScriptStruct_FOnlinePartyConfiguration, METADATA_PARAMS(nullptr, 0) }; // 1752554292
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCreateParty_eventCreateParty_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemCreateParty_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_PartyTypeId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_PartyConfig,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemCreateParty, nullptr, "CreateParty", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::OnlinePartySubsystemCreateParty_eventCreateParty_Parms), Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemCreateParty);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemCreateParty_NoRegister()
+	{
+		return UOnlinePartySubsystemCreateParty::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCreatePartyComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCreatePartyComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyTypeId_MetaData[];
+#endif
+		static const UECodeGen_Private::FInt64PropertyParams NewProp___Store__PartyTypeId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyConfig_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__PartyConfig;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemCreateParty_CreateParty, "CreateParty" }, // 2097272961
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCreateParty, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCallFailed_MetaData)) }; // 69137074
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCreatePartyComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCreatePartyComplete = { "OnCreatePartyComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCreateParty, OnCreatePartyComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCreatePartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCreatePartyComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCreatePartyComplete_MetaData)) }; // 69137074
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCreateParty, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCreateParty, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCreateParty, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyTypeId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FInt64PropertyParams Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyTypeId = { "__Store__PartyTypeId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCreateParty, __Store__PartyTypeId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyTypeId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyTypeId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyConfig_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyConfig = { "__Store__PartyConfig", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCreateParty, __Store__PartyConfig), Z_Construct_UScriptStruct_FOnlinePartyConfiguration, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyConfig_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyConfig_MetaData)) }; // 1752554292
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp_OnCreatePartyComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyTypeId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::NewProp___Store__PartyConfig,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemCreateParty>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::ClassParams = {
+		&UOnlinePartySubsystemCreateParty::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemCreateParty()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemCreateParty.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemCreateParty.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemCreateParty_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemCreateParty.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemCreateParty>()
+	{
+		return UOnlinePartySubsystemCreateParty::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemCreateParty);
+	UOnlinePartySubsystemCreateParty::~UOnlinePartySubsystemCreateParty() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemUpdatePartyCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			EUpdateConfigCompletionResult_ Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Result_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemUpdatePartyCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemUpdatePartyCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemUpdatePartyCallbackPin_Parms, Result), Z_Construct_UEnum_OnlineSubsystemBlueprints_EUpdateConfigCompletionResult_, METADATA_PARAMS(nullptr, 0) }; // 1782688926
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemUpdatePartyCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemUpdateParty::execUpdateParty)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FOnlinePartyConfiguration,Z_Param_PartyConfig);
+		P_GET_UBOOL(Z_Param_bShouldRegenerateReservationKey);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemUpdateParty**)Z_Param__Result=UOnlinePartySubsystemUpdateParty::UpdateParty(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_PartyConfig,Z_Param_bShouldRegenerateReservationKey);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemUpdateParty::StaticRegisterNativesUOnlinePartySubsystemUpdateParty()
+	{
+		UClass* Class = UOnlinePartySubsystemUpdateParty::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "UpdateParty", &UOnlinePartySubsystemUpdateParty::execUpdateParty },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics
+	{
+		struct OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FOnlinePartyConfiguration PartyConfig;
+			bool bShouldRegenerateReservationKey;
+			UOnlinePartySubsystemUpdateParty* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_PartyConfig;
+		static void NewProp_bShouldRegenerateReservationKey_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bShouldRegenerateReservationKey;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_PartyConfig = { "PartyConfig", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms, PartyConfig), Z_Construct_UScriptStruct_FOnlinePartyConfiguration, METADATA_PARAMS(nullptr, 0) }; // 1752554292
+	void Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_bShouldRegenerateReservationKey_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms*)Obj)->bShouldRegenerateReservationKey = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_bShouldRegenerateReservationKey = { "bShouldRegenerateReservationKey", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms), &Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_bShouldRegenerateReservationKey_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_PartyConfig,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_bShouldRegenerateReservationKey,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemUpdateParty, nullptr, "UpdateParty", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::OnlinePartySubsystemUpdateParty_eventUpdateParty_Parms), Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemUpdateParty);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_NoRegister()
+	{
+		return UOnlinePartySubsystemUpdateParty::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnUpdatePartyComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnUpdatePartyComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyId_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__PartyId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyConfig_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__PartyConfig;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__bShouldRegenerateReservationKey_MetaData[];
+#endif
+		static void NewProp___Store__bShouldRegenerateReservationKey_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp___Store__bShouldRegenerateReservationKey;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemUpdateParty_UpdateParty, "UpdateParty" }, // 2244323465
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemUpdateParty, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnCallFailed_MetaData)) }; // 2902398368
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnUpdatePartyComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnUpdatePartyComplete = { "OnUpdatePartyComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemUpdateParty, OnUpdatePartyComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemUpdatePartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnUpdatePartyComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnUpdatePartyComplete_MetaData)) }; // 2902398368
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemUpdateParty, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemUpdateParty, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemUpdateParty, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyId = { "__Store__PartyId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemUpdateParty, __Store__PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyConfig_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyConfig = { "__Store__PartyConfig", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemUpdateParty, __Store__PartyConfig), Z_Construct_UScriptStruct_FOnlinePartyConfiguration, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyConfig_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyConfig_MetaData)) }; // 1752554292
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__bShouldRegenerateReservationKey_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	void Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__bShouldRegenerateReservationKey_SetBit(void* Obj)
+	{
+		((UOnlinePartySubsystemUpdateParty*)Obj)->__Store__bShouldRegenerateReservationKey = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__bShouldRegenerateReservationKey = { "__Store__bShouldRegenerateReservationKey", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UOnlinePartySubsystemUpdateParty), &Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__bShouldRegenerateReservationKey_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__bShouldRegenerateReservationKey_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__bShouldRegenerateReservationKey_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp_OnUpdatePartyComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__PartyConfig,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::NewProp___Store__bShouldRegenerateReservationKey,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemUpdateParty>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::ClassParams = {
+		&UOnlinePartySubsystemUpdateParty::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemUpdateParty()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemUpdateParty.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemUpdateParty.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemUpdateParty_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemUpdateParty.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemUpdateParty>()
+	{
+		return UOnlinePartySubsystemUpdateParty::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemUpdateParty);
+	UOnlinePartySubsystemUpdateParty::~UOnlinePartySubsystemUpdateParty() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemJoinPartyCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			EJoinPartyCompletionResult_ Result;
+			int32 NotApprovedReason;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Result_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_NotApprovedReason;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemJoinPartyCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemJoinPartyCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemJoinPartyCallbackPin_Parms, Result), Z_Construct_UEnum_OnlineSubsystemBlueprints_EJoinPartyCompletionResult_, METADATA_PARAMS(nullptr, 0) }; // 4004831350
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_NotApprovedReason = { "NotApprovedReason", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemJoinPartyCallbackPin_Parms, NotApprovedReason), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_Result,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::NewProp_NotApprovedReason,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemJoinPartyCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemJoinParty::execJoinParty)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UOnlinePartyJoinInfo,Z_Param_OnlinePartyJoinInfo);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemJoinParty**)Z_Param__Result=UOnlinePartySubsystemJoinParty::JoinParty(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_OnlinePartyJoinInfo);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemJoinParty::StaticRegisterNativesUOnlinePartySubsystemJoinParty()
+	{
+		UClass* Class = UOnlinePartySubsystemJoinParty::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "JoinParty", &UOnlinePartySubsystemJoinParty::execJoinParty },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics
+	{
+		struct OnlinePartySubsystemJoinParty_eventJoinParty_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UOnlinePartyJoinInfo* OnlinePartyJoinInfo;
+			UOnlinePartySubsystemJoinParty* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OnlinePartyJoinInfo;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemJoinParty_eventJoinParty_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemJoinParty_eventJoinParty_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::NewProp_OnlinePartyJoinInfo = { "OnlinePartyJoinInfo", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemJoinParty_eventJoinParty_Parms, OnlinePartyJoinInfo), Z_Construct_UClass_UOnlinePartyJoinInfo_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemJoinParty_eventJoinParty_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemJoinParty_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::NewProp_OnlinePartyJoinInfo,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemJoinParty, nullptr, "JoinParty", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::OnlinePartySubsystemJoinParty_eventJoinParty_Parms), Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemJoinParty);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemJoinParty_NoRegister()
+	{
+		return UOnlinePartySubsystemJoinParty::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnJoinPartyComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnJoinPartyComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__OnlinePartyJoinInfo_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__OnlinePartyJoinInfo;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemJoinParty_JoinParty, "JoinParty" }, // 739218532
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemJoinParty, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnCallFailed_MetaData)) }; // 3171517003
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnJoinPartyComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnJoinPartyComplete = { "OnJoinPartyComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemJoinParty, OnJoinPartyComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemJoinPartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnJoinPartyComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnJoinPartyComplete_MetaData)) }; // 3171517003
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemJoinParty, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemJoinParty, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemJoinParty, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__OnlinePartyJoinInfo_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__OnlinePartyJoinInfo = { "__Store__OnlinePartyJoinInfo", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemJoinParty, __Store__OnlinePartyJoinInfo), Z_Construct_UClass_UOnlinePartyJoinInfo_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__OnlinePartyJoinInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__OnlinePartyJoinInfo_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp_OnJoinPartyComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::NewProp___Store__OnlinePartyJoinInfo,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemJoinParty>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::ClassParams = {
+		&UOnlinePartySubsystemJoinParty::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemJoinParty()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemJoinParty.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemJoinParty.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemJoinParty_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemJoinParty.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemJoinParty>()
+	{
+		return UOnlinePartySubsystemJoinParty::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemJoinParty);
+	UOnlinePartySubsystemJoinParty::~UOnlinePartySubsystemJoinParty() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRejoinPartyCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			EJoinPartyCompletionResult_ Result;
+			int32 NotApprovedReason;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Result_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_NotApprovedReason;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRejoinPartyCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRejoinPartyCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRejoinPartyCallbackPin_Parms, Result), Z_Construct_UEnum_OnlineSubsystemBlueprints_EJoinPartyCompletionResult_, METADATA_PARAMS(nullptr, 0) }; // 4004831350
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_NotApprovedReason = { "NotApprovedReason", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRejoinPartyCallbackPin_Parms, NotApprovedReason), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_Result,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::NewProp_NotApprovedReason,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemRejoinPartyCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemRejoinParty::execRejoinParty)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_PROPERTY(FInt64Property,Z_Param_PartyTypeId);
+		P_GET_TARRAY(FUniqueNetIdRepl,Z_Param_FormerMembers);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemRejoinParty**)Z_Param__Result=UOnlinePartySubsystemRejoinParty::RejoinParty(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_PartyTypeId,Z_Param_FormerMembers);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemRejoinParty::StaticRegisterNativesUOnlinePartySubsystemRejoinParty()
+	{
+		UClass* Class = UOnlinePartySubsystemRejoinParty::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "RejoinParty", &UOnlinePartySubsystemRejoinParty::execRejoinParty },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics
+	{
+		struct OnlinePartySubsystemRejoinParty_eventRejoinParty_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			int64 PartyTypeId;
+			TArray<FUniqueNetIdRepl> FormerMembers;
+			UOnlinePartySubsystemRejoinParty* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FInt64PropertyParams NewProp_PartyTypeId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_FormerMembers_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_FormerMembers;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRejoinParty_eventRejoinParty_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRejoinParty_eventRejoinParty_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRejoinParty_eventRejoinParty_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FInt64PropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_PartyTypeId = { "PartyTypeId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRejoinParty_eventRejoinParty_Parms, PartyTypeId), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_FormerMembers_Inner = { "FormerMembers", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_FormerMembers = { "FormerMembers", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRejoinParty_eventRejoinParty_Parms, FormerMembers), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemRejoinParty_eventRejoinParty_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_PartyTypeId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_FormerMembers_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_FormerMembers,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemRejoinParty, nullptr, "RejoinParty", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::OnlinePartySubsystemRejoinParty_eventRejoinParty_Parms), Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemRejoinParty);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_NoRegister()
+	{
+		return UOnlinePartySubsystemRejoinParty::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnJoinPartyComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnJoinPartyComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyId_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__PartyId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyTypeId_MetaData[];
+#endif
+		static const UECodeGen_Private::FInt64PropertyParams NewProp___Store__PartyTypeId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__FormerMembers_Inner;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__FormerMembers_MetaData[];
+#endif
+		static const UECodeGen_Private::FArrayPropertyParams NewProp___Store__FormerMembers;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemRejoinParty_RejoinParty, "RejoinParty" }, // 1937862347
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRejoinParty, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnCallFailed_MetaData)) }; // 1589094993
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnJoinPartyComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnJoinPartyComplete = { "OnJoinPartyComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRejoinParty, OnJoinPartyComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemRejoinPartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnJoinPartyComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnJoinPartyComplete_MetaData)) }; // 1589094993
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRejoinParty, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRejoinParty, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRejoinParty, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyId = { "__Store__PartyId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRejoinParty, __Store__PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyTypeId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FInt64PropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyTypeId = { "__Store__PartyTypeId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRejoinParty, __Store__PartyTypeId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyTypeId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyTypeId_MetaData)) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__FormerMembers_Inner = { "__Store__FormerMembers", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__FormerMembers_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__FormerMembers = { "__Store__FormerMembers", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemRejoinParty, __Store__FormerMembers), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__FormerMembers_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__FormerMembers_MetaData)) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp_OnJoinPartyComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__PartyTypeId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__FormerMembers_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::NewProp___Store__FormerMembers,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemRejoinParty>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::ClassParams = {
+		&UOnlinePartySubsystemRejoinParty::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemRejoinParty()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemRejoinParty.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemRejoinParty.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemRejoinParty_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemRejoinParty.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemRejoinParty>()
+	{
+		return UOnlinePartySubsystemRejoinParty::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemRejoinParty);
+	UOnlinePartySubsystemRejoinParty::~UOnlinePartySubsystemRejoinParty() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemLeavePartyCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			ELeavePartyCompletionResult_ Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Result_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemLeavePartyCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemLeavePartyCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemLeavePartyCallbackPin_Parms, Result), Z_Construct_UEnum_OnlineSubsystemBlueprints_ELeavePartyCompletionResult_, METADATA_PARAMS(nullptr, 0) }; // 3259514118
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemLeavePartyCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemLeaveParty::execLeaveParty)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_UBOOL(Z_Param_bSynchronizeLeave);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemLeaveParty**)Z_Param__Result=UOnlinePartySubsystemLeaveParty::LeaveParty(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_bSynchronizeLeave);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemLeaveParty::StaticRegisterNativesUOnlinePartySubsystemLeaveParty()
+	{
+		UClass* Class = UOnlinePartySubsystemLeaveParty::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "LeaveParty", &UOnlinePartySubsystemLeaveParty::execLeaveParty },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics
+	{
+		struct OnlinePartySubsystemLeaveParty_eventLeaveParty_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			bool bSynchronizeLeave;
+			UOnlinePartySubsystemLeaveParty* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static void NewProp_bSynchronizeLeave_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bSynchronizeLeave;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemLeaveParty_eventLeaveParty_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemLeaveParty_eventLeaveParty_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemLeaveParty_eventLeaveParty_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_bSynchronizeLeave_SetBit(void* Obj)
+	{
+		((OnlinePartySubsystemLeaveParty_eventLeaveParty_Parms*)Obj)->bSynchronizeLeave = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_bSynchronizeLeave = { "bSynchronizeLeave", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OnlinePartySubsystemLeaveParty_eventLeaveParty_Parms), &Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_bSynchronizeLeave_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemLeaveParty_eventLeaveParty_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_bSynchronizeLeave,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemLeaveParty, nullptr, "LeaveParty", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::OnlinePartySubsystemLeaveParty_eventLeaveParty_Parms), Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemLeaveParty);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_NoRegister()
+	{
+		return UOnlinePartySubsystemLeaveParty::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnLeavePartyComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnLeavePartyComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyId_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__PartyId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__bSynchronizeLeave_MetaData[];
+#endif
+		static void NewProp___Store__bSynchronizeLeave_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp___Store__bSynchronizeLeave;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemLeaveParty_LeaveParty, "LeaveParty" }, // 2019998806
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemLeaveParty, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnCallFailed_MetaData)) }; // 2331341235
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnLeavePartyComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnLeavePartyComplete = { "OnLeavePartyComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemLeaveParty, OnLeavePartyComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemLeavePartyCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnLeavePartyComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnLeavePartyComplete_MetaData)) }; // 2331341235
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemLeaveParty, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemLeaveParty, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemLeaveParty, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__PartyId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__PartyId = { "__Store__PartyId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemLeaveParty, __Store__PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__PartyId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__PartyId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__bSynchronizeLeave_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	void Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__bSynchronizeLeave_SetBit(void* Obj)
+	{
+		((UOnlinePartySubsystemLeaveParty*)Obj)->__Store__bSynchronizeLeave = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__bSynchronizeLeave = { "__Store__bSynchronizeLeave", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UOnlinePartySubsystemLeaveParty), &Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__bSynchronizeLeave_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__bSynchronizeLeave_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__bSynchronizeLeave_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp_OnLeavePartyComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::NewProp___Store__bSynchronizeLeave,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemLeaveParty>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::ClassParams = {
+		&UOnlinePartySubsystemLeaveParty::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemLeaveParty()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemLeaveParty.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemLeaveParty.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemLeaveParty_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemLeaveParty.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemLeaveParty>()
+	{
+		return UOnlinePartySubsystemLeaveParty::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemLeaveParty);
+	UOnlinePartySubsystemLeaveParty::~UOnlinePartySubsystemLeaveParty() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemSendInvitationCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl RecipientId;
+			ESendPartyInvitationCompletionResult_ Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_RecipientId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Result_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemSendInvitationCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemSendInvitationCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_RecipientId = { "RecipientId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemSendInvitationCallbackPin_Parms, RecipientId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemSendInvitationCallbackPin_Parms, Result), Z_Construct_UEnum_OnlineSubsystemBlueprints_ESendPartyInvitationCompletionResult_, METADATA_PARAMS(nullptr, 0) }; // 2409326852
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_RecipientId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemSendInvitationCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemSendInvitation::execSendInvitation)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_Recipient);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemSendInvitation**)Z_Param__Result=UOnlinePartySubsystemSendInvitation::SendInvitation(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_Recipient);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemSendInvitation::StaticRegisterNativesUOnlinePartySubsystemSendInvitation()
+	{
+		UClass* Class = UOnlinePartySubsystemSendInvitation::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "SendInvitation", &UOnlinePartySubsystemSendInvitation::execSendInvitation },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics
+	{
+		struct OnlinePartySubsystemSendInvitation_eventSendInvitation_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl Recipient;
+			UOnlinePartySubsystemSendInvitation* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Recipient;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemSendInvitation_eventSendInvitation_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemSendInvitation_eventSendInvitation_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemSendInvitation_eventSendInvitation_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_Recipient = { "Recipient", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemSendInvitation_eventSendInvitation_Parms, Recipient), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemSendInvitation_eventSendInvitation_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_Recipient,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemSendInvitation, nullptr, "SendInvitation", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::OnlinePartySubsystemSendInvitation_eventSendInvitation_Parms), Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemSendInvitation);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_NoRegister()
+	{
+		return UOnlinePartySubsystemSendInvitation::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnSendPartyInvitationComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnSendPartyInvitationComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyId_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__PartyId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Recipient_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__Recipient;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemSendInvitation_SendInvitation, "SendInvitation" }, // 1033566032
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemSendInvitation, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnCallFailed_MetaData)) }; // 1598174828
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnSendPartyInvitationComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnSendPartyInvitationComplete = { "OnSendPartyInvitationComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemSendInvitation, OnSendPartyInvitationComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemSendInvitationCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnSendPartyInvitationComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnSendPartyInvitationComplete_MetaData)) }; // 1598174828
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemSendInvitation, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemSendInvitation, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemSendInvitation, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__PartyId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__PartyId = { "__Store__PartyId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemSendInvitation, __Store__PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__PartyId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__PartyId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Recipient_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Recipient = { "__Store__Recipient", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemSendInvitation, __Store__Recipient), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Recipient_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Recipient_MetaData)) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp_OnSendPartyInvitationComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::NewProp___Store__Recipient,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemSendInvitation>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::ClassParams = {
+		&UOnlinePartySubsystemSendInvitation::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemSendInvitation()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemSendInvitation.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemSendInvitation.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemSendInvitation_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemSendInvitation.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemSendInvitation>()
+	{
+		return UOnlinePartySubsystemSendInvitation::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemSendInvitation);
+	UOnlinePartySubsystemSendInvitation::~UOnlinePartySubsystemSendInvitation() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCancelInvitationCallbackPin_Parms
+		{
+			FUniqueNetIdRepl SenderUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl TargetUserId;
+			FOnlineErrorInfo Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_SenderUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_TargetUserId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::NewProp_SenderUserId = { "SenderUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCancelInvitationCallbackPin_Parms, SenderUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCancelInvitationCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::NewProp_TargetUserId = { "TargetUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCancelInvitationCallbackPin_Parms, TargetUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCancelInvitationCallbackPin_Parms, Result), Z_Construct_UScriptStruct_FOnlineErrorInfo, METADATA_PARAMS(nullptr, 0) }; // 93036015
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::NewProp_SenderUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::NewProp_TargetUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemCancelInvitationCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemCancelInvitation::execCancelInvitation)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_TargetUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemCancelInvitation**)Z_Param__Result=UOnlinePartySubsystemCancelInvitation::CancelInvitation(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_TargetUserId,Z_Param_PartyId);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemCancelInvitation::StaticRegisterNativesUOnlinePartySubsystemCancelInvitation()
+	{
+		UClass* Class = UOnlinePartySubsystemCancelInvitation::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "CancelInvitation", &UOnlinePartySubsystemCancelInvitation::execCancelInvitation },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics
+	{
+		struct OnlinePartySubsystemCancelInvitation_eventCancelInvitation_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			FUniqueNetIdRepl TargetUserId;
+			UPartyId* PartyId;
+			UOnlinePartySubsystemCancelInvitation* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_TargetUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCancelInvitation_eventCancelInvitation_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCancelInvitation_eventCancelInvitation_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_TargetUserId = { "TargetUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCancelInvitation_eventCancelInvitation_Parms, TargetUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCancelInvitation_eventCancelInvitation_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemCancelInvitation_eventCancelInvitation_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_TargetUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation, nullptr, "CancelInvitation", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::OnlinePartySubsystemCancelInvitation_eventCancelInvitation_Parms), Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemCancelInvitation);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_NoRegister()
+	{
+		return UOnlinePartySubsystemCancelInvitation::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCancelPartyInvitationComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCancelPartyInvitationComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__TargetUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__TargetUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyId_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__PartyId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemCancelInvitation_CancelInvitation, "CancelInvitation" }, // 2854760940
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCancelInvitation, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCallFailed_MetaData)) }; // 2689815689
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCancelPartyInvitationComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCancelPartyInvitationComplete = { "OnCancelPartyInvitationComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCancelInvitation, OnCancelPartyInvitationComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemCancelInvitationCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCancelPartyInvitationComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCancelPartyInvitationComplete_MetaData)) }; // 2689815689
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCancelInvitation, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCancelInvitation, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCancelInvitation, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__TargetUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__TargetUserId = { "__Store__TargetUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCancelInvitation, __Store__TargetUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__TargetUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__TargetUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__PartyId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__PartyId = { "__Store__PartyId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemCancelInvitation, __Store__PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__PartyId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__PartyId_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp_OnCancelPartyInvitationComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__TargetUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::NewProp___Store__PartyId,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemCancelInvitation>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::ClassParams = {
+		&UOnlinePartySubsystemCancelInvitation::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemCancelInvitation.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemCancelInvitation.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemCancelInvitation.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemCancelInvitation>()
+	{
+		return UOnlinePartySubsystemCancelInvitation::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemCancelInvitation);
+	UOnlinePartySubsystemCancelInvitation::~UOnlinePartySubsystemCancelInvitation() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemKickMemberCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl MemberId;
+			EKickMemberCompletionResult_ Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MemberId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Result_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemKickMemberCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemKickMemberCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_MemberId = { "MemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemKickMemberCallbackPin_Parms, MemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemKickMemberCallbackPin_Parms, Result), Z_Construct_UEnum_OnlineSubsystemBlueprints_EKickMemberCompletionResult_, METADATA_PARAMS(nullptr, 0) }; // 501676892
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_MemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemKickMemberCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemKickMember::execKickMember)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_TargetMemberId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemKickMember**)Z_Param__Result=UOnlinePartySubsystemKickMember::KickMember(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_TargetMemberId);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemKickMember::StaticRegisterNativesUOnlinePartySubsystemKickMember()
+	{
+		UClass* Class = UOnlinePartySubsystemKickMember::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "KickMember", &UOnlinePartySubsystemKickMember::execKickMember },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics
+	{
+		struct OnlinePartySubsystemKickMember_eventKickMember_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl TargetMemberId;
+			UOnlinePartySubsystemKickMember* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_TargetMemberId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemKickMember_eventKickMember_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemKickMember_eventKickMember_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemKickMember_eventKickMember_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_TargetMemberId = { "TargetMemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemKickMember_eventKickMember_Parms, TargetMemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemKickMember_eventKickMember_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemKickMember_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_TargetMemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemKickMember, nullptr, "KickMember", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::OnlinePartySubsystemKickMember_eventKickMember_Parms), Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemKickMember);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemKickMember_NoRegister()
+	{
+		return UOnlinePartySubsystemKickMember::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnKickPartyMemberComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnKickPartyMemberComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyId_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__PartyId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__TargetMemberId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__TargetMemberId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemKickMember_KickMember, "KickMember" }, // 1663992275
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemKickMember, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnCallFailed_MetaData)) }; // 1277098881
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnKickPartyMemberComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnKickPartyMemberComplete = { "OnKickPartyMemberComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemKickMember, OnKickPartyMemberComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemKickMemberCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnKickPartyMemberComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnKickPartyMemberComplete_MetaData)) }; // 1277098881
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemKickMember, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemKickMember, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemKickMember, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__PartyId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__PartyId = { "__Store__PartyId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemKickMember, __Store__PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__PartyId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__PartyId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__TargetMemberId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__TargetMemberId = { "__Store__TargetMemberId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemKickMember, __Store__TargetMemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__TargetMemberId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__TargetMemberId_MetaData)) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp_OnKickPartyMemberComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::NewProp___Store__TargetMemberId,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemKickMember>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::ClassParams = {
+		&UOnlinePartySubsystemKickMember::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemKickMember()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemKickMember.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemKickMember.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemKickMember_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemKickMember.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemKickMember>()
+	{
+		return UOnlinePartySubsystemKickMember::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemKickMember);
+	UOnlinePartySubsystemKickMember::~UOnlinePartySubsystemKickMember() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemPromoteMemberCallbackPin_Parms
+		{
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl MemberId;
+			EPromoteMemberCompletionResult_ Result;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MemberId;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Result_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemPromoteMemberCallbackPin_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemPromoteMemberCallbackPin_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_MemberId = { "MemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemPromoteMemberCallbackPin_Parms, MemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemPromoteMemberCallbackPin_Parms, Result), Z_Construct_UEnum_OnlineSubsystemBlueprints_EPromoteMemberCompletionResult_, METADATA_PARAMS(nullptr, 0) }; // 953130480
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_MemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_Result_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventOnlinePartySubsystemPromoteMemberCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UOnlinePartySubsystemPromoteMember::execPromoteMember)
+	{
+		P_GET_OBJECT(UOnlinePartySubsystem,Z_Param_Subsystem);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_LocalUserId);
+		P_GET_OBJECT(UPartyId,Z_Param_PartyId);
+		P_GET_STRUCT(FUniqueNetIdRepl,Z_Param_TargetMemberId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UOnlinePartySubsystemPromoteMember**)Z_Param__Result=UOnlinePartySubsystemPromoteMember::PromoteMember(Z_Param_Subsystem,Z_Param_LocalUserId,Z_Param_PartyId,Z_Param_TargetMemberId);
+		P_NATIVE_END;
+	}
+	void UOnlinePartySubsystemPromoteMember::StaticRegisterNativesUOnlinePartySubsystemPromoteMember()
+	{
+		UClass* Class = UOnlinePartySubsystemPromoteMember::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "PromoteMember", &UOnlinePartySubsystemPromoteMember::execPromoteMember },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics
+	{
+		struct OnlinePartySubsystemPromoteMember_eventPromoteMember_Parms
+		{
+			UOnlinePartySubsystem* Subsystem;
+			FUniqueNetIdRepl LocalUserId;
+			UPartyId* PartyId;
+			FUniqueNetIdRepl TargetMemberId;
+			UOnlinePartySubsystemPromoteMember* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_LocalUserId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PartyId;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_TargetMemberId;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemPromoteMember_eventPromoteMember_Parms, Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_LocalUserId = { "LocalUserId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemPromoteMember_eventPromoteMember_Parms, LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_PartyId = { "PartyId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemPromoteMember_eventPromoteMember_Parms, PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_TargetMemberId = { "TargetMemberId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemPromoteMember_eventPromoteMember_Parms, TargetMemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) }; // 2142661840
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OnlinePartySubsystemPromoteMember_eventPromoteMember_Parms, ReturnValue), Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_TargetMemberId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|Party" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOnlinePartySubsystemPromoteMember, nullptr, "PromoteMember", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::OnlinePartySubsystemPromoteMember_eventPromoteMember_Parms), Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOnlinePartySubsystemPromoteMember);
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_NoRegister()
+	{
+		return UOnlinePartySubsystemPromoteMember::StaticClass();
+	}
+	struct Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnPromotePartyMemberComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPromotePartyMemberComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__CallUniquenessId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__CallUniquenessId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__LocalUserId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__LocalUserId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PartyId_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__PartyId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__TargetMemberId_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__TargetMemberId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOnlinePartySubsystemPromoteMember_PromoteMember, "PromoteMember" }, // 1097496022
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemPromoteMember, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnCallFailed_MetaData)) }; // 2389250741
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnPromotePartyMemberComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnPromotePartyMemberComplete = { "OnPromotePartyMemberComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemPromoteMember, OnPromotePartyMemberComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_OnlinePartySubsystemPromoteMemberCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnPromotePartyMemberComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnPromotePartyMemberComplete_MetaData)) }; // 2389250741
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemPromoteMember, __Store__Subsystem), Z_Construct_UClass_UOnlinePartySubsystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__CallUniquenessId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__CallUniquenessId = { "__Store__CallUniquenessId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemPromoteMember, __Store__CallUniquenessId), METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__CallUniquenessId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__CallUniquenessId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__LocalUserId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__LocalUserId = { "__Store__LocalUserId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemPromoteMember, __Store__LocalUserId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__LocalUserId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__LocalUserId_MetaData)) }; // 2142661840
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__PartyId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__PartyId = { "__Store__PartyId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemPromoteMember, __Store__PartyId), Z_Construct_UClass_UPartyId_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__PartyId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__PartyId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__TargetMemberId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/OnlinePartySubsystem.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__TargetMemberId = { "__Store__TargetMemberId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOnlinePartySubsystemPromoteMember, __Store__TargetMemberId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__TargetMemberId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__TargetMemberId_MetaData)) }; // 2142661840
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp_OnPromotePartyMemberComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__CallUniquenessId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__LocalUserId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__PartyId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::NewProp___Store__TargetMemberId,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOnlinePartySubsystemPromoteMember>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::ClassParams = {
+		&UOnlinePartySubsystemPromoteMember::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UOnlinePartySubsystemPromoteMember()
+	{
+		if (!Z_Registration_Info_UClass_UOnlinePartySubsystemPromoteMember.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOnlinePartySubsystemPromoteMember.OuterSingleton, Z_Construct_UClass_UOnlinePartySubsystemPromoteMember_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UOnlinePartySubsystemPromoteMember.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UOnlinePartySubsystemPromoteMember>()
+	{
+		return UOnlinePartySubsystemPromoteMember::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UOnlinePartySubsystemPromoteMember);
+	UOnlinePartySubsystemPromoteMember::~UOnlinePartySubsystemPromoteMember() {}
+	struct Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePartySubsystem_h_Statics
+	{
+		static const FClassRegisterCompiledInInfo ClassInfo[];
+	};
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePartySubsystem_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UOnlinePartySubsystem, UOnlinePartySubsystem::StaticClass, TEXT("UOnlinePartySubsystem"), &Z_Registration_Info_UClass_UOnlinePartySubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystem), 3154569083U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemRestoreParties, UOnlinePartySubsystemRestoreParties::StaticClass, TEXT("UOnlinePartySubsystemRestoreParties"), &Z_Registration_Info_UClass_UOnlinePartySubsystemRestoreParties, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemRestoreParties), 2416533425U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemRestoreInvites, UOnlinePartySubsystemRestoreInvites::StaticClass, TEXT("UOnlinePartySubsystemRestoreInvites"), &Z_Registration_Info_UClass_UOnlinePartySubsystemRestoreInvites, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemRestoreInvites), 3108608911U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemCleanupParties, UOnlinePartySubsystemCleanupParties::StaticClass, TEXT("UOnlinePartySubsystemCleanupParties"), &Z_Registration_Info_UClass_UOnlinePartySubsystemCleanupParties, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemCleanupParties), 1004201934U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemCreateParty, UOnlinePartySubsystemCreateParty::StaticClass, TEXT("UOnlinePartySubsystemCreateParty"), &Z_Registration_Info_UClass_UOnlinePartySubsystemCreateParty, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemCreateParty), 3491689891U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemUpdateParty, UOnlinePartySubsystemUpdateParty::StaticClass, TEXT("UOnlinePartySubsystemUpdateParty"), &Z_Registration_Info_UClass_UOnlinePartySubsystemUpdateParty, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemUpdateParty), 1693563672U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemJoinParty, UOnlinePartySubsystemJoinParty::StaticClass, TEXT("UOnlinePartySubsystemJoinParty"), &Z_Registration_Info_UClass_UOnlinePartySubsystemJoinParty, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemJoinParty), 4022529677U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemRejoinParty, UOnlinePartySubsystemRejoinParty::StaticClass, TEXT("UOnlinePartySubsystemRejoinParty"), &Z_Registration_Info_UClass_UOnlinePartySubsystemRejoinParty, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemRejoinParty), 879448104U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemLeaveParty, UOnlinePartySubsystemLeaveParty::StaticClass, TEXT("UOnlinePartySubsystemLeaveParty"), &Z_Registration_Info_UClass_UOnlinePartySubsystemLeaveParty, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemLeaveParty), 4039931113U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemSendInvitation, UOnlinePartySubsystemSendInvitation::StaticClass, TEXT("UOnlinePartySubsystemSendInvitation"), &Z_Registration_Info_UClass_UOnlinePartySubsystemSendInvitation, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemSendInvitation), 3040584159U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemCancelInvitation, UOnlinePartySubsystemCancelInvitation::StaticClass, TEXT("UOnlinePartySubsystemCancelInvitation"), &Z_Registration_Info_UClass_UOnlinePartySubsystemCancelInvitation, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemCancelInvitation), 2695248697U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemKickMember, UOnlinePartySubsystemKickMember::StaticClass, TEXT("UOnlinePartySubsystemKickMember"), &Z_Registration_Info_UClass_UOnlinePartySubsystemKickMember, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemKickMember), 930255241U) },
+		{ Z_Construct_UClass_UOnlinePartySubsystemPromoteMember, UOnlinePartySubsystemPromoteMember::StaticClass, TEXT("UOnlinePartySubsystemPromoteMember"), &Z_Registration_Info_UClass_UOnlinePartySubsystemPromoteMember, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOnlinePartySubsystemPromoteMember), 3222047742U) },
+	};
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePartySubsystem_h_4102142697(TEXT("/Script/OnlineSubsystemBlueprints"),
+		Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePartySubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePartySubsystem_h_Statics::ClassInfo),
+		nullptr, 0,
+		nullptr, 0);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

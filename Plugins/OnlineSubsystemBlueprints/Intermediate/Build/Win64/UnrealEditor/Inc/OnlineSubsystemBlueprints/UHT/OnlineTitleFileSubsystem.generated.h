@@ -1,0 +1,367 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "_5.1/Private/AutoSubsystems/OnlineTitleFileSubsystem.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UFileData;
+class UOnlineTitleFileSubsystem;
+class UOnlineTitleFileSubsystemEnumerateFiles;
+class UOnlineTitleFileSubsystemReadFile;
+struct FCloudFileHeaderBP;
+struct FPagedQueryBP;
+#ifdef ONLINESUBSYSTEMBLUEPRINTS_OnlineTitleFileSubsystem_generated_h
+#error "OnlineTitleFileSubsystem.generated.h already included, missing '#pragma once' in OnlineTitleFileSubsystem.h"
+#endif
+#define ONLINESUBSYSTEMBLUEPRINTS_OnlineTitleFileSubsystem_generated_h
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_39_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventTitleFile_EnumerateFilesComplete_BP_Parms \
+{ \
+	bool bWasSuccessful; \
+	FString Error; \
+}; \
+static inline void FTitleFile_EnumerateFilesComplete_BP_DelegateWrapper(const FMulticastScriptDelegate& TitleFile_EnumerateFilesComplete_BP, bool bWasSuccessful, const FString& Error) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventTitleFile_EnumerateFilesComplete_BP_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.Error=Error; \
+	TitleFile_EnumerateFilesComplete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_41_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventTitleFile_ReadFileComplete_BP_Parms \
+{ \
+	bool bWasSuccessful; \
+	FString FileName; \
+}; \
+static inline void FTitleFile_ReadFileComplete_BP_DelegateWrapper(const FMulticastScriptDelegate& TitleFile_ReadFileComplete_BP, bool bWasSuccessful, const FString& FileName) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventTitleFile_ReadFileComplete_BP_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.FileName=FileName; \
+	TitleFile_ReadFileComplete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_43_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventTitleFile_ReadFileProgress_BP_Parms \
+{ \
+	FString FileName; \
+	int64 NumBytes; \
+}; \
+static inline void FTitleFile_ReadFileProgress_BP_DelegateWrapper(const FMulticastScriptDelegate& TitleFile_ReadFileProgress_BP, const FString& FileName, int64 NumBytes) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventTitleFile_ReadFileProgress_BP_Parms Parms; \
+	Parms.FileName=FileName; \
+	Parms.NumBytes=NumBytes; \
+	TitleFile_ReadFileProgress_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetFileList); \
+	DECLARE_FUNCTION(execDeleteCachedFiles); \
+	DECLARE_FUNCTION(execClearFile); \
+	DECLARE_FUNCTION(execClearFiles); \
+	DECLARE_FUNCTION(execGetFileContents); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetFileList); \
+	DECLARE_FUNCTION(execDeleteCachedFiles); \
+	DECLARE_FUNCTION(execClearFile); \
+	DECLARE_FUNCTION(execClearFiles); \
+	DECLARE_FUNCTION(execGetFileContents); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineTitleFileSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineTitleFileSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineTitleFileSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineTitleFileSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineTitleFileSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineTitleFileSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineTitleFileSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineTitleFileSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineTitleFileSubsystem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineTitleFileSubsystem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineTitleFileSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineTitleFileSubsystem); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineTitleFileSubsystem(UOnlineTitleFileSubsystem&&); \
+	NO_API UOnlineTitleFileSubsystem(const UOnlineTitleFileSubsystem&); \
+public: \
+	NO_API virtual ~UOnlineTitleFileSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineTitleFileSubsystem(UOnlineTitleFileSubsystem&&); \
+	NO_API UOnlineTitleFileSubsystem(const UOnlineTitleFileSubsystem&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineTitleFileSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineTitleFileSubsystem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlineTitleFileSubsystem) \
+	NO_API virtual ~UOnlineTitleFileSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_45_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_48_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineTitleFileSubsystem>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_106_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineTitleFileSubsystemEnumerateFilesCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FString Error; \
+}; \
+static inline void FOnlineTitleFileSubsystemEnumerateFilesCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineTitleFileSubsystemEnumerateFilesCallbackPin, bool bWasSuccessful, const FString& Error) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineTitleFileSubsystemEnumerateFilesCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.Error=Error; \
+	OnlineTitleFileSubsystemEnumerateFilesCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execEnumerateFiles);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execEnumerateFiles);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineTitleFileSubsystemEnumerateFiles(); \
+	friend struct Z_Construct_UClass_UOnlineTitleFileSubsystemEnumerateFiles_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineTitleFileSubsystemEnumerateFiles, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineTitleFileSubsystemEnumerateFiles)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineTitleFileSubsystemEnumerateFiles(); \
+	friend struct Z_Construct_UClass_UOnlineTitleFileSubsystemEnumerateFiles_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineTitleFileSubsystemEnumerateFiles, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineTitleFileSubsystemEnumerateFiles)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineTitleFileSubsystemEnumerateFiles(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineTitleFileSubsystemEnumerateFiles) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineTitleFileSubsystemEnumerateFiles); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineTitleFileSubsystemEnumerateFiles); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineTitleFileSubsystemEnumerateFiles(UOnlineTitleFileSubsystemEnumerateFiles&&); \
+	NO_API UOnlineTitleFileSubsystemEnumerateFiles(const UOnlineTitleFileSubsystemEnumerateFiles&); \
+public: \
+	NO_API virtual ~UOnlineTitleFileSubsystemEnumerateFiles();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineTitleFileSubsystemEnumerateFiles(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineTitleFileSubsystemEnumerateFiles(UOnlineTitleFileSubsystemEnumerateFiles&&); \
+	NO_API UOnlineTitleFileSubsystemEnumerateFiles(const UOnlineTitleFileSubsystemEnumerateFiles&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineTitleFileSubsystemEnumerateFiles); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineTitleFileSubsystemEnumerateFiles); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineTitleFileSubsystemEnumerateFiles) \
+	NO_API virtual ~UOnlineTitleFileSubsystemEnumerateFiles();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_108_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_111_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineTitleFileSubsystemEnumerateFiles>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_139_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineTitleFileSubsystemReadFileCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FString FileName; \
+	int64 NumBytes; \
+}; \
+static inline void FOnlineTitleFileSubsystemReadFileCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineTitleFileSubsystemReadFileCallbackPin, bool bWasSuccessful, const FString& FileName, int64 NumBytes) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineTitleFileSubsystemReadFileCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.FileName=FileName; \
+	Parms.NumBytes=NumBytes; \
+	OnlineTitleFileSubsystemReadFileCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execReadFile);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execReadFile);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineTitleFileSubsystemReadFile(); \
+	friend struct Z_Construct_UClass_UOnlineTitleFileSubsystemReadFile_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineTitleFileSubsystemReadFile, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineTitleFileSubsystemReadFile)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineTitleFileSubsystemReadFile(); \
+	friend struct Z_Construct_UClass_UOnlineTitleFileSubsystemReadFile_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineTitleFileSubsystemReadFile, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineTitleFileSubsystemReadFile)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineTitleFileSubsystemReadFile(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineTitleFileSubsystemReadFile) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineTitleFileSubsystemReadFile); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineTitleFileSubsystemReadFile); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineTitleFileSubsystemReadFile(UOnlineTitleFileSubsystemReadFile&&); \
+	NO_API UOnlineTitleFileSubsystemReadFile(const UOnlineTitleFileSubsystemReadFile&); \
+public: \
+	NO_API virtual ~UOnlineTitleFileSubsystemReadFile();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineTitleFileSubsystemReadFile(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineTitleFileSubsystemReadFile(UOnlineTitleFileSubsystemReadFile&&); \
+	NO_API UOnlineTitleFileSubsystemReadFile(const UOnlineTitleFileSubsystemReadFile&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineTitleFileSubsystemReadFile); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineTitleFileSubsystemReadFile); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineTitleFileSubsystemReadFile) \
+	NO_API virtual ~UOnlineTitleFileSubsystemReadFile();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_141_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h_144_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineTitleFileSubsystemReadFile>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineTitleFileSubsystem_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

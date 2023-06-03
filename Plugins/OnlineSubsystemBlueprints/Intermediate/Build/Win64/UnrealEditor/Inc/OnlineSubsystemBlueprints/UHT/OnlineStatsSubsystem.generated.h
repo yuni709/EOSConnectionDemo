@@ -1,0 +1,311 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "_5.1/Private/AutoSubsystems/OnlineStatsSubsystem.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UOnlineStatsSubsystem;
+class UOnlineStatsSubsystemQueryStats;
+class UOnlineStatsSubsystemUpdateStats;
+struct FOnlineErrorInfo;
+struct FOnlineStatsUserStatsBP;
+struct FOnlineStatsUserUpdatedStatsBP;
+struct FUniqueNetIdRepl;
+#ifdef ONLINESUBSYSTEMBLUEPRINTS_OnlineStatsSubsystem_generated_h
+#error "OnlineStatsSubsystem.generated.h already included, missing '#pragma once' in OnlineStatsSubsystem.h"
+#endif
+#define ONLINESUBSYSTEMBLUEPRINTS_OnlineStatsSubsystem_generated_h
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetStats); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetStats); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineStatsSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineStatsSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineStatsSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineStatsSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineStatsSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineStatsSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineStatsSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineStatsSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineStatsSubsystem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineStatsSubsystem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineStatsSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineStatsSubsystem); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineStatsSubsystem(UOnlineStatsSubsystem&&); \
+	NO_API UOnlineStatsSubsystem(const UOnlineStatsSubsystem&); \
+public: \
+	NO_API virtual ~UOnlineStatsSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineStatsSubsystem(UOnlineStatsSubsystem&&); \
+	NO_API UOnlineStatsSubsystem(const UOnlineStatsSubsystem&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineStatsSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineStatsSubsystem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlineStatsSubsystem) \
+	NO_API virtual ~UOnlineStatsSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_39_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_42_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineStatsSubsystem>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_79_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineStatsSubsystemQueryStatsCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo ResultState; \
+	TArray<FOnlineStatsUserStatsBP> UsersStatsResult; \
+}; \
+static inline void FOnlineStatsSubsystemQueryStatsCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineStatsSubsystemQueryStatsCallbackPin, FOnlineErrorInfo ResultState, TArray<FOnlineStatsUserStatsBP> const& UsersStatsResult) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineStatsSubsystemQueryStatsCallbackPin_Parms Parms; \
+	Parms.ResultState=ResultState; \
+	Parms.UsersStatsResult=UsersStatsResult; \
+	OnlineStatsSubsystemQueryStatsCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execQueryStats);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execQueryStats);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineStatsSubsystemQueryStats(); \
+	friend struct Z_Construct_UClass_UOnlineStatsSubsystemQueryStats_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineStatsSubsystemQueryStats, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineStatsSubsystemQueryStats)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineStatsSubsystemQueryStats(); \
+	friend struct Z_Construct_UClass_UOnlineStatsSubsystemQueryStats_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineStatsSubsystemQueryStats, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineStatsSubsystemQueryStats)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineStatsSubsystemQueryStats(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineStatsSubsystemQueryStats) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineStatsSubsystemQueryStats); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineStatsSubsystemQueryStats); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineStatsSubsystemQueryStats(UOnlineStatsSubsystemQueryStats&&); \
+	NO_API UOnlineStatsSubsystemQueryStats(const UOnlineStatsSubsystemQueryStats&); \
+public: \
+	NO_API virtual ~UOnlineStatsSubsystemQueryStats();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineStatsSubsystemQueryStats(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineStatsSubsystemQueryStats(UOnlineStatsSubsystemQueryStats&&); \
+	NO_API UOnlineStatsSubsystemQueryStats(const UOnlineStatsSubsystemQueryStats&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineStatsSubsystemQueryStats); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineStatsSubsystemQueryStats); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineStatsSubsystemQueryStats) \
+	NO_API virtual ~UOnlineStatsSubsystemQueryStats();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_81_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_84_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineStatsSubsystemQueryStats>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_117_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineStatsSubsystemUpdateStatsCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo ResultState; \
+}; \
+static inline void FOnlineStatsSubsystemUpdateStatsCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineStatsSubsystemUpdateStatsCallbackPin, FOnlineErrorInfo ResultState) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineStatsSubsystemUpdateStatsCallbackPin_Parms Parms; \
+	Parms.ResultState=ResultState; \
+	OnlineStatsSubsystemUpdateStatsCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUpdateStats);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUpdateStats);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineStatsSubsystemUpdateStats(); \
+	friend struct Z_Construct_UClass_UOnlineStatsSubsystemUpdateStats_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineStatsSubsystemUpdateStats, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineStatsSubsystemUpdateStats)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineStatsSubsystemUpdateStats(); \
+	friend struct Z_Construct_UClass_UOnlineStatsSubsystemUpdateStats_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineStatsSubsystemUpdateStats, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineStatsSubsystemUpdateStats)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineStatsSubsystemUpdateStats(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineStatsSubsystemUpdateStats) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineStatsSubsystemUpdateStats); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineStatsSubsystemUpdateStats); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineStatsSubsystemUpdateStats(UOnlineStatsSubsystemUpdateStats&&); \
+	NO_API UOnlineStatsSubsystemUpdateStats(const UOnlineStatsSubsystemUpdateStats&); \
+public: \
+	NO_API virtual ~UOnlineStatsSubsystemUpdateStats();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineStatsSubsystemUpdateStats(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineStatsSubsystemUpdateStats(UOnlineStatsSubsystemUpdateStats&&); \
+	NO_API UOnlineStatsSubsystemUpdateStats(const UOnlineStatsSubsystemUpdateStats&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineStatsSubsystemUpdateStats); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineStatsSubsystemUpdateStats); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineStatsSubsystemUpdateStats) \
+	NO_API virtual ~UOnlineStatsSubsystemUpdateStats();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_119_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h_122_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineStatsSubsystemUpdateStats>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineStatsSubsystem_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

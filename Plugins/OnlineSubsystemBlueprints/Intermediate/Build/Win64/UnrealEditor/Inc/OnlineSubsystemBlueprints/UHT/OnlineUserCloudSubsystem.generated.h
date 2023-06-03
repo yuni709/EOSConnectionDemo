@@ -1,0 +1,636 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "_5.1/Private/AutoSubsystems/OnlineUserCloudSubsystem.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UFileData;
+class UOnlineUserCloudSubsystem;
+class UOnlineUserCloudSubsystemDeleteUserFile;
+class UOnlineUserCloudSubsystemEnumerateUserFiles;
+class UOnlineUserCloudSubsystemReadUserFile;
+class UOnlineUserCloudSubsystemWriteUserFile;
+struct FCloudFileHeaderBP;
+struct FUniqueNetIdRepl;
+#ifdef ONLINESUBSYSTEMBLUEPRINTS_OnlineUserCloudSubsystem_generated_h
+#error "OnlineUserCloudSubsystem.generated.h already included, missing '#pragma once' in OnlineUserCloudSubsystem.h"
+#endif
+#define ONLINESUBSYSTEMBLUEPRINTS_OnlineUserCloudSubsystem_generated_h
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_39_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventUserCloud_EnumerateUserFilesComplete_BP_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+}; \
+static inline void FUserCloud_EnumerateUserFilesComplete_BP_DelegateWrapper(const FMulticastScriptDelegate& UserCloud_EnumerateUserFilesComplete_BP, bool bWasSuccessful, FUniqueNetIdRepl UserId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventUserCloud_EnumerateUserFilesComplete_BP_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	UserCloud_EnumerateUserFilesComplete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_41_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventUserCloud_ReadUserFileComplete_BP_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString FileName; \
+}; \
+static inline void FUserCloud_ReadUserFileComplete_BP_DelegateWrapper(const FMulticastScriptDelegate& UserCloud_ReadUserFileComplete_BP, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& FileName) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventUserCloud_ReadUserFileComplete_BP_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.FileName=FileName; \
+	UserCloud_ReadUserFileComplete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_43_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventUserCloud_WriteUserFileProgress_BP_Parms \
+{ \
+	int32 BytesWritten; \
+	FUniqueNetIdRepl UserId; \
+	FString FileName; \
+}; \
+static inline void FUserCloud_WriteUserFileProgress_BP_DelegateWrapper(const FMulticastScriptDelegate& UserCloud_WriteUserFileProgress_BP, int32 BytesWritten, FUniqueNetIdRepl UserId, const FString& FileName) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventUserCloud_WriteUserFileProgress_BP_Parms Parms; \
+	Parms.BytesWritten=BytesWritten; \
+	Parms.UserId=UserId; \
+	Parms.FileName=FileName; \
+	UserCloud_WriteUserFileProgress_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_45_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventUserCloud_WriteUserFileComplete_BP_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString FileName; \
+}; \
+static inline void FUserCloud_WriteUserFileComplete_BP_DelegateWrapper(const FMulticastScriptDelegate& UserCloud_WriteUserFileComplete_BP, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& FileName) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventUserCloud_WriteUserFileComplete_BP_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.FileName=FileName; \
+	UserCloud_WriteUserFileComplete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_47_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventUserCloud_WriteUserFileCanceled_BP_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString FileName; \
+}; \
+static inline void FUserCloud_WriteUserFileCanceled_BP_DelegateWrapper(const FMulticastScriptDelegate& UserCloud_WriteUserFileCanceled_BP, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& FileName) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventUserCloud_WriteUserFileCanceled_BP_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.FileName=FileName; \
+	UserCloud_WriteUserFileCanceled_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_49_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventUserCloud_DeleteUserFileComplete_BP_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString FileName; \
+}; \
+static inline void FUserCloud_DeleteUserFileComplete_BP_DelegateWrapper(const FMulticastScriptDelegate& UserCloud_DeleteUserFileComplete_BP, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& FileName) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventUserCloud_DeleteUserFileComplete_BP_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.FileName=FileName; \
+	UserCloud_DeleteUserFileComplete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDumpCloudFileState); \
+	DECLARE_FUNCTION(execDumpCloudState); \
+	DECLARE_FUNCTION(execRequestUsageInfo); \
+	DECLARE_FUNCTION(execCancelWriteUserFile); \
+	DECLARE_FUNCTION(execGetUserFileList); \
+	DECLARE_FUNCTION(execClearFile); \
+	DECLARE_FUNCTION(execClearFiles); \
+	DECLARE_FUNCTION(execGetFileContents); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDumpCloudFileState); \
+	DECLARE_FUNCTION(execDumpCloudState); \
+	DECLARE_FUNCTION(execRequestUsageInfo); \
+	DECLARE_FUNCTION(execCancelWriteUserFile); \
+	DECLARE_FUNCTION(execGetUserFileList); \
+	DECLARE_FUNCTION(execClearFile); \
+	DECLARE_FUNCTION(execClearFiles); \
+	DECLARE_FUNCTION(execGetFileContents); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystem); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystem(UOnlineUserCloudSubsystem&&); \
+	NO_API UOnlineUserCloudSubsystem(const UOnlineUserCloudSubsystem&); \
+public: \
+	NO_API virtual ~UOnlineUserCloudSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystem(UOnlineUserCloudSubsystem&&); \
+	NO_API UOnlineUserCloudSubsystem(const UOnlineUserCloudSubsystem&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystem) \
+	NO_API virtual ~UOnlineUserCloudSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_57_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_60_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserCloudSubsystem>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_143_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineUserCloudSubsystemEnumerateUserFilesCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+}; \
+static inline void FOnlineUserCloudSubsystemEnumerateUserFilesCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineUserCloudSubsystemEnumerateUserFilesCallbackPin, bool bWasSuccessful, FUniqueNetIdRepl UserId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineUserCloudSubsystemEnumerateUserFilesCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	OnlineUserCloudSubsystemEnumerateUserFilesCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execEnumerateUserFiles);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execEnumerateUserFiles);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystemEnumerateUserFiles(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystemEnumerateUserFiles_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystemEnumerateUserFiles, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystemEnumerateUserFiles)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystemEnumerateUserFiles(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystemEnumerateUserFiles_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystemEnumerateUserFiles, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystemEnumerateUserFiles)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystemEnumerateUserFiles(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystemEnumerateUserFiles) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystemEnumerateUserFiles); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystemEnumerateUserFiles); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystemEnumerateUserFiles(UOnlineUserCloudSubsystemEnumerateUserFiles&&); \
+	NO_API UOnlineUserCloudSubsystemEnumerateUserFiles(const UOnlineUserCloudSubsystemEnumerateUserFiles&); \
+public: \
+	NO_API virtual ~UOnlineUserCloudSubsystemEnumerateUserFiles();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystemEnumerateUserFiles(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystemEnumerateUserFiles(UOnlineUserCloudSubsystemEnumerateUserFiles&&); \
+	NO_API UOnlineUserCloudSubsystemEnumerateUserFiles(const UOnlineUserCloudSubsystemEnumerateUserFiles&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystemEnumerateUserFiles); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystemEnumerateUserFiles); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystemEnumerateUserFiles) \
+	NO_API virtual ~UOnlineUserCloudSubsystemEnumerateUserFiles();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_145_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_148_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserCloudSubsystemEnumerateUserFiles>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_176_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineUserCloudSubsystemReadUserFileCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString FileName; \
+}; \
+static inline void FOnlineUserCloudSubsystemReadUserFileCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineUserCloudSubsystemReadUserFileCallbackPin, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& FileName) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineUserCloudSubsystemReadUserFileCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.FileName=FileName; \
+	OnlineUserCloudSubsystemReadUserFileCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execReadUserFile);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execReadUserFile);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystemReadUserFile(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystemReadUserFile_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystemReadUserFile, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystemReadUserFile)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystemReadUserFile(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystemReadUserFile_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystemReadUserFile, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystemReadUserFile)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystemReadUserFile(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystemReadUserFile) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystemReadUserFile); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystemReadUserFile); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystemReadUserFile(UOnlineUserCloudSubsystemReadUserFile&&); \
+	NO_API UOnlineUserCloudSubsystemReadUserFile(const UOnlineUserCloudSubsystemReadUserFile&); \
+public: \
+	NO_API virtual ~UOnlineUserCloudSubsystemReadUserFile();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystemReadUserFile(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystemReadUserFile(UOnlineUserCloudSubsystemReadUserFile&&); \
+	NO_API UOnlineUserCloudSubsystemReadUserFile(const UOnlineUserCloudSubsystemReadUserFile&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystemReadUserFile); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystemReadUserFile); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystemReadUserFile) \
+	NO_API virtual ~UOnlineUserCloudSubsystemReadUserFile();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_178_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_181_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserCloudSubsystemReadUserFile>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_212_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineUserCloudSubsystemWriteUserFileCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString FileName; \
+	int32 BytesWritten; \
+}; \
+static inline void FOnlineUserCloudSubsystemWriteUserFileCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineUserCloudSubsystemWriteUserFileCallbackPin, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& FileName, int32 BytesWritten) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineUserCloudSubsystemWriteUserFileCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.FileName=FileName; \
+	Parms.BytesWritten=BytesWritten; \
+	OnlineUserCloudSubsystemWriteUserFileCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execWriteUserFile);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execWriteUserFile);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystemWriteUserFile(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystemWriteUserFile_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystemWriteUserFile, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystemWriteUserFile)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystemWriteUserFile(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystemWriteUserFile_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystemWriteUserFile, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystemWriteUserFile)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystemWriteUserFile(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystemWriteUserFile) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystemWriteUserFile); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystemWriteUserFile); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystemWriteUserFile(UOnlineUserCloudSubsystemWriteUserFile&&); \
+	NO_API UOnlineUserCloudSubsystemWriteUserFile(const UOnlineUserCloudSubsystemWriteUserFile&); \
+public: \
+	NO_API virtual ~UOnlineUserCloudSubsystemWriteUserFile();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystemWriteUserFile(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystemWriteUserFile(UOnlineUserCloudSubsystemWriteUserFile&&); \
+	NO_API UOnlineUserCloudSubsystemWriteUserFile(const UOnlineUserCloudSubsystemWriteUserFile&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystemWriteUserFile); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystemWriteUserFile); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystemWriteUserFile) \
+	NO_API virtual ~UOnlineUserCloudSubsystemWriteUserFile();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_214_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_217_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserCloudSubsystemWriteUserFile>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_262_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineUserCloudSubsystemDeleteUserFileCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString FileName; \
+}; \
+static inline void FOnlineUserCloudSubsystemDeleteUserFileCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineUserCloudSubsystemDeleteUserFileCallbackPin, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& FileName) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineUserCloudSubsystemDeleteUserFileCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.FileName=FileName; \
+	OnlineUserCloudSubsystemDeleteUserFileCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDeleteUserFile);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDeleteUserFile);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystemDeleteUserFile(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystemDeleteUserFile_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystemDeleteUserFile, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystemDeleteUserFile)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserCloudSubsystemDeleteUserFile(); \
+	friend struct Z_Construct_UClass_UOnlineUserCloudSubsystemDeleteUserFile_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserCloudSubsystemDeleteUserFile, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserCloudSubsystemDeleteUserFile)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystemDeleteUserFile(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystemDeleteUserFile) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystemDeleteUserFile); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystemDeleteUserFile); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystemDeleteUserFile(UOnlineUserCloudSubsystemDeleteUserFile&&); \
+	NO_API UOnlineUserCloudSubsystemDeleteUserFile(const UOnlineUserCloudSubsystemDeleteUserFile&); \
+public: \
+	NO_API virtual ~UOnlineUserCloudSubsystemDeleteUserFile();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserCloudSubsystemDeleteUserFile(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserCloudSubsystemDeleteUserFile(UOnlineUserCloudSubsystemDeleteUserFile&&); \
+	NO_API UOnlineUserCloudSubsystemDeleteUserFile(const UOnlineUserCloudSubsystemDeleteUserFile&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserCloudSubsystemDeleteUserFile); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserCloudSubsystemDeleteUserFile); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserCloudSubsystemDeleteUserFile) \
+	NO_API virtual ~UOnlineUserCloudSubsystemDeleteUserFile();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_264_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h_267_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserCloudSubsystemDeleteUserFile>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserCloudSubsystem_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

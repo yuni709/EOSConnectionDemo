@@ -1,0 +1,345 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "_5.1/Private/AutoSubsystems/OnlinePresenceSubsystem.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UOnlinePresenceSubsystem;
+class UOnlinePresenceSubsystemQueryPresence;
+class UOnlinePresenceSubsystemSetPresence;
+enum class EOnlineCachedResult_ : uint8;
+struct FOnlineUserPresenceData;
+struct FOnlineUserPresenceStatusData;
+struct FUniqueNetIdRepl;
+#ifdef ONLINESUBSYSTEMBLUEPRINTS_OnlinePresenceSubsystem_generated_h
+#error "OnlinePresenceSubsystem.generated.h already included, missing '#pragma once' in OnlinePresenceSubsystem.h"
+#endif
+#define ONLINESUBSYSTEMBLUEPRINTS_OnlinePresenceSubsystem_generated_h
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_39_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventPresence_PresenceReceived_BP_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	FOnlineUserPresenceData Presence; \
+}; \
+static inline void FPresence_PresenceReceived_BP_DelegateWrapper(const FMulticastScriptDelegate& Presence_PresenceReceived_BP, FUniqueNetIdRepl UserId, FOnlineUserPresenceData Presence) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventPresence_PresenceReceived_BP_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.Presence=Presence; \
+	Presence_PresenceReceived_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_41_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventPresence_PresenceArrayUpdated_BP_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	TArray<FOnlineUserPresenceData> NewPresenceArray; \
+}; \
+static inline void FPresence_PresenceArrayUpdated_BP_DelegateWrapper(const FMulticastScriptDelegate& Presence_PresenceArrayUpdated_BP, FUniqueNetIdRepl UserId, TArray<FOnlineUserPresenceData> const& NewPresenceArray) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventPresence_PresenceArrayUpdated_BP_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.NewPresenceArray=NewPresenceArray; \
+	Presence_PresenceArrayUpdated_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetCachedPresenceForApp); \
+	DECLARE_FUNCTION(execGetCachedPresence); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetCachedPresenceForApp); \
+	DECLARE_FUNCTION(execGetCachedPresence); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlinePresenceSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlinePresenceSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlinePresenceSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlinePresenceSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlinePresenceSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlinePresenceSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlinePresenceSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlinePresenceSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlinePresenceSubsystem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlinePresenceSubsystem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlinePresenceSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlinePresenceSubsystem); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlinePresenceSubsystem(UOnlinePresenceSubsystem&&); \
+	NO_API UOnlinePresenceSubsystem(const UOnlinePresenceSubsystem&); \
+public: \
+	NO_API virtual ~UOnlinePresenceSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlinePresenceSubsystem(UOnlinePresenceSubsystem&&); \
+	NO_API UOnlinePresenceSubsystem(const UOnlinePresenceSubsystem&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlinePresenceSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlinePresenceSubsystem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlinePresenceSubsystem) \
+	NO_API virtual ~UOnlinePresenceSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_43_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_46_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlinePresenceSubsystem>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_97_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlinePresenceSubsystemSetPresenceCallbackPin_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	bool bWasSuccessful; \
+}; \
+static inline void FOnlinePresenceSubsystemSetPresenceCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlinePresenceSubsystemSetPresenceCallbackPin, FUniqueNetIdRepl UserId, bool bWasSuccessful) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlinePresenceSubsystemSetPresenceCallbackPin_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	OnlinePresenceSubsystemSetPresenceCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSetPresence);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetPresence);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlinePresenceSubsystemSetPresence(); \
+	friend struct Z_Construct_UClass_UOnlinePresenceSubsystemSetPresence_Statics; \
+public: \
+	DECLARE_CLASS(UOnlinePresenceSubsystemSetPresence, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlinePresenceSubsystemSetPresence)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlinePresenceSubsystemSetPresence(); \
+	friend struct Z_Construct_UClass_UOnlinePresenceSubsystemSetPresence_Statics; \
+public: \
+	DECLARE_CLASS(UOnlinePresenceSubsystemSetPresence, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlinePresenceSubsystemSetPresence)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlinePresenceSubsystemSetPresence(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlinePresenceSubsystemSetPresence) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlinePresenceSubsystemSetPresence); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlinePresenceSubsystemSetPresence); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlinePresenceSubsystemSetPresence(UOnlinePresenceSubsystemSetPresence&&); \
+	NO_API UOnlinePresenceSubsystemSetPresence(const UOnlinePresenceSubsystemSetPresence&); \
+public: \
+	NO_API virtual ~UOnlinePresenceSubsystemSetPresence();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlinePresenceSubsystemSetPresence(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlinePresenceSubsystemSetPresence(UOnlinePresenceSubsystemSetPresence&&); \
+	NO_API UOnlinePresenceSubsystemSetPresence(const UOnlinePresenceSubsystemSetPresence&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlinePresenceSubsystemSetPresence); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlinePresenceSubsystemSetPresence); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlinePresenceSubsystemSetPresence) \
+	NO_API virtual ~UOnlinePresenceSubsystemSetPresence();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_99_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_102_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlinePresenceSubsystemSetPresence>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_132_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlinePresenceSubsystemQueryPresenceCallbackPin_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	bool bWasSuccessful; \
+}; \
+static inline void FOnlinePresenceSubsystemQueryPresenceCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlinePresenceSubsystemQueryPresenceCallbackPin, FUniqueNetIdRepl UserId, bool bWasSuccessful) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlinePresenceSubsystemQueryPresenceCallbackPin_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	OnlinePresenceSubsystemQueryPresenceCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execQueryPresence);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execQueryPresence);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlinePresenceSubsystemQueryPresence(); \
+	friend struct Z_Construct_UClass_UOnlinePresenceSubsystemQueryPresence_Statics; \
+public: \
+	DECLARE_CLASS(UOnlinePresenceSubsystemQueryPresence, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlinePresenceSubsystemQueryPresence)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlinePresenceSubsystemQueryPresence(); \
+	friend struct Z_Construct_UClass_UOnlinePresenceSubsystemQueryPresence_Statics; \
+public: \
+	DECLARE_CLASS(UOnlinePresenceSubsystemQueryPresence, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlinePresenceSubsystemQueryPresence)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlinePresenceSubsystemQueryPresence(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlinePresenceSubsystemQueryPresence) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlinePresenceSubsystemQueryPresence); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlinePresenceSubsystemQueryPresence); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlinePresenceSubsystemQueryPresence(UOnlinePresenceSubsystemQueryPresence&&); \
+	NO_API UOnlinePresenceSubsystemQueryPresence(const UOnlinePresenceSubsystemQueryPresence&); \
+public: \
+	NO_API virtual ~UOnlinePresenceSubsystemQueryPresence();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlinePresenceSubsystemQueryPresence(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlinePresenceSubsystemQueryPresence(UOnlinePresenceSubsystemQueryPresence&&); \
+	NO_API UOnlinePresenceSubsystemQueryPresence(const UOnlinePresenceSubsystemQueryPresence&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlinePresenceSubsystemQueryPresence); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlinePresenceSubsystemQueryPresence); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlinePresenceSubsystemQueryPresence) \
+	NO_API virtual ~UOnlinePresenceSubsystemQueryPresence();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_134_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h_137_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlinePresenceSubsystemQueryPresence>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlinePresenceSubsystem_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,0 +1,452 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "_5.1/Private/AutoSubsystems/OnlineUserSubsystem.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UOnlineUserRef;
+class UOnlineUserSubsystem;
+class UOnlineUserSubsystemQueryExternalIdMappings;
+class UOnlineUserSubsystemQueryUserIdMapping;
+class UOnlineUserSubsystemQueryUserInfo;
+struct FExternalIdQueryOptionsBP;
+struct FUniqueNetIdRepl;
+#ifdef ONLINESUBSYSTEMBLUEPRINTS_OnlineUserSubsystem_generated_h
+#error "OnlineUserSubsystem.generated.h already included, missing '#pragma once' in OnlineUserSubsystem.h"
+#endif
+#define ONLINESUBSYSTEMBLUEPRINTS_OnlineUserSubsystem_generated_h
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_39_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventUser_QueryUserInfoComplete_BP_Parms \
+{ \
+	int32 LocalUserNum; \
+	bool bWasSuccessful; \
+	TArray<FUniqueNetIdRepl> UserIds; \
+	FString ErrorStr; \
+}; \
+static inline void FUser_QueryUserInfoComplete_BP_DelegateWrapper(const FMulticastScriptDelegate& User_QueryUserInfoComplete_BP, int32 LocalUserNum, bool bWasSuccessful, TArray<FUniqueNetIdRepl> const& UserIds, const FString& ErrorStr) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventUser_QueryUserInfoComplete_BP_Parms Parms; \
+	Parms.LocalUserNum=LocalUserNum; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserIds=UserIds; \
+	Parms.ErrorStr=ErrorStr; \
+	User_QueryUserInfoComplete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetExternalIdMapping); \
+	DECLARE_FUNCTION(execGetExternalIdMappings); \
+	DECLARE_FUNCTION(execGetUserInfo); \
+	DECLARE_FUNCTION(execGetAllUserInfo); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetExternalIdMapping); \
+	DECLARE_FUNCTION(execGetExternalIdMappings); \
+	DECLARE_FUNCTION(execGetUserInfo); \
+	DECLARE_FUNCTION(execGetAllUserInfo); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineUserSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineUserSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserSubsystem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserSubsystem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserSubsystem); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserSubsystem(UOnlineUserSubsystem&&); \
+	NO_API UOnlineUserSubsystem(const UOnlineUserSubsystem&); \
+public: \
+	NO_API virtual ~UOnlineUserSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserSubsystem(UOnlineUserSubsystem&&); \
+	NO_API UOnlineUserSubsystem(const UOnlineUserSubsystem&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserSubsystem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlineUserSubsystem) \
+	NO_API virtual ~UOnlineUserSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_41_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_44_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserSubsystem>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_93_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineUserSubsystemQueryUserInfoCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	TArray<FUniqueNetIdRepl> UserIds; \
+	FString ErrorStr; \
+}; \
+static inline void FOnlineUserSubsystemQueryUserInfoCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineUserSubsystemQueryUserInfoCallbackPin, bool bWasSuccessful, TArray<FUniqueNetIdRepl> const& UserIds, const FString& ErrorStr) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineUserSubsystemQueryUserInfoCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserIds=UserIds; \
+	Parms.ErrorStr=ErrorStr; \
+	OnlineUserSubsystemQueryUserInfoCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execQueryUserInfo);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execQueryUserInfo);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserSubsystemQueryUserInfo(); \
+	friend struct Z_Construct_UClass_UOnlineUserSubsystemQueryUserInfo_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserSubsystemQueryUserInfo, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserSubsystemQueryUserInfo)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserSubsystemQueryUserInfo(); \
+	friend struct Z_Construct_UClass_UOnlineUserSubsystemQueryUserInfo_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserSubsystemQueryUserInfo, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserSubsystemQueryUserInfo)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserSubsystemQueryUserInfo(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserSubsystemQueryUserInfo) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserSubsystemQueryUserInfo); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserSubsystemQueryUserInfo); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserSubsystemQueryUserInfo(UOnlineUserSubsystemQueryUserInfo&&); \
+	NO_API UOnlineUserSubsystemQueryUserInfo(const UOnlineUserSubsystemQueryUserInfo&); \
+public: \
+	NO_API virtual ~UOnlineUserSubsystemQueryUserInfo();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserSubsystemQueryUserInfo(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserSubsystemQueryUserInfo(UOnlineUserSubsystemQueryUserInfo&&); \
+	NO_API UOnlineUserSubsystemQueryUserInfo(const UOnlineUserSubsystemQueryUserInfo&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserSubsystemQueryUserInfo); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserSubsystemQueryUserInfo); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserSubsystemQueryUserInfo) \
+	NO_API virtual ~UOnlineUserSubsystemQueryUserInfo();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_95_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_98_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserSubsystemQueryUserInfo>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_129_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineUserSubsystemQueryUserIdMappingCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString DisplayNameOrEmail; \
+	FUniqueNetIdRepl FoundUserId; \
+	FString Error; \
+}; \
+static inline void FOnlineUserSubsystemQueryUserIdMappingCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineUserSubsystemQueryUserIdMappingCallbackPin, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& DisplayNameOrEmail, FUniqueNetIdRepl FoundUserId, const FString& Error) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineUserSubsystemQueryUserIdMappingCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.DisplayNameOrEmail=DisplayNameOrEmail; \
+	Parms.FoundUserId=FoundUserId; \
+	Parms.Error=Error; \
+	OnlineUserSubsystemQueryUserIdMappingCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execQueryUserIdMapping);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execQueryUserIdMapping);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserSubsystemQueryUserIdMapping(); \
+	friend struct Z_Construct_UClass_UOnlineUserSubsystemQueryUserIdMapping_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserSubsystemQueryUserIdMapping, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserSubsystemQueryUserIdMapping)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserSubsystemQueryUserIdMapping(); \
+	friend struct Z_Construct_UClass_UOnlineUserSubsystemQueryUserIdMapping_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserSubsystemQueryUserIdMapping, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserSubsystemQueryUserIdMapping)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserSubsystemQueryUserIdMapping(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserSubsystemQueryUserIdMapping) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserSubsystemQueryUserIdMapping); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserSubsystemQueryUserIdMapping); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserSubsystemQueryUserIdMapping(UOnlineUserSubsystemQueryUserIdMapping&&); \
+	NO_API UOnlineUserSubsystemQueryUserIdMapping(const UOnlineUserSubsystemQueryUserIdMapping&); \
+public: \
+	NO_API virtual ~UOnlineUserSubsystemQueryUserIdMapping();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserSubsystemQueryUserIdMapping(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserSubsystemQueryUserIdMapping(UOnlineUserSubsystemQueryUserIdMapping&&); \
+	NO_API UOnlineUserSubsystemQueryUserIdMapping(const UOnlineUserSubsystemQueryUserIdMapping&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserSubsystemQueryUserIdMapping); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserSubsystemQueryUserIdMapping); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserSubsystemQueryUserIdMapping) \
+	NO_API virtual ~UOnlineUserSubsystemQueryUserIdMapping();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_131_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_134_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserSubsystemQueryUserIdMapping>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_164_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineUserSubsystemQueryExternalIdMappingsCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FExternalIdQueryOptionsBP QueryOptions; \
+	TArray<FString> ExternalIds; \
+	FString Error; \
+}; \
+static inline void FOnlineUserSubsystemQueryExternalIdMappingsCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineUserSubsystemQueryExternalIdMappingsCallbackPin, bool bWasSuccessful, FUniqueNetIdRepl UserId, FExternalIdQueryOptionsBP QueryOptions, TArray<FString> const& ExternalIds, const FString& Error) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineUserSubsystemQueryExternalIdMappingsCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.QueryOptions=QueryOptions; \
+	Parms.ExternalIds=ExternalIds; \
+	Parms.Error=Error; \
+	OnlineUserSubsystemQueryExternalIdMappingsCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execQueryExternalIdMappings);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execQueryExternalIdMappings);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineUserSubsystemQueryExternalIdMappings(); \
+	friend struct Z_Construct_UClass_UOnlineUserSubsystemQueryExternalIdMappings_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserSubsystemQueryExternalIdMappings, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserSubsystemQueryExternalIdMappings)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineUserSubsystemQueryExternalIdMappings(); \
+	friend struct Z_Construct_UClass_UOnlineUserSubsystemQueryExternalIdMappings_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineUserSubsystemQueryExternalIdMappings, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineUserSubsystemQueryExternalIdMappings)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserSubsystemQueryExternalIdMappings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserSubsystemQueryExternalIdMappings) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserSubsystemQueryExternalIdMappings); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserSubsystemQueryExternalIdMappings); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserSubsystemQueryExternalIdMappings(UOnlineUserSubsystemQueryExternalIdMappings&&); \
+	NO_API UOnlineUserSubsystemQueryExternalIdMappings(const UOnlineUserSubsystemQueryExternalIdMappings&); \
+public: \
+	NO_API virtual ~UOnlineUserSubsystemQueryExternalIdMappings();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineUserSubsystemQueryExternalIdMappings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineUserSubsystemQueryExternalIdMappings(UOnlineUserSubsystemQueryExternalIdMappings&&); \
+	NO_API UOnlineUserSubsystemQueryExternalIdMappings(const UOnlineUserSubsystemQueryExternalIdMappings&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineUserSubsystemQueryExternalIdMappings); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineUserSubsystemQueryExternalIdMappings); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineUserSubsystemQueryExternalIdMappings) \
+	NO_API virtual ~UOnlineUserSubsystemQueryExternalIdMappings();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_166_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h_169_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineUserSubsystemQueryExternalIdMappings>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineUserSubsystem_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

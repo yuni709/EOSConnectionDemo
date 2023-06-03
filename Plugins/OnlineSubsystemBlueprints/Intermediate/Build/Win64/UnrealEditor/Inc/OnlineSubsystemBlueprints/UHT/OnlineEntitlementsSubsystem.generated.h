@@ -1,0 +1,238 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "_5.1/Private/AutoSubsystems/OnlineEntitlementsSubsystem.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UOnlineEntitlement;
+class UOnlineEntitlementsSubsystem;
+class UOnlineEntitlementsSubsystemQueryEntitlements;
+struct FPagedQueryBP;
+struct FUniqueNetIdRepl;
+#ifdef ONLINESUBSYSTEMBLUEPRINTS_OnlineEntitlementsSubsystem_generated_h
+#error "OnlineEntitlementsSubsystem.generated.h already included, missing '#pragma once' in OnlineEntitlementsSubsystem.h"
+#endif
+#define ONLINESUBSYSTEMBLUEPRINTS_OnlineEntitlementsSubsystem_generated_h
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_39_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventEntitlements_QueryEntitlementsComplete_BP_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString Namespace; \
+	FString Error; \
+}; \
+static inline void FEntitlements_QueryEntitlementsComplete_BP_DelegateWrapper(const FMulticastScriptDelegate& Entitlements_QueryEntitlementsComplete_BP, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& Namespace, const FString& Error) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventEntitlements_QueryEntitlementsComplete_BP_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.Namespace=Namespace; \
+	Parms.Error=Error; \
+	Entitlements_QueryEntitlementsComplete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetAllEntitlements); \
+	DECLARE_FUNCTION(execGetItemEntitlement); \
+	DECLARE_FUNCTION(execGetEntitlement); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetAllEntitlements); \
+	DECLARE_FUNCTION(execGetItemEntitlement); \
+	DECLARE_FUNCTION(execGetEntitlement); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineEntitlementsSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineEntitlementsSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineEntitlementsSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineEntitlementsSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineEntitlementsSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineEntitlementsSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineEntitlementsSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineEntitlementsSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineEntitlementsSubsystem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineEntitlementsSubsystem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineEntitlementsSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineEntitlementsSubsystem); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineEntitlementsSubsystem(UOnlineEntitlementsSubsystem&&); \
+	NO_API UOnlineEntitlementsSubsystem(const UOnlineEntitlementsSubsystem&); \
+public: \
+	NO_API virtual ~UOnlineEntitlementsSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineEntitlementsSubsystem(UOnlineEntitlementsSubsystem&&); \
+	NO_API UOnlineEntitlementsSubsystem(const UOnlineEntitlementsSubsystem&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineEntitlementsSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineEntitlementsSubsystem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlineEntitlementsSubsystem) \
+	NO_API virtual ~UOnlineEntitlementsSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_41_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_44_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineEntitlementsSubsystem>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_86_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineEntitlementsSubsystemQueryEntitlementsCallbackPin_Parms \
+{ \
+	bool bWasSuccessful; \
+	FUniqueNetIdRepl UserId; \
+	FString Namespace; \
+	FString Error; \
+}; \
+static inline void FOnlineEntitlementsSubsystemQueryEntitlementsCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineEntitlementsSubsystemQueryEntitlementsCallbackPin, bool bWasSuccessful, FUniqueNetIdRepl UserId, const FString& Namespace, const FString& Error) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineEntitlementsSubsystemQueryEntitlementsCallbackPin_Parms Parms; \
+	Parms.bWasSuccessful=bWasSuccessful ? true : false; \
+	Parms.UserId=UserId; \
+	Parms.Namespace=Namespace; \
+	Parms.Error=Error; \
+	OnlineEntitlementsSubsystemQueryEntitlementsCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execQueryEntitlements);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execQueryEntitlements);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineEntitlementsSubsystemQueryEntitlements(); \
+	friend struct Z_Construct_UClass_UOnlineEntitlementsSubsystemQueryEntitlements_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineEntitlementsSubsystemQueryEntitlements, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineEntitlementsSubsystemQueryEntitlements)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineEntitlementsSubsystemQueryEntitlements(); \
+	friend struct Z_Construct_UClass_UOnlineEntitlementsSubsystemQueryEntitlements_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineEntitlementsSubsystemQueryEntitlements, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineEntitlementsSubsystemQueryEntitlements)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineEntitlementsSubsystemQueryEntitlements(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineEntitlementsSubsystemQueryEntitlements) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineEntitlementsSubsystemQueryEntitlements); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineEntitlementsSubsystemQueryEntitlements); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineEntitlementsSubsystemQueryEntitlements(UOnlineEntitlementsSubsystemQueryEntitlements&&); \
+	NO_API UOnlineEntitlementsSubsystemQueryEntitlements(const UOnlineEntitlementsSubsystemQueryEntitlements&); \
+public: \
+	NO_API virtual ~UOnlineEntitlementsSubsystemQueryEntitlements();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineEntitlementsSubsystemQueryEntitlements(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineEntitlementsSubsystemQueryEntitlements(UOnlineEntitlementsSubsystemQueryEntitlements&&); \
+	NO_API UOnlineEntitlementsSubsystemQueryEntitlements(const UOnlineEntitlementsSubsystemQueryEntitlements&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineEntitlementsSubsystemQueryEntitlements); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineEntitlementsSubsystemQueryEntitlements); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineEntitlementsSubsystemQueryEntitlements) \
+	NO_API virtual ~UOnlineEntitlementsSubsystemQueryEntitlements();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_88_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h_91_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineEntitlementsSubsystemQueryEntitlements>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineEntitlementsSubsystem_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

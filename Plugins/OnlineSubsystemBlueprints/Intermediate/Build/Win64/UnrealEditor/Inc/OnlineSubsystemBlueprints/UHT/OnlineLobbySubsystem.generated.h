@@ -1,0 +1,1026 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "_5.1/Private/AutoSubsystems/OnlineLobbySubsystem.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ULobby;
+class ULobbyId;
+class UOnlineLobbyMemberTransaction;
+class UOnlineLobbySubsystem;
+class UOnlineLobbySubsystemConnectLobby;
+class UOnlineLobbySubsystemCreateLobby;
+class UOnlineLobbySubsystemDeleteLobby;
+class UOnlineLobbySubsystemDisconnectLobby;
+class UOnlineLobbySubsystemKickMember;
+class UOnlineLobbySubsystemSearch;
+class UOnlineLobbySubsystemUpdateLobby;
+class UOnlineLobbySubsystemUpdateMemberSelf;
+class UOnlineLobbyTransaction;
+struct FOnlineErrorInfo;
+struct FOnlineLobbySearchQueryBP;
+struct FUniqueNetIdRepl;
+struct FVariantDataBP;
+#ifdef ONLINESUBSYSTEMBLUEPRINTS_OnlineLobbySubsystem_generated_h
+#error "OnlineLobbySubsystem.generated.h already included, missing '#pragma once' in OnlineLobbySubsystem.h"
+#endif
+#define ONLINESUBSYSTEMBLUEPRINTS_OnlineLobbySubsystem_generated_h
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_39_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventLobby_LobbyUpdate_BP_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	ULobbyId* LobbyId; \
+}; \
+static inline void FLobby_LobbyUpdate_BP_DelegateWrapper(const FMulticastScriptDelegate& Lobby_LobbyUpdate_BP, FUniqueNetIdRepl UserId, ULobbyId* LobbyId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventLobby_LobbyUpdate_BP_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.LobbyId=LobbyId; \
+	Lobby_LobbyUpdate_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_41_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventLobby_LobbyDelete_BP_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	ULobbyId* LobbyId; \
+}; \
+static inline void FLobby_LobbyDelete_BP_DelegateWrapper(const FMulticastScriptDelegate& Lobby_LobbyDelete_BP, FUniqueNetIdRepl UserId, ULobbyId* LobbyId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventLobby_LobbyDelete_BP_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.LobbyId=LobbyId; \
+	Lobby_LobbyDelete_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_43_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventLobby_MemberConnect_BP_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	ULobbyId* LobbyId; \
+	FUniqueNetIdRepl MemberId; \
+}; \
+static inline void FLobby_MemberConnect_BP_DelegateWrapper(const FMulticastScriptDelegate& Lobby_MemberConnect_BP, FUniqueNetIdRepl UserId, ULobbyId* LobbyId, FUniqueNetIdRepl MemberId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventLobby_MemberConnect_BP_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.LobbyId=LobbyId; \
+	Parms.MemberId=MemberId; \
+	Lobby_MemberConnect_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_45_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventLobby_MemberUpdate_BP_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	ULobbyId* LobbyId; \
+	FUniqueNetIdRepl MemberId; \
+}; \
+static inline void FLobby_MemberUpdate_BP_DelegateWrapper(const FMulticastScriptDelegate& Lobby_MemberUpdate_BP, FUniqueNetIdRepl UserId, ULobbyId* LobbyId, FUniqueNetIdRepl MemberId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventLobby_MemberUpdate_BP_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.LobbyId=LobbyId; \
+	Parms.MemberId=MemberId; \
+	Lobby_MemberUpdate_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_47_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventLobby_MemberDisconnect_BP_Parms \
+{ \
+	FUniqueNetIdRepl UserId; \
+	ULobbyId* LobbyId; \
+	FUniqueNetIdRepl MemberId; \
+	bool bWasKicked; \
+}; \
+static inline void FLobby_MemberDisconnect_BP_DelegateWrapper(const FMulticastScriptDelegate& Lobby_MemberDisconnect_BP, FUniqueNetIdRepl UserId, ULobbyId* LobbyId, FUniqueNetIdRepl MemberId, bool bWasKicked) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventLobby_MemberDisconnect_BP_Parms Parms; \
+	Parms.UserId=UserId; \
+	Parms.LobbyId=LobbyId; \
+	Parms.MemberId=MemberId; \
+	Parms.bWasKicked=bWasKicked ? true : false; \
+	Lobby_MemberDisconnect_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execParseSerializedLobbyId); \
+	DECLARE_FUNCTION(execGetLobbyMetadataValue); \
+	DECLARE_FUNCTION(execGetMemberMetadataValue); \
+	DECLARE_FUNCTION(execGetMemberUserId); \
+	DECLARE_FUNCTION(execGetMemberCount); \
+	DECLARE_FUNCTION(execMakeUpdateLobbyMemberTransaction); \
+	DECLARE_FUNCTION(execMakeUpdateLobbyTransaction); \
+	DECLARE_FUNCTION(execMakeCreateLobbyTransaction); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execParseSerializedLobbyId); \
+	DECLARE_FUNCTION(execGetLobbyMetadataValue); \
+	DECLARE_FUNCTION(execGetMemberMetadataValue); \
+	DECLARE_FUNCTION(execGetMemberUserId); \
+	DECLARE_FUNCTION(execGetMemberCount); \
+	DECLARE_FUNCTION(execMakeUpdateLobbyMemberTransaction); \
+	DECLARE_FUNCTION(execMakeUpdateLobbyTransaction); \
+	DECLARE_FUNCTION(execMakeCreateLobbyTransaction); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystem); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystem(UOnlineLobbySubsystem&&); \
+	NO_API UOnlineLobbySubsystem(const UOnlineLobbySubsystem&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystem(UOnlineLobbySubsystem&&); \
+	NO_API UOnlineLobbySubsystem(const UOnlineLobbySubsystem&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlineLobbySubsystem) \
+	NO_API virtual ~UOnlineLobbySubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_49_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_52_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystem>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_142_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemCreateLobbyCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo Error; \
+	FUniqueNetIdRepl UserId; \
+	ULobby* Lobby; \
+}; \
+static inline void FOnlineLobbySubsystemCreateLobbyCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineLobbySubsystemCreateLobbyCallbackPin, FOnlineErrorInfo Error, FUniqueNetIdRepl UserId, ULobby* Lobby) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemCreateLobbyCallbackPin_Parms Parms; \
+	Parms.Error=Error; \
+	Parms.UserId=UserId; \
+	Parms.Lobby=Lobby; \
+	OnlineLobbySubsystemCreateLobbyCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCreateLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCreateLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemCreateLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemCreateLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemCreateLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemCreateLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemCreateLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemCreateLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemCreateLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemCreateLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemCreateLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemCreateLobby) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemCreateLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemCreateLobby); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemCreateLobby(UOnlineLobbySubsystemCreateLobby&&); \
+	NO_API UOnlineLobbySubsystemCreateLobby(const UOnlineLobbySubsystemCreateLobby&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystemCreateLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemCreateLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemCreateLobby(UOnlineLobbySubsystemCreateLobby&&); \
+	NO_API UOnlineLobbySubsystemCreateLobby(const UOnlineLobbySubsystemCreateLobby&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemCreateLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemCreateLobby); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemCreateLobby) \
+	NO_API virtual ~UOnlineLobbySubsystemCreateLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_144_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_147_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystemCreateLobby>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_177_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemUpdateLobbyCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo Error; \
+	FUniqueNetIdRepl UserId; \
+}; \
+static inline void FOnlineLobbySubsystemUpdateLobbyCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineLobbySubsystemUpdateLobbyCallbackPin, FOnlineErrorInfo Error, FUniqueNetIdRepl UserId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemUpdateLobbyCallbackPin_Parms Parms; \
+	Parms.Error=Error; \
+	Parms.UserId=UserId; \
+	OnlineLobbySubsystemUpdateLobbyCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUpdateLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUpdateLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemUpdateLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemUpdateLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemUpdateLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemUpdateLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemUpdateLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemUpdateLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemUpdateLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemUpdateLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemUpdateLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemUpdateLobby) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemUpdateLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemUpdateLobby); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemUpdateLobby(UOnlineLobbySubsystemUpdateLobby&&); \
+	NO_API UOnlineLobbySubsystemUpdateLobby(const UOnlineLobbySubsystemUpdateLobby&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystemUpdateLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemUpdateLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemUpdateLobby(UOnlineLobbySubsystemUpdateLobby&&); \
+	NO_API UOnlineLobbySubsystemUpdateLobby(const UOnlineLobbySubsystemUpdateLobby&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemUpdateLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemUpdateLobby); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemUpdateLobby) \
+	NO_API virtual ~UOnlineLobbySubsystemUpdateLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_179_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_182_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystemUpdateLobby>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_215_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemDeleteLobbyCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo Error; \
+	FUniqueNetIdRepl UserId; \
+}; \
+static inline void FOnlineLobbySubsystemDeleteLobbyCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineLobbySubsystemDeleteLobbyCallbackPin, FOnlineErrorInfo Error, FUniqueNetIdRepl UserId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemDeleteLobbyCallbackPin_Parms Parms; \
+	Parms.Error=Error; \
+	Parms.UserId=UserId; \
+	OnlineLobbySubsystemDeleteLobbyCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDeleteLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDeleteLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemDeleteLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemDeleteLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemDeleteLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemDeleteLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemDeleteLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemDeleteLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemDeleteLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemDeleteLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemDeleteLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemDeleteLobby) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemDeleteLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemDeleteLobby); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemDeleteLobby(UOnlineLobbySubsystemDeleteLobby&&); \
+	NO_API UOnlineLobbySubsystemDeleteLobby(const UOnlineLobbySubsystemDeleteLobby&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystemDeleteLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemDeleteLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemDeleteLobby(UOnlineLobbySubsystemDeleteLobby&&); \
+	NO_API UOnlineLobbySubsystemDeleteLobby(const UOnlineLobbySubsystemDeleteLobby&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemDeleteLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemDeleteLobby); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemDeleteLobby) \
+	NO_API virtual ~UOnlineLobbySubsystemDeleteLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_217_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_220_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystemDeleteLobby>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_250_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemConnectLobbyCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo Error; \
+	FUniqueNetIdRepl UserId; \
+	ULobby* Lobby; \
+}; \
+static inline void FOnlineLobbySubsystemConnectLobbyCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineLobbySubsystemConnectLobbyCallbackPin, FOnlineErrorInfo Error, FUniqueNetIdRepl UserId, ULobby* Lobby) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemConnectLobbyCallbackPin_Parms Parms; \
+	Parms.Error=Error; \
+	Parms.UserId=UserId; \
+	Parms.Lobby=Lobby; \
+	OnlineLobbySubsystemConnectLobbyCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execConnectLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execConnectLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemConnectLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemConnectLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemConnectLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemConnectLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemConnectLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemConnectLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemConnectLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemConnectLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemConnectLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemConnectLobby) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemConnectLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemConnectLobby); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemConnectLobby(UOnlineLobbySubsystemConnectLobby&&); \
+	NO_API UOnlineLobbySubsystemConnectLobby(const UOnlineLobbySubsystemConnectLobby&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystemConnectLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemConnectLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemConnectLobby(UOnlineLobbySubsystemConnectLobby&&); \
+	NO_API UOnlineLobbySubsystemConnectLobby(const UOnlineLobbySubsystemConnectLobby&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemConnectLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemConnectLobby); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemConnectLobby) \
+	NO_API virtual ~UOnlineLobbySubsystemConnectLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_252_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_255_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystemConnectLobby>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_285_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemDisconnectLobbyCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo Error; \
+	FUniqueNetIdRepl UserId; \
+}; \
+static inline void FOnlineLobbySubsystemDisconnectLobbyCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineLobbySubsystemDisconnectLobbyCallbackPin, FOnlineErrorInfo Error, FUniqueNetIdRepl UserId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemDisconnectLobbyCallbackPin_Parms Parms; \
+	Parms.Error=Error; \
+	Parms.UserId=UserId; \
+	OnlineLobbySubsystemDisconnectLobbyCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDisconnectLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDisconnectLobby);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemDisconnectLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemDisconnectLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemDisconnectLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemDisconnectLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemDisconnectLobby(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemDisconnectLobby_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemDisconnectLobby, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemDisconnectLobby)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemDisconnectLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemDisconnectLobby) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemDisconnectLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemDisconnectLobby); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemDisconnectLobby(UOnlineLobbySubsystemDisconnectLobby&&); \
+	NO_API UOnlineLobbySubsystemDisconnectLobby(const UOnlineLobbySubsystemDisconnectLobby&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystemDisconnectLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemDisconnectLobby(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemDisconnectLobby(UOnlineLobbySubsystemDisconnectLobby&&); \
+	NO_API UOnlineLobbySubsystemDisconnectLobby(const UOnlineLobbySubsystemDisconnectLobby&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemDisconnectLobby); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemDisconnectLobby); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemDisconnectLobby) \
+	NO_API virtual ~UOnlineLobbySubsystemDisconnectLobby();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_287_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_290_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystemDisconnectLobby>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_320_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemUpdateMemberSelfCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo Error; \
+	FUniqueNetIdRepl UserId; \
+}; \
+static inline void FOnlineLobbySubsystemUpdateMemberSelfCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineLobbySubsystemUpdateMemberSelfCallbackPin, FOnlineErrorInfo Error, FUniqueNetIdRepl UserId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemUpdateMemberSelfCallbackPin_Parms Parms; \
+	Parms.Error=Error; \
+	Parms.UserId=UserId; \
+	OnlineLobbySubsystemUpdateMemberSelfCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUpdateMemberSelf);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUpdateMemberSelf);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemUpdateMemberSelf(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemUpdateMemberSelf_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemUpdateMemberSelf, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemUpdateMemberSelf)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemUpdateMemberSelf(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemUpdateMemberSelf_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemUpdateMemberSelf, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemUpdateMemberSelf)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemUpdateMemberSelf(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemUpdateMemberSelf) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemUpdateMemberSelf); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemUpdateMemberSelf); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemUpdateMemberSelf(UOnlineLobbySubsystemUpdateMemberSelf&&); \
+	NO_API UOnlineLobbySubsystemUpdateMemberSelf(const UOnlineLobbySubsystemUpdateMemberSelf&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystemUpdateMemberSelf();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemUpdateMemberSelf(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemUpdateMemberSelf(UOnlineLobbySubsystemUpdateMemberSelf&&); \
+	NO_API UOnlineLobbySubsystemUpdateMemberSelf(const UOnlineLobbySubsystemUpdateMemberSelf&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemUpdateMemberSelf); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemUpdateMemberSelf); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemUpdateMemberSelf) \
+	NO_API virtual ~UOnlineLobbySubsystemUpdateMemberSelf();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_322_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_325_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystemUpdateMemberSelf>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_358_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemSearchCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo Error; \
+	FUniqueNetIdRepl UserId; \
+	TArray<ULobbyId*> Lobbies; \
+}; \
+static inline void FOnlineLobbySubsystemSearchCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineLobbySubsystemSearchCallbackPin, FOnlineErrorInfo Error, FUniqueNetIdRepl UserId, TArray<ULobbyId*> const& Lobbies) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemSearchCallbackPin_Parms Parms; \
+	Parms.Error=Error; \
+	Parms.UserId=UserId; \
+	Parms.Lobbies=Lobbies; \
+	OnlineLobbySubsystemSearchCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSearch);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSearch);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemSearch(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemSearch_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemSearch, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemSearch)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemSearch(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemSearch_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemSearch, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemSearch)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemSearch(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemSearch) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemSearch); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemSearch); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemSearch(UOnlineLobbySubsystemSearch&&); \
+	NO_API UOnlineLobbySubsystemSearch(const UOnlineLobbySubsystemSearch&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystemSearch();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemSearch(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemSearch(UOnlineLobbySubsystemSearch&&); \
+	NO_API UOnlineLobbySubsystemSearch(const UOnlineLobbySubsystemSearch&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemSearch); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemSearch); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemSearch) \
+	NO_API virtual ~UOnlineLobbySubsystemSearch();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_360_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_363_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystemSearch>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_393_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemKickMemberCallbackPin_Parms \
+{ \
+	FOnlineErrorInfo Error; \
+	FUniqueNetIdRepl UserId; \
+}; \
+static inline void FOnlineLobbySubsystemKickMemberCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineLobbySubsystemKickMemberCallbackPin, FOnlineErrorInfo Error, FUniqueNetIdRepl UserId) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineLobbySubsystemKickMemberCallbackPin_Parms Parms; \
+	Parms.Error=Error; \
+	Parms.UserId=UserId; \
+	OnlineLobbySubsystemKickMemberCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execKickMember);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execKickMember);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemKickMember(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemKickMember_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemKickMember, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemKickMember)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineLobbySubsystemKickMember(); \
+	friend struct Z_Construct_UClass_UOnlineLobbySubsystemKickMember_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineLobbySubsystemKickMember, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineLobbySubsystemKickMember)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemKickMember(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemKickMember) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemKickMember); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemKickMember); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemKickMember(UOnlineLobbySubsystemKickMember&&); \
+	NO_API UOnlineLobbySubsystemKickMember(const UOnlineLobbySubsystemKickMember&); \
+public: \
+	NO_API virtual ~UOnlineLobbySubsystemKickMember();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineLobbySubsystemKickMember(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineLobbySubsystemKickMember(UOnlineLobbySubsystemKickMember&&); \
+	NO_API UOnlineLobbySubsystemKickMember(const UOnlineLobbySubsystemKickMember&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineLobbySubsystemKickMember); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineLobbySubsystemKickMember); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineLobbySubsystemKickMember) \
+	NO_API virtual ~UOnlineLobbySubsystemKickMember();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_395_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h_398_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineLobbySubsystemKickMember>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineLobbySubsystem_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

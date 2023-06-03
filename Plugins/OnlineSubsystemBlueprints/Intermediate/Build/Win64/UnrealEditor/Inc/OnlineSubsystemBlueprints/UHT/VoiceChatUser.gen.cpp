@@ -1,0 +1,3395 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "OnlineSubsystemBlueprints_5.1/Private/AutoSubsystems/VoiceChatUser.h"
+#include "OnlineSubsystemBlueprints/Public/Types/OSBVoiceChatTypes.h"
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeVoiceChatUser() {}
+// Cross Module References
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UClass* Z_Construct_UClass_UBlueprintAsyncActionBase();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUser();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUser_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUserJoinChannel();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUserJoinChannel_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUserLeaveChannel();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUserLeaveChannel_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUserLogin();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUserLogin_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUserLogout();
+	ONLINESUBSYSTEMBLUEPRINTS_API UClass* Z_Construct_UClass_UVoiceChatUserLogout_NoRegister();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_EVoiceChatChannelType_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UEnum* Z_Construct_UEnum_OnlineSubsystemBlueprints_EVoiceChatTransmitMode_();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature();
+	ONLINESUBSYSTEMBLUEPRINTS_API UScriptStruct* Z_Construct_UScriptStruct_FVoiceChatChannel3dPropertiesBP();
+	ONLINESUBSYSTEMBLUEPRINTS_API UScriptStruct* Z_Construct_UScriptStruct_FVoiceChatDeviceInfoBP();
+	ONLINESUBSYSTEMBLUEPRINTS_API UScriptStruct* Z_Construct_UScriptStruct_FVoiceChatResultBP();
+	UPackage* Z_Construct_UPackage__Script_OnlineSubsystemBlueprints();
+// End Cross Module References
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatLoggedInDelegate_BP_Parms
+		{
+			FString PlayerName;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatLoggedInDelegate_BP_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatLoggedInDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatLoggedOutDelegate_BP_Parms
+		{
+			FString PlayerName;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatLoggedOutDelegate_BP_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatLoggedOutDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP_Parms
+		{
+			FString ChannelName;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// @parameters-not-compatible\n// DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FVoiceChatUser_OnVoiceChatCallStatsUpdatedDelegate_BP, const FVoiceChatCallStats&, CallStats);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+		{ "ToolTip", "@parameters-not-compatible\nDECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FVoiceChatUser_OnVoiceChatCallStatsUpdatedDelegate_BP, const FVoiceChatCallStats&, CallStats);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatChannelExitedDelegate_BP_Parms
+		{
+			FString ChannelName;
+			FVoiceChatResultBP Reason;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Reason;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatChannelExitedDelegate_BP_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::NewProp_Reason = { "Reason", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatChannelExitedDelegate_BP_Parms, Reason), Z_Construct_UScriptStruct_FVoiceChatResultBP, METADATA_PARAMS(nullptr, 0) }; // 3594018074
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::NewProp_Reason,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatChannelExitedDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP_Parms
+		{
+			FString ChannelName;
+			FString PlayerName;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP_Parms
+		{
+			FString ChannelName;
+			FString PlayerName;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP_Parms
+		{
+			FString ChannelName;
+			FString PlayerName;
+			bool bIsTalking;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static void NewProp_bIsTalking_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsTalking;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_bIsTalking_SetBit(void* Obj)
+	{
+		((_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP_Parms*)Obj)->bIsTalking = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_bIsTalking = { "bIsTalking", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP_Parms), &Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_bIsTalking_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_bIsTalking,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP_Parms
+		{
+			FString ChannelName;
+			FString PlayerName;
+			bool bIsMuted;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static void NewProp_bIsMuted_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsMuted;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_bIsMuted_SetBit(void* Obj)
+	{
+		((_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP_Parms*)Obj)->bIsMuted = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_bIsMuted = { "bIsMuted", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP_Parms), &Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_bIsMuted_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_bIsMuted,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP_Parms
+		{
+			FString ChannelName;
+			FString PlayerName;
+			float Volume;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Volume;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_Volume = { "Volume", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP_Parms, Volume), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::NewProp_Volume,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execInsecureGetJoinToken)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_GET_ENUM(EVoiceChatChannelType_,Z_Param_ChannelType);
+		P_GET_STRUCT(FVoiceChatChannel3dPropertiesBP,Z_Param_Channel3dProperties);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->InsecureGetJoinToken(Z_Param_ChannelName,EVoiceChatChannelType_(Z_Param_ChannelType),Z_Param_Channel3dProperties);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execInsecureGetLoginToken)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->InsecureGetLoginToken(Z_Param_PlayerName);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetTransmitChannel)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetTransmitChannel();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetTransmitMode)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(EVoiceChatTransmitMode_*)Z_Param__Result=P_THIS->GetTransmitMode();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execTransmitToSpecificChannel)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->TransmitToSpecificChannel(Z_Param_ChannelName);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execTransmitToNoChannels)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->TransmitToNoChannels();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execTransmitToAllChannels)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->TransmitToAllChannels();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetPlayerVolume)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetPlayerVolume(Z_Param_PlayerName);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetPlayerVolume)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_GET_PROPERTY(FFloatProperty,Z_Param_Volume);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetPlayerVolume(Z_Param_PlayerName,Z_Param_Volume);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execIsChannelPlayerMuted)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsChannelPlayerMuted(Z_Param_ChannelName,Z_Param_PlayerName);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetChannelPlayerMuted)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_GET_UBOOL(Z_Param_bAudioMuted);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetChannelPlayerMuted(Z_Param_ChannelName,Z_Param_PlayerName,Z_Param_bAudioMuted);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execIsPlayerMuted)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsPlayerMuted(Z_Param_PlayerName);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetPlayerMuted)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_GET_UBOOL(Z_Param_bMuted);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetPlayerMuted(Z_Param_PlayerName,Z_Param_bMuted);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execIsPlayerTalking)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsPlayerTalking(Z_Param_PlayerName);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetChannelType)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(EVoiceChatChannelType_*)Z_Param__Result=P_THIS->GetChannelType(Z_Param_ChannelName);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetPlayersInChannel)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TArray<FString>*)Z_Param__Result=P_THIS->GetPlayersInChannel(Z_Param_ChannelName);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetChannels)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TArray<FString>*)Z_Param__Result=P_THIS->GetChannels();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSet3DPosition)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_GET_STRUCT(FVector,Z_Param_SpeakerPosition);
+		P_GET_STRUCT(FVector,Z_Param_ListenerPosition);
+		P_GET_STRUCT(FVector,Z_Param_ListenerForwardDirection);
+		P_GET_STRUCT(FVector,Z_Param_ListenerUpDirection);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Set3DPosition(Z_Param_ChannelName,Z_Param_SpeakerPosition,Z_Param_ListenerPosition,Z_Param_ListenerForwardDirection,Z_Param_ListenerUpDirection);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execUnblockPlayers)
+	{
+		P_GET_TARRAY(FString,Z_Param_PlayerNames);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UnblockPlayers(Z_Param_PlayerNames);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execBlockPlayers)
+	{
+		P_GET_TARRAY(FString,Z_Param_PlayerNames);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->BlockPlayers(Z_Param_PlayerNames);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetLoggedInPlayerName)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetLoggedInPlayerName();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execIsLoggedIn)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsLoggedIn();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execIsLoggingIn)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsLoggingIn();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetDefaultOutputDeviceInfo)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FVoiceChatDeviceInfoBP*)Z_Param__Result=P_THIS->GetDefaultOutputDeviceInfo();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetDefaultInputDeviceInfo)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FVoiceChatDeviceInfoBP*)Z_Param__Result=P_THIS->GetDefaultInputDeviceInfo();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetOutputDeviceInfo)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FVoiceChatDeviceInfoBP*)Z_Param__Result=P_THIS->GetOutputDeviceInfo();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetInputDeviceInfo)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FVoiceChatDeviceInfoBP*)Z_Param__Result=P_THIS->GetInputDeviceInfo();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetOutputDeviceId)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_OutputDeviceId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetOutputDeviceId(Z_Param_OutputDeviceId);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetInputDeviceId)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_InputDeviceId);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetInputDeviceId(Z_Param_InputDeviceId);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetAvailableOutputDeviceInfos)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TArray<FVoiceChatDeviceInfoBP>*)Z_Param__Result=P_THIS->GetAvailableOutputDeviceInfos();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetAvailableInputDeviceInfos)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TArray<FVoiceChatDeviceInfoBP>*)Z_Param__Result=P_THIS->GetAvailableInputDeviceInfos();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetAudioOutputDeviceMuted)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->GetAudioOutputDeviceMuted();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetAudioInputDeviceMuted)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->GetAudioInputDeviceMuted();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetAudioOutputDeviceMuted)
+	{
+		P_GET_UBOOL(Z_Param_bIsMuted);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetAudioOutputDeviceMuted(Z_Param_bIsMuted);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetAudioInputDeviceMuted)
+	{
+		P_GET_UBOOL(Z_Param_bIsMuted);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetAudioInputDeviceMuted(Z_Param_bIsMuted);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetAudioOutputVolume)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetAudioOutputVolume();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetAudioInputVolume)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetAudioInputVolume();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetAudioOutputVolume)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_Volume);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetAudioOutputVolume(Z_Param_Volume);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetAudioInputVolume)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_Volume);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetAudioInputVolume(Z_Param_Volume);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execGetSetting)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Name);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetSetting(Z_Param_Name);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVoiceChatUser::execSetSetting)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Name);
+		P_GET_PROPERTY(FStrProperty,Z_Param_Value);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetSetting(Z_Param_Name,Z_Param_Value);
+		P_NATIVE_END;
+	}
+	void UVoiceChatUser::StaticRegisterNativesUVoiceChatUser()
+	{
+		UClass* Class = UVoiceChatUser::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "BlockPlayers", &UVoiceChatUser::execBlockPlayers },
+			{ "GetAudioInputDeviceMuted", &UVoiceChatUser::execGetAudioInputDeviceMuted },
+			{ "GetAudioInputVolume", &UVoiceChatUser::execGetAudioInputVolume },
+			{ "GetAudioOutputDeviceMuted", &UVoiceChatUser::execGetAudioOutputDeviceMuted },
+			{ "GetAudioOutputVolume", &UVoiceChatUser::execGetAudioOutputVolume },
+			{ "GetAvailableInputDeviceInfos", &UVoiceChatUser::execGetAvailableInputDeviceInfos },
+			{ "GetAvailableOutputDeviceInfos", &UVoiceChatUser::execGetAvailableOutputDeviceInfos },
+			{ "GetChannels", &UVoiceChatUser::execGetChannels },
+			{ "GetChannelType", &UVoiceChatUser::execGetChannelType },
+			{ "GetDefaultInputDeviceInfo", &UVoiceChatUser::execGetDefaultInputDeviceInfo },
+			{ "GetDefaultOutputDeviceInfo", &UVoiceChatUser::execGetDefaultOutputDeviceInfo },
+			{ "GetInputDeviceInfo", &UVoiceChatUser::execGetInputDeviceInfo },
+			{ "GetLoggedInPlayerName", &UVoiceChatUser::execGetLoggedInPlayerName },
+			{ "GetOutputDeviceInfo", &UVoiceChatUser::execGetOutputDeviceInfo },
+			{ "GetPlayersInChannel", &UVoiceChatUser::execGetPlayersInChannel },
+			{ "GetPlayerVolume", &UVoiceChatUser::execGetPlayerVolume },
+			{ "GetSetting", &UVoiceChatUser::execGetSetting },
+			{ "GetTransmitChannel", &UVoiceChatUser::execGetTransmitChannel },
+			{ "GetTransmitMode", &UVoiceChatUser::execGetTransmitMode },
+			{ "InsecureGetJoinToken", &UVoiceChatUser::execInsecureGetJoinToken },
+			{ "InsecureGetLoginToken", &UVoiceChatUser::execInsecureGetLoginToken },
+			{ "IsChannelPlayerMuted", &UVoiceChatUser::execIsChannelPlayerMuted },
+			{ "IsLoggedIn", &UVoiceChatUser::execIsLoggedIn },
+			{ "IsLoggingIn", &UVoiceChatUser::execIsLoggingIn },
+			{ "IsPlayerMuted", &UVoiceChatUser::execIsPlayerMuted },
+			{ "IsPlayerTalking", &UVoiceChatUser::execIsPlayerTalking },
+			{ "Set3DPosition", &UVoiceChatUser::execSet3DPosition },
+			{ "SetAudioInputDeviceMuted", &UVoiceChatUser::execSetAudioInputDeviceMuted },
+			{ "SetAudioInputVolume", &UVoiceChatUser::execSetAudioInputVolume },
+			{ "SetAudioOutputDeviceMuted", &UVoiceChatUser::execSetAudioOutputDeviceMuted },
+			{ "SetAudioOutputVolume", &UVoiceChatUser::execSetAudioOutputVolume },
+			{ "SetChannelPlayerMuted", &UVoiceChatUser::execSetChannelPlayerMuted },
+			{ "SetInputDeviceId", &UVoiceChatUser::execSetInputDeviceId },
+			{ "SetOutputDeviceId", &UVoiceChatUser::execSetOutputDeviceId },
+			{ "SetPlayerMuted", &UVoiceChatUser::execSetPlayerMuted },
+			{ "SetPlayerVolume", &UVoiceChatUser::execSetPlayerVolume },
+			{ "SetSetting", &UVoiceChatUser::execSetSetting },
+			{ "TransmitToAllChannels", &UVoiceChatUser::execTransmitToAllChannels },
+			{ "TransmitToNoChannels", &UVoiceChatUser::execTransmitToNoChannels },
+			{ "TransmitToSpecificChannel", &UVoiceChatUser::execTransmitToSpecificChannel },
+			{ "UnblockPlayers", &UVoiceChatUser::execUnblockPlayers },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics
+	{
+		struct VoiceChatUser_eventBlockPlayers_Parms
+		{
+			TArray<FString> PlayerNames;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerNames_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_PlayerNames;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::NewProp_PlayerNames_Inner = { "PlayerNames", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::NewProp_PlayerNames = { "PlayerNames", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventBlockPlayers_Parms, PlayerNames), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::NewProp_PlayerNames_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::NewProp_PlayerNames,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "BlockPlayers", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::VoiceChatUser_eventBlockPlayers_Parms), Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_BlockPlayers()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_BlockPlayers_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics
+	{
+		struct VoiceChatUser_eventGetAudioInputDeviceMuted_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventGetAudioInputDeviceMuted_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventGetAudioInputDeviceMuted_Parms), &Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetAudioInputDeviceMuted", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::VoiceChatUser_eventGetAudioInputDeviceMuted_Parms), Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics
+	{
+		struct VoiceChatUser_eventGetAudioInputVolume_Parms
+		{
+			float ReturnValue;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetAudioInputVolume_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetAudioInputVolume", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::VoiceChatUser_eventGetAudioInputVolume_Parms), Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics
+	{
+		struct VoiceChatUser_eventGetAudioOutputDeviceMuted_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventGetAudioOutputDeviceMuted_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventGetAudioOutputDeviceMuted_Parms), &Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetAudioOutputDeviceMuted", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::VoiceChatUser_eventGetAudioOutputDeviceMuted_Parms), Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics
+	{
+		struct VoiceChatUser_eventGetAudioOutputVolume_Parms
+		{
+			float ReturnValue;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetAudioOutputVolume_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetAudioOutputVolume", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::VoiceChatUser_eventGetAudioOutputVolume_Parms), Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics
+	{
+		struct VoiceChatUser_eventGetAvailableInputDeviceInfos_Parms
+		{
+			TArray<FVoiceChatDeviceInfoBP> ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FVoiceChatDeviceInfoBP, METADATA_PARAMS(nullptr, 0) }; // 307905358
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetAvailableInputDeviceInfos_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 307905358
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::NewProp_ReturnValue_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetAvailableInputDeviceInfos", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::VoiceChatUser_eventGetAvailableInputDeviceInfos_Parms), Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics
+	{
+		struct VoiceChatUser_eventGetAvailableOutputDeviceInfos_Parms
+		{
+			TArray<FVoiceChatDeviceInfoBP> ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FVoiceChatDeviceInfoBP, METADATA_PARAMS(nullptr, 0) }; // 307905358
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetAvailableOutputDeviceInfos_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 307905358
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::NewProp_ReturnValue_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetAvailableOutputDeviceInfos", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::VoiceChatUser_eventGetAvailableOutputDeviceInfos_Parms), Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics
+	{
+		struct VoiceChatUser_eventGetChannels_Parms
+		{
+			TArray<FString> ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetChannels_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::NewProp_ReturnValue_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetChannels", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::VoiceChatUser_eventGetChannels_Parms), Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetChannels()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetChannels_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics
+	{
+		struct VoiceChatUser_eventGetChannelType_Parms
+		{
+			FString ChannelName;
+			EVoiceChatChannelType_ ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetChannelType_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetChannelType_Parms, ReturnValue), Z_Construct_UEnum_OnlineSubsystemBlueprints_EVoiceChatChannelType_, METADATA_PARAMS(nullptr, 0) }; // 2757596097
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::NewProp_ReturnValue_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetChannelType", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::VoiceChatUser_eventGetChannelType_Parms), Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetChannelType()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetChannelType_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics
+	{
+		struct VoiceChatUser_eventGetDefaultInputDeviceInfo_Parms
+		{
+			FVoiceChatDeviceInfoBP ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetDefaultInputDeviceInfo_Parms, ReturnValue), Z_Construct_UScriptStruct_FVoiceChatDeviceInfoBP, METADATA_PARAMS(nullptr, 0) }; // 307905358
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetDefaultInputDeviceInfo", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::VoiceChatUser_eventGetDefaultInputDeviceInfo_Parms), Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics
+	{
+		struct VoiceChatUser_eventGetDefaultOutputDeviceInfo_Parms
+		{
+			FVoiceChatDeviceInfoBP ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetDefaultOutputDeviceInfo_Parms, ReturnValue), Z_Construct_UScriptStruct_FVoiceChatDeviceInfoBP, METADATA_PARAMS(nullptr, 0) }; // 307905358
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetDefaultOutputDeviceInfo", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::VoiceChatUser_eventGetDefaultOutputDeviceInfo_Parms), Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics
+	{
+		struct VoiceChatUser_eventGetInputDeviceInfo_Parms
+		{
+			FVoiceChatDeviceInfoBP ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetInputDeviceInfo_Parms, ReturnValue), Z_Construct_UScriptStruct_FVoiceChatDeviceInfoBP, METADATA_PARAMS(nullptr, 0) }; // 307905358
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetInputDeviceInfo", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::VoiceChatUser_eventGetInputDeviceInfo_Parms), Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics
+	{
+		struct VoiceChatUser_eventGetLoggedInPlayerName_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetLoggedInPlayerName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetLoggedInPlayerName", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::VoiceChatUser_eventGetLoggedInPlayerName_Parms), Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics
+	{
+		struct VoiceChatUser_eventGetOutputDeviceInfo_Parms
+		{
+			FVoiceChatDeviceInfoBP ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetOutputDeviceInfo_Parms, ReturnValue), Z_Construct_UScriptStruct_FVoiceChatDeviceInfoBP, METADATA_PARAMS(nullptr, 0) }; // 307905358
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetOutputDeviceInfo", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::VoiceChatUser_eventGetOutputDeviceInfo_Parms), Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics
+	{
+		struct VoiceChatUser_eventGetPlayersInChannel_Parms
+		{
+			FString ChannelName;
+			TArray<FString> ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetPlayersInChannel_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetPlayersInChannel_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::NewProp_ReturnValue_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetPlayersInChannel", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::VoiceChatUser_eventGetPlayersInChannel_Parms), Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics
+	{
+		struct VoiceChatUser_eventGetPlayerVolume_Parms
+		{
+			FString PlayerName;
+			float ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetPlayerVolume_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetPlayerVolume_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetPlayerVolume", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::VoiceChatUser_eventGetPlayerVolume_Parms), Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics
+	{
+		struct VoiceChatUser_eventGetSetting_Parms
+		{
+			FString Name;
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Name;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetSetting_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetSetting_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::NewProp_Name,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetSetting", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::VoiceChatUser_eventGetSetting_Parms), Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetSetting()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetSetting_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics
+	{
+		struct VoiceChatUser_eventGetTransmitChannel_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetTransmitChannel_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetTransmitChannel", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::VoiceChatUser_eventGetTransmitChannel_Parms), Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics
+	{
+		struct VoiceChatUser_eventGetTransmitMode_Parms
+		{
+			EVoiceChatTransmitMode_ ReturnValue;
+		};
+		static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventGetTransmitMode_Parms, ReturnValue), Z_Construct_UEnum_OnlineSubsystemBlueprints_EVoiceChatTransmitMode_, METADATA_PARAMS(nullptr, 0) }; // 1566115173
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::NewProp_ReturnValue_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "GetTransmitMode", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::VoiceChatUser_eventGetTransmitMode_Parms), Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics
+	{
+		struct VoiceChatUser_eventInsecureGetJoinToken_Parms
+		{
+			FString ChannelName;
+			EVoiceChatChannelType_ ChannelType;
+			FVoiceChatChannel3dPropertiesBP Channel3dProperties;
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_ChannelType_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_ChannelType;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Channel3dProperties;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventInsecureGetJoinToken_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_ChannelType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_ChannelType = { "ChannelType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventInsecureGetJoinToken_Parms, ChannelType), Z_Construct_UEnum_OnlineSubsystemBlueprints_EVoiceChatChannelType_, METADATA_PARAMS(nullptr, 0) }; // 2757596097
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_Channel3dProperties = { "Channel3dProperties", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventInsecureGetJoinToken_Parms, Channel3dProperties), Z_Construct_UScriptStruct_FVoiceChatChannel3dPropertiesBP, METADATA_PARAMS(nullptr, 0) }; // 2697032111
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventInsecureGetJoinToken_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_ChannelType_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_ChannelType,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_Channel3dProperties,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "InsecureGetJoinToken", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::VoiceChatUser_eventInsecureGetJoinToken_Parms), Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics
+	{
+		struct VoiceChatUser_eventInsecureGetLoginToken_Parms
+		{
+			FString PlayerName;
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventInsecureGetLoginToken_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventInsecureGetLoginToken_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "Comment", "// @generator-incompatible\n// void UnregisterOnVoiceChatBeforeRecvAudioRenderedDelegate(FDelegateHandle Handle);\n" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+		{ "ToolTip", "@generator-incompatible\nvoid UnregisterOnVoiceChatBeforeRecvAudioRenderedDelegate(FDelegateHandle Handle);" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "InsecureGetLoginToken", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::VoiceChatUser_eventInsecureGetLoginToken_Parms), Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics
+	{
+		struct VoiceChatUser_eventIsChannelPlayerMuted_Parms
+		{
+			FString ChannelName;
+			FString PlayerName;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventIsChannelPlayerMuted_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventIsChannelPlayerMuted_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventIsChannelPlayerMuted_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventIsChannelPlayerMuted_Parms), &Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "IsChannelPlayerMuted", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::VoiceChatUser_eventIsChannelPlayerMuted_Parms), Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics
+	{
+		struct VoiceChatUser_eventIsLoggedIn_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventIsLoggedIn_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventIsLoggedIn_Parms), &Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "IsLoggedIn", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::VoiceChatUser_eventIsLoggedIn_Parms), Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics
+	{
+		struct VoiceChatUser_eventIsLoggingIn_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventIsLoggingIn_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventIsLoggingIn_Parms), &Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "IsLoggingIn", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::VoiceChatUser_eventIsLoggingIn_Parms), Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics
+	{
+		struct VoiceChatUser_eventIsPlayerMuted_Parms
+		{
+			FString PlayerName;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventIsPlayerMuted_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventIsPlayerMuted_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventIsPlayerMuted_Parms), &Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "IsPlayerMuted", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::VoiceChatUser_eventIsPlayerMuted_Parms), Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics
+	{
+		struct VoiceChatUser_eventIsPlayerTalking_Parms
+		{
+			FString PlayerName;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventIsPlayerTalking_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventIsPlayerTalking_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventIsPlayerTalking_Parms), &Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "IsPlayerTalking", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::VoiceChatUser_eventIsPlayerTalking_Parms), Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics
+	{
+		struct VoiceChatUser_eventSet3DPosition_Parms
+		{
+			FString ChannelName;
+			FVector SpeakerPosition;
+			FVector ListenerPosition;
+			FVector ListenerForwardDirection;
+			FVector ListenerUpDirection;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_SpeakerPosition;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ListenerPosition;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ListenerForwardDirection;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ListenerUpDirection;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSet3DPosition_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_SpeakerPosition = { "SpeakerPosition", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSet3DPosition_Parms, SpeakerPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_ListenerPosition = { "ListenerPosition", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSet3DPosition_Parms, ListenerPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_ListenerForwardDirection = { "ListenerForwardDirection", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSet3DPosition_Parms, ListenerForwardDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_ListenerUpDirection = { "ListenerUpDirection", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSet3DPosition_Parms, ListenerUpDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_SpeakerPosition,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_ListenerPosition,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_ListenerForwardDirection,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::NewProp_ListenerUpDirection,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "Set3DPosition", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::VoiceChatUser_eventSet3DPosition_Parms), Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_Set3DPosition()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_Set3DPosition_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics
+	{
+		struct VoiceChatUser_eventSetAudioInputDeviceMuted_Parms
+		{
+			bool bIsMuted;
+		};
+		static void NewProp_bIsMuted_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsMuted;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::NewProp_bIsMuted_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventSetAudioInputDeviceMuted_Parms*)Obj)->bIsMuted = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::NewProp_bIsMuted = { "bIsMuted", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventSetAudioInputDeviceMuted_Parms), &Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::NewProp_bIsMuted_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::NewProp_bIsMuted,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetAudioInputDeviceMuted", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::VoiceChatUser_eventSetAudioInputDeviceMuted_Parms), Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics
+	{
+		struct VoiceChatUser_eventSetAudioInputVolume_Parms
+		{
+			float Volume;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Volume;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::NewProp_Volume = { "Volume", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetAudioInputVolume_Parms, Volume), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::NewProp_Volume,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetAudioInputVolume", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::VoiceChatUser_eventSetAudioInputVolume_Parms), Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics
+	{
+		struct VoiceChatUser_eventSetAudioOutputDeviceMuted_Parms
+		{
+			bool bIsMuted;
+		};
+		static void NewProp_bIsMuted_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsMuted;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::NewProp_bIsMuted_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventSetAudioOutputDeviceMuted_Parms*)Obj)->bIsMuted = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::NewProp_bIsMuted = { "bIsMuted", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventSetAudioOutputDeviceMuted_Parms), &Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::NewProp_bIsMuted_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::NewProp_bIsMuted,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetAudioOutputDeviceMuted", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::VoiceChatUser_eventSetAudioOutputDeviceMuted_Parms), Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics
+	{
+		struct VoiceChatUser_eventSetAudioOutputVolume_Parms
+		{
+			float Volume;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Volume;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::NewProp_Volume = { "Volume", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetAudioOutputVolume_Parms, Volume), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::NewProp_Volume,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetAudioOutputVolume", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::VoiceChatUser_eventSetAudioOutputVolume_Parms), Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics
+	{
+		struct VoiceChatUser_eventSetChannelPlayerMuted_Parms
+		{
+			FString ChannelName;
+			FString PlayerName;
+			bool bAudioMuted;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static void NewProp_bAudioMuted_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bAudioMuted;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetChannelPlayerMuted_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetChannelPlayerMuted_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::NewProp_bAudioMuted_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventSetChannelPlayerMuted_Parms*)Obj)->bAudioMuted = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::NewProp_bAudioMuted = { "bAudioMuted", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventSetChannelPlayerMuted_Parms), &Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::NewProp_bAudioMuted_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::NewProp_bAudioMuted,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetChannelPlayerMuted", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::VoiceChatUser_eventSetChannelPlayerMuted_Parms), Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics
+	{
+		struct VoiceChatUser_eventSetInputDeviceId_Parms
+		{
+			FString InputDeviceId;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_InputDeviceId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::NewProp_InputDeviceId = { "InputDeviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetInputDeviceId_Parms, InputDeviceId), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::NewProp_InputDeviceId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetInputDeviceId", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::VoiceChatUser_eventSetInputDeviceId_Parms), Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics
+	{
+		struct VoiceChatUser_eventSetOutputDeviceId_Parms
+		{
+			FString OutputDeviceId;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_OutputDeviceId;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::NewProp_OutputDeviceId = { "OutputDeviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetOutputDeviceId_Parms, OutputDeviceId), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::NewProp_OutputDeviceId,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetOutputDeviceId", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::VoiceChatUser_eventSetOutputDeviceId_Parms), Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics
+	{
+		struct VoiceChatUser_eventSetPlayerMuted_Parms
+		{
+			FString PlayerName;
+			bool bMuted;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static void NewProp_bMuted_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bMuted;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetPlayerMuted_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::NewProp_bMuted_SetBit(void* Obj)
+	{
+		((VoiceChatUser_eventSetPlayerMuted_Parms*)Obj)->bMuted = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::NewProp_bMuted = { "bMuted", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VoiceChatUser_eventSetPlayerMuted_Parms), &Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::NewProp_bMuted_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::NewProp_bMuted,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetPlayerMuted", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::VoiceChatUser_eventSetPlayerMuted_Parms), Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics
+	{
+		struct VoiceChatUser_eventSetPlayerVolume_Parms
+		{
+			FString PlayerName;
+			float Volume;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Volume;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetPlayerVolume_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::NewProp_Volume = { "Volume", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetPlayerVolume_Parms, Volume), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::NewProp_Volume,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetPlayerVolume", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::VoiceChatUser_eventSetPlayerVolume_Parms), Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics
+	{
+		struct VoiceChatUser_eventSetSetting_Parms
+		{
+			FString Name;
+			FString Value;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Name;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Value;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetSetting_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventSetSetting_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::NewProp_Name,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::NewProp_Value,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "SetSetting", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::VoiceChatUser_eventSetSetting_Parms), Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_SetSetting()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_SetSetting_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_TransmitToAllChannels_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_TransmitToAllChannels_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_TransmitToAllChannels_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "TransmitToAllChannels", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_TransmitToAllChannels_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_TransmitToAllChannels_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_TransmitToAllChannels()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_TransmitToAllChannels_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_TransmitToNoChannels_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_TransmitToNoChannels_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_TransmitToNoChannels_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "TransmitToNoChannels", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_TransmitToNoChannels_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_TransmitToNoChannels_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_TransmitToNoChannels()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_TransmitToNoChannels_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics
+	{
+		struct VoiceChatUser_eventTransmitToSpecificChannel_Parms
+		{
+			FString ChannelName;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventTransmitToSpecificChannel_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::NewProp_ChannelName,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "TransmitToSpecificChannel", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::VoiceChatUser_eventTransmitToSpecificChannel_Parms), Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics
+	{
+		struct VoiceChatUser_eventUnblockPlayers_Parms
+		{
+			TArray<FString> PlayerNames;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerNames_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_PlayerNames;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::NewProp_PlayerNames_Inner = { "PlayerNames", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::NewProp_PlayerNames = { "PlayerNames", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUser_eventUnblockPlayers_Parms, PlayerNames), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::NewProp_PlayerNames_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::NewProp_PlayerNames,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUser, nullptr, "UnblockPlayers", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::VoiceChatUser_eventUnblockPlayers_Parms), Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UVoiceChatUser);
+	UClass* Z_Construct_UClass_UVoiceChatUser_NoRegister()
+	{
+		return UVoiceChatUser::StaticClass();
+	}
+	struct Z_Construct_UClass_UVoiceChatUser_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatAvailableAudioDevicesChanged_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatAvailableAudioDevicesChanged;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatLoggedIn_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatLoggedIn;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatLoggedOut_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatLoggedOut;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatChannelJoined_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatChannelJoined;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatChannelExited_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatChannelExited;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatPlayerAdded_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatPlayerAdded;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatPlayerRemoved_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatPlayerRemoved;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatPlayerTalkingUpdated_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatPlayerTalkingUpdated;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatPlayerMuteUpdated_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatPlayerMuteUpdated;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatPlayerVolumeUpdated_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatPlayerVolumeUpdated;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UVoiceChatUser_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UObject,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UVoiceChatUser_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UVoiceChatUser_BlockPlayers, "BlockPlayers" }, // 446701136
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetAudioInputDeviceMuted, "GetAudioInputDeviceMuted" }, // 171610287
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetAudioInputVolume, "GetAudioInputVolume" }, // 1093498432
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputDeviceMuted, "GetAudioOutputDeviceMuted" }, // 765003674
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetAudioOutputVolume, "GetAudioOutputVolume" }, // 2718687664
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetAvailableInputDeviceInfos, "GetAvailableInputDeviceInfos" }, // 563596679
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetAvailableOutputDeviceInfos, "GetAvailableOutputDeviceInfos" }, // 1207814100
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetChannels, "GetChannels" }, // 943230239
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetChannelType, "GetChannelType" }, // 2036750839
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetDefaultInputDeviceInfo, "GetDefaultInputDeviceInfo" }, // 3379286107
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetDefaultOutputDeviceInfo, "GetDefaultOutputDeviceInfo" }, // 1866088131
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetInputDeviceInfo, "GetInputDeviceInfo" }, // 4199746023
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetLoggedInPlayerName, "GetLoggedInPlayerName" }, // 1157363483
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetOutputDeviceInfo, "GetOutputDeviceInfo" }, // 2841793087
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetPlayersInChannel, "GetPlayersInChannel" }, // 1904688862
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetPlayerVolume, "GetPlayerVolume" }, // 2950234770
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetSetting, "GetSetting" }, // 1812386375
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetTransmitChannel, "GetTransmitChannel" }, // 3975219990
+		{ &Z_Construct_UFunction_UVoiceChatUser_GetTransmitMode, "GetTransmitMode" }, // 921146540
+		{ &Z_Construct_UFunction_UVoiceChatUser_InsecureGetJoinToken, "InsecureGetJoinToken" }, // 1095538034
+		{ &Z_Construct_UFunction_UVoiceChatUser_InsecureGetLoginToken, "InsecureGetLoginToken" }, // 2633073183
+		{ &Z_Construct_UFunction_UVoiceChatUser_IsChannelPlayerMuted, "IsChannelPlayerMuted" }, // 3204857144
+		{ &Z_Construct_UFunction_UVoiceChatUser_IsLoggedIn, "IsLoggedIn" }, // 4039399158
+		{ &Z_Construct_UFunction_UVoiceChatUser_IsLoggingIn, "IsLoggingIn" }, // 3835947172
+		{ &Z_Construct_UFunction_UVoiceChatUser_IsPlayerMuted, "IsPlayerMuted" }, // 2593412794
+		{ &Z_Construct_UFunction_UVoiceChatUser_IsPlayerTalking, "IsPlayerTalking" }, // 1318923668
+		{ &Z_Construct_UFunction_UVoiceChatUser_Set3DPosition, "Set3DPosition" }, // 508848536
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetAudioInputDeviceMuted, "SetAudioInputDeviceMuted" }, // 2131690132
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetAudioInputVolume, "SetAudioInputVolume" }, // 2583559374
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputDeviceMuted, "SetAudioOutputDeviceMuted" }, // 1230731286
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetAudioOutputVolume, "SetAudioOutputVolume" }, // 2610189932
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetChannelPlayerMuted, "SetChannelPlayerMuted" }, // 3408138932
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetInputDeviceId, "SetInputDeviceId" }, // 3854567631
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetOutputDeviceId, "SetOutputDeviceId" }, // 3732506201
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetPlayerMuted, "SetPlayerMuted" }, // 2815353760
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetPlayerVolume, "SetPlayerVolume" }, // 2836126728
+		{ &Z_Construct_UFunction_UVoiceChatUser_SetSetting, "SetSetting" }, // 143647761
+		{ &Z_Construct_UFunction_UVoiceChatUser_TransmitToAllChannels, "TransmitToAllChannels" }, // 2833580409
+		{ &Z_Construct_UFunction_UVoiceChatUser_TransmitToNoChannels, "TransmitToNoChannels" }, // 1969335347
+		{ &Z_Construct_UFunction_UVoiceChatUser_TransmitToSpecificChannel, "TransmitToSpecificChannel" }, // 1283776607
+		{ &Z_Construct_UFunction_UVoiceChatUser_UnblockPlayers, "UnblockPlayers" }, // 712424819
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "DontUseGenericSpawnObject", "" },
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+		{ "IsBlueprintBase", "false" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatAvailableAudioDevicesChanged_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatAvailableAudioDevicesChanged = { "OnVoiceChatAvailableAudioDevicesChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatAvailableAudioDevicesChanged), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatAvailableAudioDevicesChangedDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatAvailableAudioDevicesChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatAvailableAudioDevicesChanged_MetaData)) }; // 281056438
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedIn_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedIn = { "OnVoiceChatLoggedIn", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatLoggedIn), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedInDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedIn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedIn_MetaData)) }; // 3853065495
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedOut_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedOut = { "OnVoiceChatLoggedOut", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatLoggedOut), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatLoggedOutDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedOut_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedOut_MetaData)) }; // 1046237863
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelJoined_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelJoined = { "OnVoiceChatChannelJoined", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatChannelJoined), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelJoinedDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelJoined_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelJoined_MetaData)) }; // 3488982645
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelExited_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelExited = { "OnVoiceChatChannelExited", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatChannelExited), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatChannelExitedDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelExited_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelExited_MetaData)) }; // 1923355665
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerAdded_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerAdded = { "OnVoiceChatPlayerAdded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatPlayerAdded), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerAddedDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerAdded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerAdded_MetaData)) }; // 2461481504
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerRemoved_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerRemoved = { "OnVoiceChatPlayerRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatPlayerRemoved), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerRemovedDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerRemoved_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerRemoved_MetaData)) }; // 1672774596
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerTalkingUpdated_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerTalkingUpdated = { "OnVoiceChatPlayerTalkingUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatPlayerTalkingUpdated), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerTalkingUpdatedDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerTalkingUpdated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerTalkingUpdated_MetaData)) }; // 3315444815
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerMuteUpdated_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerMuteUpdated = { "OnVoiceChatPlayerMuteUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatPlayerMuteUpdated), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerMuteUpdatedDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerMuteUpdated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerMuteUpdated_MetaData)) }; // 770630725
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerVolumeUpdated_MetaData[] = {
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerVolumeUpdated = { "OnVoiceChatPlayerVolumeUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUser, OnVoiceChatPlayerVolumeUpdated), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUser_OnVoiceChatPlayerVolumeUpdatedDelegate_BP__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerVolumeUpdated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerVolumeUpdated_MetaData)) }; // 346074073
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVoiceChatUser_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatAvailableAudioDevicesChanged,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedIn,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatLoggedOut,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelJoined,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatChannelExited,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerAdded,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerRemoved,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerTalkingUpdated,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerMuteUpdated,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUser_Statics::NewProp_OnVoiceChatPlayerVolumeUpdated,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UVoiceChatUser_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UVoiceChatUser>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UVoiceChatUser_Statics::ClassParams = {
+		&UVoiceChatUser::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UVoiceChatUser_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::PropPointers),
+		0,
+		0x009000A8u,
+		METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUser_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUser_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UVoiceChatUser()
+	{
+		if (!Z_Registration_Info_UClass_UVoiceChatUser.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UVoiceChatUser.OuterSingleton, Z_Construct_UClass_UVoiceChatUser_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UVoiceChatUser.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UVoiceChatUser>()
+	{
+		return UVoiceChatUser::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVoiceChatUser);
+	UVoiceChatUser::~UVoiceChatUser() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUserLoginCallbackPin_Parms
+		{
+			FString PlayerName;
+			FVoiceChatResultBP Result;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLoginCallbackPin_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLoginCallbackPin_Parms, Result), Z_Construct_UScriptStruct_FVoiceChatResultBP, METADATA_PARAMS(nullptr, 0) }; // 3594018074
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUserLoginCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLoginCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UVoiceChatUserLogin::execLogin)
+	{
+		P_GET_OBJECT(UVoiceChatUser,Z_Param_Subsystem);
+		P_GET_PROPERTY(FIntProperty,Z_Param_PlatformId);
+		P_GET_PROPERTY(FStrProperty,Z_Param_PlayerName);
+		P_GET_PROPERTY(FStrProperty,Z_Param_Credentials);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UVoiceChatUserLogin**)Z_Param__Result=UVoiceChatUserLogin::Login(Z_Param_Subsystem,Z_Param_PlatformId,Z_Param_PlayerName,Z_Param_Credentials);
+		P_NATIVE_END;
+	}
+	void UVoiceChatUserLogin::StaticRegisterNativesUVoiceChatUserLogin()
+	{
+		UClass* Class = UVoiceChatUserLogin::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Login", &UVoiceChatUserLogin::execLogin },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics
+	{
+		struct VoiceChatUserLogin_eventLogin_Parms
+		{
+			UVoiceChatUser* Subsystem;
+			int32 PlatformId;
+			FString PlayerName;
+			FString Credentials;
+			UVoiceChatUserLogin* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_PlatformId;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_Credentials;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLogin_eventLogin_Parms, Subsystem), Z_Construct_UClass_UVoiceChatUser_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_PlatformId = { "PlatformId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLogin_eventLogin_Parms, PlatformId), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLogin_eventLogin_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_Credentials = { "Credentials", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLogin_eventLogin_Parms, Credentials), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLogin_eventLogin_Parms, ReturnValue), Z_Construct_UClass_UVoiceChatUserLogin_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_PlatformId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_Credentials,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUserLogin, nullptr, "Login", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::VoiceChatUserLogin_eventLogin_Parms), Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUserLogin_Login()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUserLogin_Login_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UVoiceChatUserLogin);
+	UClass* Z_Construct_UClass_UVoiceChatUserLogin_NoRegister()
+	{
+		return UVoiceChatUserLogin::StaticClass();
+	}
+	struct Z_Construct_UClass_UVoiceChatUserLogin_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatLoginComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatLoginComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PlatformId_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp___Store__PlatformId;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__PlayerName_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__PlayerName;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Credentials_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__Credentials;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UVoiceChatUserLogin_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UVoiceChatUserLogin_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UVoiceChatUserLogin_Login, "Login" }, // 3886141002
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogin_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogin, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnCallFailed_MetaData)) }; // 210914012
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnVoiceChatLoginComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnVoiceChatLoginComplete = { "OnVoiceChatLoginComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogin, OnVoiceChatLoginComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLoginCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnVoiceChatLoginComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnVoiceChatLoginComplete_MetaData)) }; // 210914012
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogin, __Store__Subsystem), Z_Construct_UClass_UVoiceChatUser_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlatformId_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlatformId = { "__Store__PlatformId", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogin, __Store__PlatformId), METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlatformId_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlatformId_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlayerName_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlayerName = { "__Store__PlayerName", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogin, __Store__PlayerName), METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlayerName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlayerName_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Credentials_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Credentials = { "__Store__Credentials", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogin, __Store__Credentials), METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Credentials_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Credentials_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVoiceChatUserLogin_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp_OnVoiceChatLoginComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlatformId,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogin_Statics::NewProp___Store__Credentials,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UVoiceChatUserLogin_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UVoiceChatUserLogin>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UVoiceChatUserLogin_Statics::ClassParams = {
+		&UVoiceChatUserLogin::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UVoiceChatUserLogin_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogin_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogin_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogin_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UVoiceChatUserLogin()
+	{
+		if (!Z_Registration_Info_UClass_UVoiceChatUserLogin.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UVoiceChatUserLogin.OuterSingleton, Z_Construct_UClass_UVoiceChatUserLogin_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UVoiceChatUserLogin.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UVoiceChatUserLogin>()
+	{
+		return UVoiceChatUserLogin::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVoiceChatUserLogin);
+	UVoiceChatUserLogin::~UVoiceChatUserLogin() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUserLogoutCallbackPin_Parms
+		{
+			FString PlayerName;
+			FVoiceChatResultBP Result;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerName;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLogoutCallbackPin_Parms, PlayerName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLogoutCallbackPin_Parms, Result), Z_Construct_UScriptStruct_FVoiceChatResultBP, METADATA_PARAMS(nullptr, 0) }; // 3594018074
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::NewProp_PlayerName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUserLogoutCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLogoutCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UVoiceChatUserLogout::execLogout)
+	{
+		P_GET_OBJECT(UVoiceChatUser,Z_Param_Subsystem);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UVoiceChatUserLogout**)Z_Param__Result=UVoiceChatUserLogout::Logout(Z_Param_Subsystem);
+		P_NATIVE_END;
+	}
+	void UVoiceChatUserLogout::StaticRegisterNativesUVoiceChatUserLogout()
+	{
+		UClass* Class = UVoiceChatUserLogout::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Logout", &UVoiceChatUserLogout::execLogout },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics
+	{
+		struct VoiceChatUserLogout_eventLogout_Parms
+		{
+			UVoiceChatUser* Subsystem;
+			UVoiceChatUserLogout* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLogout_eventLogout_Parms, Subsystem), Z_Construct_UClass_UVoiceChatUser_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLogout_eventLogout_Parms, ReturnValue), Z_Construct_UClass_UVoiceChatUserLogout_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUserLogout, nullptr, "Logout", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::VoiceChatUserLogout_eventLogout_Parms), Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUserLogout_Logout()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUserLogout_Logout_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UVoiceChatUserLogout);
+	UClass* Z_Construct_UClass_UVoiceChatUserLogout_NoRegister()
+	{
+		return UVoiceChatUserLogout::StaticClass();
+	}
+	struct Z_Construct_UClass_UVoiceChatUserLogout_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatLogoutComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatLogoutComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UVoiceChatUserLogout_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UVoiceChatUserLogout_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UVoiceChatUserLogout_Logout, "Logout" }, // 1309430121
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogout_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogout, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnCallFailed_MetaData)) }; // 1824471512
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnVoiceChatLogoutComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnVoiceChatLogoutComplete = { "OnVoiceChatLogoutComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogout, OnVoiceChatLogoutComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLogoutCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnVoiceChatLogoutComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnVoiceChatLogoutComplete_MetaData)) }; // 1824471512
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLogout, __Store__Subsystem), Z_Construct_UClass_UVoiceChatUser_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp___Store__Subsystem_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVoiceChatUserLogout_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp_OnVoiceChatLogoutComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLogout_Statics::NewProp___Store__Subsystem,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UVoiceChatUserLogout_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UVoiceChatUserLogout>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UVoiceChatUserLogout_Statics::ClassParams = {
+		&UVoiceChatUserLogout::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UVoiceChatUserLogout_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogout_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLogout_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLogout_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UVoiceChatUserLogout()
+	{
+		if (!Z_Registration_Info_UClass_UVoiceChatUserLogout.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UVoiceChatUserLogout.OuterSingleton, Z_Construct_UClass_UVoiceChatUserLogout_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UVoiceChatUserLogout.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UVoiceChatUserLogout>()
+	{
+		return UVoiceChatUserLogout::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVoiceChatUserLogout);
+	UVoiceChatUserLogout::~UVoiceChatUserLogout() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUserJoinChannelCallbackPin_Parms
+		{
+			FString ChannelName;
+			FVoiceChatResultBP Result;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUserJoinChannelCallbackPin_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUserJoinChannelCallbackPin_Parms, Result), Z_Construct_UScriptStruct_FVoiceChatResultBP, METADATA_PARAMS(nullptr, 0) }; // 3594018074
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUserJoinChannelCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUserJoinChannelCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UVoiceChatUserJoinChannel::execJoinChannel)
+	{
+		P_GET_OBJECT(UVoiceChatUser,Z_Param_Subsystem);
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelCredentials);
+		P_GET_ENUM(EVoiceChatChannelType_,Z_Param_ChannelType);
+		P_GET_STRUCT(FVoiceChatChannel3dPropertiesBP,Z_Param_Channel3dProperties);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UVoiceChatUserJoinChannel**)Z_Param__Result=UVoiceChatUserJoinChannel::JoinChannel(Z_Param_Subsystem,Z_Param_ChannelName,Z_Param_ChannelCredentials,EVoiceChatChannelType_(Z_Param_ChannelType),Z_Param_Channel3dProperties);
+		P_NATIVE_END;
+	}
+	void UVoiceChatUserJoinChannel::StaticRegisterNativesUVoiceChatUserJoinChannel()
+	{
+		UClass* Class = UVoiceChatUserJoinChannel::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "JoinChannel", &UVoiceChatUserJoinChannel::execJoinChannel },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics
+	{
+		struct VoiceChatUserJoinChannel_eventJoinChannel_Parms
+		{
+			UVoiceChatUser* Subsystem;
+			FString ChannelName;
+			FString ChannelCredentials;
+			EVoiceChatChannelType_ ChannelType;
+			FVoiceChatChannel3dPropertiesBP Channel3dProperties;
+			UVoiceChatUserJoinChannel* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelCredentials;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_ChannelType_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_ChannelType;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Channel3dProperties;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserJoinChannel_eventJoinChannel_Parms, Subsystem), Z_Construct_UClass_UVoiceChatUser_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserJoinChannel_eventJoinChannel_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ChannelCredentials = { "ChannelCredentials", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserJoinChannel_eventJoinChannel_Parms, ChannelCredentials), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ChannelType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ChannelType = { "ChannelType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserJoinChannel_eventJoinChannel_Parms, ChannelType), Z_Construct_UEnum_OnlineSubsystemBlueprints_EVoiceChatChannelType_, METADATA_PARAMS(nullptr, 0) }; // 2757596097
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_Channel3dProperties = { "Channel3dProperties", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserJoinChannel_eventJoinChannel_Parms, Channel3dProperties), Z_Construct_UScriptStruct_FVoiceChatChannel3dPropertiesBP, METADATA_PARAMS(nullptr, 0) }; // 2697032111
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserJoinChannel_eventJoinChannel_Parms, ReturnValue), Z_Construct_UClass_UVoiceChatUserJoinChannel_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ChannelCredentials,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ChannelType_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ChannelType,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_Channel3dProperties,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUserJoinChannel, nullptr, "JoinChannel", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::VoiceChatUserJoinChannel_eventJoinChannel_Parms), Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UVoiceChatUserJoinChannel);
+	UClass* Z_Construct_UClass_UVoiceChatUserJoinChannel_NoRegister()
+	{
+		return UVoiceChatUserJoinChannel::StaticClass();
+	}
+	struct Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatChannelJoinComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatChannelJoinComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__ChannelName_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__ChannelName;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__ChannelCredentials_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__ChannelCredentials;
+		static const UECodeGen_Private::FBytePropertyParams NewProp___Store__ChannelType_Underlying;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__ChannelType_MetaData[];
+#endif
+		static const UECodeGen_Private::FEnumPropertyParams NewProp___Store__ChannelType;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Channel3dProperties_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp___Store__Channel3dProperties;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UVoiceChatUserJoinChannel_JoinChannel, "JoinChannel" }, // 655309673
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserJoinChannel, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnCallFailed_MetaData)) }; // 4139057188
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnVoiceChatChannelJoinComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnVoiceChatChannelJoinComplete = { "OnVoiceChatChannelJoinComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserJoinChannel, OnVoiceChatChannelJoinComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserJoinChannelCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnVoiceChatChannelJoinComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnVoiceChatChannelJoinComplete_MetaData)) }; // 4139057188
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserJoinChannel, __Store__Subsystem), Z_Construct_UClass_UVoiceChatUser_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelName_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelName = { "__Store__ChannelName", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserJoinChannel, __Store__ChannelName), METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelName_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelCredentials_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelCredentials = { "__Store__ChannelCredentials", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserJoinChannel, __Store__ChannelCredentials), METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelCredentials_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelCredentials_MetaData)) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelType_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelType = { "__Store__ChannelType", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserJoinChannel, __Store__ChannelType), Z_Construct_UEnum_OnlineSubsystemBlueprints_EVoiceChatChannelType_, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelType_MetaData)) }; // 2757596097
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Channel3dProperties_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Channel3dProperties = { "__Store__Channel3dProperties", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserJoinChannel, __Store__Channel3dProperties), Z_Construct_UScriptStruct_FVoiceChatChannel3dPropertiesBP, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Channel3dProperties_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Channel3dProperties_MetaData)) }; // 2697032111
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp_OnVoiceChatChannelJoinComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelCredentials,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelType_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__ChannelType,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::NewProp___Store__Channel3dProperties,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UVoiceChatUserJoinChannel>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::ClassParams = {
+		&UVoiceChatUserJoinChannel::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UVoiceChatUserJoinChannel()
+	{
+		if (!Z_Registration_Info_UClass_UVoiceChatUserJoinChannel.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UVoiceChatUserJoinChannel.OuterSingleton, Z_Construct_UClass_UVoiceChatUserJoinChannel_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UVoiceChatUserJoinChannel.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UVoiceChatUserJoinChannel>()
+	{
+		return UVoiceChatUserJoinChannel::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVoiceChatUserJoinChannel);
+	UVoiceChatUserJoinChannel::~UVoiceChatUserJoinChannel() {}
+	struct Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics
+	{
+		struct _Script_OnlineSubsystemBlueprints_eventVoiceChatUserLeaveChannelCallbackPin_Parms
+		{
+			FString ChannelName;
+			FVoiceChatResultBP Result;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLeaveChannelCallbackPin_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLeaveChannelCallbackPin_Parms, Result), Z_Construct_UScriptStruct_FVoiceChatResultBP, METADATA_PARAMS(nullptr, 0) }; // 3594018074
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::NewProp_Result,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints, nullptr, "VoiceChatUserLeaveChannelCallbackPin__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::_Script_OnlineSubsystemBlueprints_eventVoiceChatUserLeaveChannelCallbackPin_Parms), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(UVoiceChatUserLeaveChannel::execLeaveChannel)
+	{
+		P_GET_OBJECT(UVoiceChatUser,Z_Param_Subsystem);
+		P_GET_PROPERTY(FStrProperty,Z_Param_ChannelName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UVoiceChatUserLeaveChannel**)Z_Param__Result=UVoiceChatUserLeaveChannel::LeaveChannel(Z_Param_Subsystem,Z_Param_ChannelName);
+		P_NATIVE_END;
+	}
+	void UVoiceChatUserLeaveChannel::StaticRegisterNativesUVoiceChatUserLeaveChannel()
+	{
+		UClass* Class = UVoiceChatUserLeaveChannel::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "LeaveChannel", &UVoiceChatUserLeaveChannel::execLeaveChannel },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics
+	{
+		struct VoiceChatUserLeaveChannel_eventLeaveChannel_Parms
+		{
+			UVoiceChatUser* Subsystem;
+			FString ChannelName;
+			UVoiceChatUserLeaveChannel* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Subsystem;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ChannelName;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::NewProp_Subsystem = { "Subsystem", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLeaveChannel_eventLeaveChannel_Parms, Subsystem), Z_Construct_UClass_UVoiceChatUser_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::NewProp_ChannelName = { "ChannelName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLeaveChannel_eventLeaveChannel_Parms, ChannelName), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VoiceChatUserLeaveChannel_eventLeaveChannel_Parms, ReturnValue), Z_Construct_UClass_UVoiceChatUserLeaveChannel_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::NewProp_Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::NewProp_ChannelName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Online|VoiceChatUser" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVoiceChatUserLeaveChannel, nullptr, "LeaveChannel", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::VoiceChatUserLeaveChannel_eventLeaveChannel_Parms), Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UVoiceChatUserLeaveChannel);
+	UClass* Z_Construct_UClass_UVoiceChatUserLeaveChannel_NoRegister()
+	{
+		return UVoiceChatUserLeaveChannel::StaticClass();
+	}
+	struct Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnCallFailed_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCallFailed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnVoiceChatChannelLeaveComplete_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoiceChatChannelLeaveComplete;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__Subsystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp___Store__Subsystem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp___Store__ChannelName_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp___Store__ChannelName;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+		(UObject* (*)())Z_Construct_UPackage__Script_OnlineSubsystemBlueprints,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UVoiceChatUserLeaveChannel_LeaveChannel, "LeaveChannel" }, // 3914709677
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnCallFailed_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnCallFailed = { "OnCallFailed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLeaveChannel, OnCallFailed), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnCallFailed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnCallFailed_MetaData)) }; // 189450771
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnVoiceChatChannelLeaveComplete_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnVoiceChatChannelLeaveComplete = { "OnVoiceChatChannelLeaveComplete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLeaveChannel, OnVoiceChatChannelLeaveComplete), Z_Construct_UDelegateFunction_OnlineSubsystemBlueprints_VoiceChatUserLeaveChannelCallbackPin__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnVoiceChatChannelLeaveComplete_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnVoiceChatChannelLeaveComplete_MetaData)) }; // 189450771
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__Subsystem_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__Subsystem = { "__Store__Subsystem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLeaveChannel, __Store__Subsystem), Z_Construct_UClass_UVoiceChatUser_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__Subsystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__Subsystem_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__ChannelName_MetaData[] = {
+		{ "ModuleRelativePath", "_5.1/Private/AutoSubsystems/VoiceChatUser.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__ChannelName = { "__Store__ChannelName", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVoiceChatUserLeaveChannel, __Store__ChannelName), METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__ChannelName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__ChannelName_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnCallFailed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp_OnVoiceChatChannelLeaveComplete,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__Subsystem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::NewProp___Store__ChannelName,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UVoiceChatUserLeaveChannel>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::ClassParams = {
+		&UVoiceChatUserLeaveChannel::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::PropPointers),
+		0,
+		0x009000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UVoiceChatUserLeaveChannel()
+	{
+		if (!Z_Registration_Info_UClass_UVoiceChatUserLeaveChannel.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UVoiceChatUserLeaveChannel.OuterSingleton, Z_Construct_UClass_UVoiceChatUserLeaveChannel_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_UVoiceChatUserLeaveChannel.OuterSingleton;
+	}
+	template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<UVoiceChatUserLeaveChannel>()
+	{
+		return UVoiceChatUserLeaveChannel::StaticClass();
+	}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVoiceChatUserLeaveChannel);
+	UVoiceChatUserLeaveChannel::~UVoiceChatUserLeaveChannel() {}
+	struct Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_VoiceChatUser_h_Statics
+	{
+		static const FClassRegisterCompiledInInfo ClassInfo[];
+	};
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_VoiceChatUser_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UVoiceChatUser, UVoiceChatUser::StaticClass, TEXT("UVoiceChatUser"), &Z_Registration_Info_UClass_UVoiceChatUser, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVoiceChatUser), 2886435357U) },
+		{ Z_Construct_UClass_UVoiceChatUserLogin, UVoiceChatUserLogin::StaticClass, TEXT("UVoiceChatUserLogin"), &Z_Registration_Info_UClass_UVoiceChatUserLogin, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVoiceChatUserLogin), 2720174379U) },
+		{ Z_Construct_UClass_UVoiceChatUserLogout, UVoiceChatUserLogout::StaticClass, TEXT("UVoiceChatUserLogout"), &Z_Registration_Info_UClass_UVoiceChatUserLogout, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVoiceChatUserLogout), 2155124548U) },
+		{ Z_Construct_UClass_UVoiceChatUserJoinChannel, UVoiceChatUserJoinChannel::StaticClass, TEXT("UVoiceChatUserJoinChannel"), &Z_Registration_Info_UClass_UVoiceChatUserJoinChannel, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVoiceChatUserJoinChannel), 928993107U) },
+		{ Z_Construct_UClass_UVoiceChatUserLeaveChannel, UVoiceChatUserLeaveChannel::StaticClass, TEXT("UVoiceChatUserLeaveChannel"), &Z_Registration_Info_UClass_UVoiceChatUserLeaveChannel, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVoiceChatUserLeaveChannel), 1487646333U) },
+	};
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_VoiceChatUser_h_2180782426(TEXT("/Script/OnlineSubsystemBlueprints"),
+		Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_VoiceChatUser_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_VoiceChatUser_h_Statics::ClassInfo),
+		nullptr, 0,
+		nullptr, 0);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

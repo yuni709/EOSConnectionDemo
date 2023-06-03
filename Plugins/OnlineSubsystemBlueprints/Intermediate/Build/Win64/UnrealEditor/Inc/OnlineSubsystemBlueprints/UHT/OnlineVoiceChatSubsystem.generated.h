@@ -1,0 +1,344 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "_5.1/Private/AutoSubsystems/OnlineVoiceChatSubsystem.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UOnlineVoiceChatSubsystem;
+class UOnlineVoiceChatSubsystemConnect;
+class UOnlineVoiceChatSubsystemDisconnect;
+class UVoiceChatUser;
+struct FVoiceChatResultBP;
+#ifdef ONLINESUBSYSTEMBLUEPRINTS_OnlineVoiceChatSubsystem_generated_h
+#error "OnlineVoiceChatSubsystem.generated.h already included, missing '#pragma once' in OnlineVoiceChatSubsystem.h"
+#endif
+#define ONLINESUBSYSTEMBLUEPRINTS_OnlineVoiceChatSubsystem_generated_h
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_40_DELEGATE \
+static inline void FVoiceChat_OnVoiceChatReconnectedDelegate_BP_DelegateWrapper(const FMulticastScriptDelegate& VoiceChat_OnVoiceChatReconnectedDelegate_BP) \
+{ \
+	VoiceChat_OnVoiceChatReconnectedDelegate_BP.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_42_DELEGATE \
+static inline void FVoiceChat_OnVoiceChatConnectedDelegate_BP_DelegateWrapper(const FMulticastScriptDelegate& VoiceChat_OnVoiceChatConnectedDelegate_BP) \
+{ \
+	VoiceChat_OnVoiceChatConnectedDelegate_BP.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_44_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventVoiceChat_OnVoiceChatDisconnectedDelegate_BP_Parms \
+{ \
+	FVoiceChatResultBP Reason; \
+}; \
+static inline void FVoiceChat_OnVoiceChatDisconnectedDelegate_BP_DelegateWrapper(const FMulticastScriptDelegate& VoiceChat_OnVoiceChatDisconnectedDelegate_BP, FVoiceChatResultBP Reason) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventVoiceChat_OnVoiceChatDisconnectedDelegate_BP_Parms Parms; \
+	Parms.Reason=Reason; \
+	VoiceChat_OnVoiceChatDisconnectedDelegate_BP.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execIsConnected); \
+	DECLARE_FUNCTION(execIsConnecting); \
+	DECLARE_FUNCTION(execIsInitialized); \
+	DECLARE_FUNCTION(execUninitialize_); \
+	DECLARE_FUNCTION(execInitialize_); \
+	DECLARE_FUNCTION(execCreateUser); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execIsConnected); \
+	DECLARE_FUNCTION(execIsConnecting); \
+	DECLARE_FUNCTION(execIsInitialized); \
+	DECLARE_FUNCTION(execUninitialize_); \
+	DECLARE_FUNCTION(execInitialize_); \
+	DECLARE_FUNCTION(execCreateUser); \
+	DECLARE_FUNCTION(execIsSubsystemAvailable);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineVoiceChatSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineVoiceChatSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineVoiceChatSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineVoiceChatSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineVoiceChatSubsystem(); \
+	friend struct Z_Construct_UClass_UOnlineVoiceChatSubsystem_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineVoiceChatSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineVoiceChatSubsystem)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineVoiceChatSubsystem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineVoiceChatSubsystem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineVoiceChatSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineVoiceChatSubsystem); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineVoiceChatSubsystem(UOnlineVoiceChatSubsystem&&); \
+	NO_API UOnlineVoiceChatSubsystem(const UOnlineVoiceChatSubsystem&); \
+public: \
+	NO_API virtual ~UOnlineVoiceChatSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineVoiceChatSubsystem(UOnlineVoiceChatSubsystem&&); \
+	NO_API UOnlineVoiceChatSubsystem(const UOnlineVoiceChatSubsystem&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineVoiceChatSubsystem); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineVoiceChatSubsystem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlineVoiceChatSubsystem) \
+	NO_API virtual ~UOnlineVoiceChatSubsystem();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_46_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_49_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineVoiceChatSubsystem>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_126_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineVoiceChatSubsystemConnectCallbackPin_Parms \
+{ \
+	FVoiceChatResultBP Result; \
+}; \
+static inline void FOnlineVoiceChatSubsystemConnectCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineVoiceChatSubsystemConnectCallbackPin, FVoiceChatResultBP Result) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineVoiceChatSubsystemConnectCallbackPin_Parms Parms; \
+	Parms.Result=Result; \
+	OnlineVoiceChatSubsystemConnectCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execConnect);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execConnect);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineVoiceChatSubsystemConnect(); \
+	friend struct Z_Construct_UClass_UOnlineVoiceChatSubsystemConnect_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineVoiceChatSubsystemConnect, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineVoiceChatSubsystemConnect)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineVoiceChatSubsystemConnect(); \
+	friend struct Z_Construct_UClass_UOnlineVoiceChatSubsystemConnect_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineVoiceChatSubsystemConnect, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineVoiceChatSubsystemConnect)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineVoiceChatSubsystemConnect(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineVoiceChatSubsystemConnect) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineVoiceChatSubsystemConnect); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineVoiceChatSubsystemConnect); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineVoiceChatSubsystemConnect(UOnlineVoiceChatSubsystemConnect&&); \
+	NO_API UOnlineVoiceChatSubsystemConnect(const UOnlineVoiceChatSubsystemConnect&); \
+public: \
+	NO_API virtual ~UOnlineVoiceChatSubsystemConnect();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineVoiceChatSubsystemConnect(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineVoiceChatSubsystemConnect(UOnlineVoiceChatSubsystemConnect&&); \
+	NO_API UOnlineVoiceChatSubsystemConnect(const UOnlineVoiceChatSubsystemConnect&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineVoiceChatSubsystemConnect); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineVoiceChatSubsystemConnect); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineVoiceChatSubsystemConnect) \
+	NO_API virtual ~UOnlineVoiceChatSubsystemConnect();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_128_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_131_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineVoiceChatSubsystemConnect>();
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_155_DELEGATE \
+struct _Script_OnlineSubsystemBlueprints_eventOnlineVoiceChatSubsystemDisconnectCallbackPin_Parms \
+{ \
+	FVoiceChatResultBP Result; \
+}; \
+static inline void FOnlineVoiceChatSubsystemDisconnectCallbackPin_DelegateWrapper(const FMulticastScriptDelegate& OnlineVoiceChatSubsystemDisconnectCallbackPin, FVoiceChatResultBP Result) \
+{ \
+	_Script_OnlineSubsystemBlueprints_eventOnlineVoiceChatSubsystemDisconnectCallbackPin_Parms Parms; \
+	Parms.Result=Result; \
+	OnlineVoiceChatSubsystemDisconnectCallbackPin.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_SPARSE_DATA
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDisconnect);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDisconnect);
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_ACCESSORS
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineVoiceChatSubsystemDisconnect(); \
+	friend struct Z_Construct_UClass_UOnlineVoiceChatSubsystemDisconnect_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineVoiceChatSubsystemDisconnect, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineVoiceChatSubsystemDisconnect)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineVoiceChatSubsystemDisconnect(); \
+	friend struct Z_Construct_UClass_UOnlineVoiceChatSubsystemDisconnect_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineVoiceChatSubsystemDisconnect, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemBlueprints"), NO_API) \
+	DECLARE_SERIALIZER(UOnlineVoiceChatSubsystemDisconnect)
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineVoiceChatSubsystemDisconnect(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineVoiceChatSubsystemDisconnect) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineVoiceChatSubsystemDisconnect); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineVoiceChatSubsystemDisconnect); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineVoiceChatSubsystemDisconnect(UOnlineVoiceChatSubsystemDisconnect&&); \
+	NO_API UOnlineVoiceChatSubsystemDisconnect(const UOnlineVoiceChatSubsystemDisconnect&); \
+public: \
+	NO_API virtual ~UOnlineVoiceChatSubsystemDisconnect();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UOnlineVoiceChatSubsystemDisconnect(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UOnlineVoiceChatSubsystemDisconnect(UOnlineVoiceChatSubsystemDisconnect&&); \
+	NO_API UOnlineVoiceChatSubsystemDisconnect(const UOnlineVoiceChatSubsystemDisconnect&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UOnlineVoiceChatSubsystemDisconnect); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineVoiceChatSubsystemDisconnect); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineVoiceChatSubsystemDisconnect) \
+	NO_API virtual ~UOnlineVoiceChatSubsystemDisconnect();
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_157_PROLOG
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_RPC_WRAPPERS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_INCLASS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_SPARSE_DATA \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_ACCESSORS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h_160_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMBLUEPRINTS_API UClass* StaticClass<class UOnlineVoiceChatSubsystemDisconnect>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_UnrealProjects_EOSConnectionDemo_Plugins_OnlineSubsystemBlueprints_Source_OnlineSubsystemBlueprints_5_1_Private_AutoSubsystems_OnlineVoiceChatSubsystem_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

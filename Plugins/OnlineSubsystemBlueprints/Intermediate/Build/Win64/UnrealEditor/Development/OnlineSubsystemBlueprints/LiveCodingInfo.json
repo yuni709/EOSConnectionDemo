@@ -1,0 +1,151 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OnlineSubsystemBlueprints.1_of_14.cpp.obj": [
+			"OnlineAchievementsSubsystem.gen.cpp.obj",
+			"OnlineAvatarSubsystem.gen.cpp.obj",
+			"OnlineChatSubsystem.gen.cpp.obj",
+			"OnlineEntitlementsSubsystem.gen.cpp.obj",
+			"OnlineEventsSubsystem.gen.cpp.obj",
+			"OnlineExternalUISubsystem.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.2_of_14.cpp.obj": [
+			"OnlineFriendsSubsystem.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.3_of_14.cpp.obj": [
+			"OnlineGameActivitySubsystem.gen.cpp.obj",
+			"OnlineGameItemStatsSubsystem.gen.cpp.obj",
+			"OnlineGroupsSubsystem.gen.cpp.obj",
+			"OnlineHelpers.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.4_of_14.cpp.obj": [
+			"OnlineIdentitySubsystem.gen.cpp.obj",
+			"OnlineLeaderboardsSubsystem.gen.cpp.obj",
+			"OnlineLobbySubsystem.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.5_of_14.cpp.obj": [
+			"OnlineMessageSanitizerSubsystem.gen.cpp.obj",
+			"OnlineMessageSubsystem.gen.cpp.obj",
+			"OnlinePartySubsystem.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.6_of_14.cpp.obj": [
+			"OnlinePresenceSubsystem.gen.cpp.obj",
+			"OnlinePurchaseSubsystem.gen.cpp.obj",
+			"OnlineSessionSubsystem.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.7_of_14.cpp.obj": [
+			"OnlineSharedCloudSubsystem.gen.cpp.obj",
+			"OnlineSharingSubsystem.gen.cpp.obj",
+			"OnlineStatsSubsystem.gen.cpp.obj",
+			"OnlineStoreV2Subsystem.gen.cpp.obj",
+			"OnlineSubsystemBlueprints.init.gen.cpp.obj",
+			"OnlineSubsystemBP.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.8_of_14.cpp.obj": [
+			"OnlineTimeSubsystem.gen.cpp.obj",
+			"OnlineTitleFileSubsystem.gen.cpp.obj",
+			"OnlineTournamentSubsystem.gen.cpp.obj",
+			"OnlineTurnBasedSubsystem.gen.cpp.obj",
+			"OnlineUserCloudSubsystem.gen.cpp.obj",
+			"OnlineUserSubsystem.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.9_of_14.cpp.obj": [
+			"OnlineVoiceAdminSubsystem.gen.cpp.obj",
+			"OnlineVoiceChatSubsystem.gen.cpp.obj",
+			"OnlineVoiceSubsystem.gen.cpp.obj",
+			"OSBAchievementTypes.gen.cpp.obj",
+			"OSBBlockedQueryResultInfo.gen.cpp.obj",
+			"OSBEntitlementTypes.gen.cpp.obj",
+			"OSBExternalUITypes.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.10_of_14.cpp.obj": [
+			"OSBFileTypes.gen.cpp.obj",
+			"OSBFriendTypes.gen.cpp.obj",
+			"OSBGameActivityTypes.gen.cpp.obj",
+			"OSBLeaderboardTypes.gen.cpp.obj",
+			"OSBLobbyTypes.gen.cpp.obj",
+			"OSBMessageTypes.gen.cpp.obj",
+			"OSBOnlineAccountCredential.gen.cpp.obj",
+			"OSBOnlineErrorInfo.gen.cpp.obj",
+			"OSBOnlineLoginStatus.gen.cpp.obj",
+			"OSBOnlineRecentPlayerRef.gen.cpp.obj",
+			"OSBOnlineUserPresenceData.gen.cpp.obj",
+			"OSBOnlineUserPrivilege.gen.cpp.obj",
+			"OSBOnlineUserRef.gen.cpp.obj",
+			"OSBPartyTypes.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.11_of_14.cpp.obj": [
+			"OSBPurchaseTypes.gen.cpp.obj",
+			"OSBSessionTypes.gen.cpp.obj",
+			"OSBStatsTypes.gen.cpp.obj",
+			"OSBStoreV2Types.gen.cpp.obj",
+			"OSBVoiceChatTypes.gen.cpp.obj",
+			"VoiceChatUser.gen.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.12_of_14.cpp.obj": [
+			"UniqueNetIdConversion.cpp.obj",
+			"OnlineExternalUISubsystem.extendedimpl.cpp.obj",
+			"OnlineHelpers.cpp.obj",
+			"OnlineSubsystemBlueprintsModule.cpp.obj",
+			"OSBAchievementTypes.cpp.obj",
+			"OSBBlockedQueryResultInfo.cpp.obj",
+			"OSBEntitlementTypes.cpp.obj",
+			"OSBExternalUITypes.cpp.obj",
+			"OSBFileTypes.cpp.obj",
+			"OSBFriendTypes.cpp.obj",
+			"OSBGameActivityTypes.cpp.obj",
+			"OSBLeaderboardTypes.cpp.obj",
+			"OSBLobbyTypes.cpp.obj",
+			"OSBMessageTypes.cpp.obj",
+			"OSBOnlineAccountCredential.cpp.obj",
+			"OSBOnlineErrorInfo.cpp.obj",
+			"OSBOnlineRecentPlayerRef.cpp.obj",
+			"OSBOnlineUserPresenceData.cpp.obj",
+			"OSBOnlineUserRef.cpp.obj",
+			"OSBPartyTypes.cpp.obj",
+			"OSBPurchaseTypes.cpp.obj",
+			"OSBSessionTypes.cpp.obj",
+			"OSBStatsTypes.cpp.obj",
+			"OSBStoreV2Types.cpp.obj",
+			"OSBVoiceChatTypes.cpp.obj",
+			"OnlineAchievementsSubsystem.cpp.obj",
+			"OnlineAvatarSubsystem.cpp.obj",
+			"OnlineChatSubsystem.cpp.obj",
+			"OnlineEntitlementsSubsystem.cpp.obj",
+			"OnlineEventsSubsystem.cpp.obj",
+			"OnlineExternalUISubsystem.cpp.obj",
+			"OnlineFriendsSubsystem.cpp.obj",
+			"OnlineGameActivitySubsystem.cpp.obj",
+			"OnlineGameItemStatsSubsystem.cpp.obj",
+			"OnlineGroupsSubsystem.cpp.obj",
+			"OnlineIdentitySubsystem.cpp.obj",
+			"OnlineLeaderboardsSubsystem.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.13_of_14.cpp.obj": [
+			"OnlineLobbySubsystem.cpp.obj",
+			"OnlineMessageSanitizerSubsystem.cpp.obj",
+			"OnlineMessageSubsystem.cpp.obj",
+			"OnlinePartySubsystem.cpp.obj",
+			"OnlinePresenceSubsystem.cpp.obj",
+			"OnlinePurchaseSubsystem.cpp.obj",
+			"OnlineSessionSubsystem.cpp.obj",
+			"OnlineSharedCloudSubsystem.cpp.obj",
+			"OnlineSharingSubsystem.cpp.obj",
+			"OnlineStatsSubsystem.cpp.obj",
+			"OnlineStoreV2Subsystem.cpp.obj",
+			"OnlineSubsystemBP.cpp.obj",
+			"OnlineTimeSubsystem.cpp.obj",
+			"OnlineTitleFileSubsystem.cpp.obj"
+		],
+		"Module.OnlineSubsystemBlueprints.14_of_14.cpp.obj": [
+			"OnlineTournamentSubsystem.cpp.obj",
+			"OnlineTurnBasedSubsystem.cpp.obj",
+			"OnlineUserCloudSubsystem.cpp.obj",
+			"OnlineUserSubsystem.cpp.obj",
+			"OnlineVoiceAdminSubsystem.cpp.obj",
+			"OnlineVoiceChatSubsystem.cpp.obj",
+			"OnlineVoiceSubsystem.cpp.obj",
+			"VoiceChatUser.cpp.obj"
+		]
+	}
+}
